@@ -1,0 +1,115 @@
+.about{
+	padding: 14.5em 0;
+	text-align: center;
+	position: relative;
+	&__circle{
+		&-one{
+			position: absolute;
+		    right: 7.8em;
+    		top: 15.3em;
+			background: linear-gradient(130.42deg, #6FC7B5 14.1%, #2F5C53 45.52%, #020202 74.85%);
+			width: 12.82em;
+			height: 12.82em;
+			border-radius: 50%;
+			z-index: 2;
+		}
+		&-two{
+			position: absolute;
+		    left: 16.2em;
+    		top: 27.5em;
+			background: linear-gradient(130.42deg, #345C66 14.1%, #213734 45.52%, #020202 74.85%);
+			width: 20.02em;
+			height: 20.02em;
+			border-radius: 50%;
+		}
+		&-three{
+			position: absolute;
+		    right: -9.8em;
+    		top: 21.5em;
+			background: linear-gradient(130.42deg, #72A79D 14.1%, #314D46 39.65%, #020202 64.9%);
+			width: 71.23em;
+			height: 71.23em;
+			border-radius: 50%;
+			z-index: 1;
+		}
+		&-four{
+			position: absolute;
+	        left: -4.8em;
+    		top: 49.7em;
+    		background: linear-gradient(130.42deg, #73A79D 14.1%, #324C48 45.52%, #020202 74.85%);
+			width: 37.3em;
+			height: 37.3em;
+			border-radius: 50%;
+			z-index: 1;
+		}
+		&-blur{
+			position: absolute;
+	        left: -12.2em;
+    		top: 53.7em;
+			width: 101em;
+			height: 101em;
+			border-radius: 50%;
+			background: linear-gradient(130.42deg, rgba(73, 223, 195, 0.19) 14.1%, rgba(16, 75, 41, 0.19) 39.65%, rgba(2, 2, 2, 0.19) 64.9%);
+			opacity: 0.8;
+			filter: blur(159px);
+			transform: rotate(60deg);
+		}
+	}
+	&__container{
+		max-width: 86em;
+		width: 100%;
+		padding: 0 0.95em;
+    	margin: 0 auto;
+	}
+	&__title{
+		position: relative;
+		font-weight: 300;
+		font-size: 15.8em;
+		line-height: 79.6%;
+		text-align: center;
+		letter-spacing: -0.07em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		&sub{
+			padding-top: 0.04em;
+			position: relative;
+			z-index: 2;
+		}
+	}
+	&__set{
+		position: relative;
+		z-index: 2;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding-top: 25em;
+	}
+	&__unit{
+		margin-top: 5em;
+		width: 33.3%;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 0.15em;
+			height: 6.7em;
+			background-color: #FFFFFF;
+		}
+		&:nth-child(3n+3):after{
+			display: none;
+		}
+		&-num{
+			font-size: 5.6em;
+		}
+		&-name{
+			padding-top: 2.6em;
+			font-weight: 500;
+			font-size: 1.5em;
+		    letter-spacing: -0.8px;
+		}
+	}
+}
