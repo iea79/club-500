@@ -11,6 +11,16 @@
 			z-index: -1;
 		}
 	}
+	&.effect{
+		.header__close{
+			opacity: 1;
+			z-index: 1;
+		}
+		.header__action, .header__center{
+			opacity: 0;
+			z-index: -1;
+		}
+	}
 	&__container{
 		max-width: 114.8em;
 		width: 100%;
@@ -90,6 +100,7 @@
 	&__right{
 		width: 33.3%;
 		text-align: right;
+		position: relative;
 	}
 	&__action{
 		text-decoration: none;
@@ -99,6 +110,25 @@
 		letter-spacing: -0.035em;
 		text-transform: uppercase;
 		color: #FFFFFF;
+		transition: all .8s;
+	}
+	&__close{
+		cursor: pointer;
+		display: inline-block;
+		min-width: 22px;
+		max-width: 22px;
+		height: 22px;
+		background-image: url(../img/close.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translate(0, -50%);
+		opacity: 0;
+		z-index: -1;
+		transition: all .8s;
 	}
 }
 

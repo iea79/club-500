@@ -25,4 +25,14 @@ $(document).ready(function(){
         $(this).addClass('active');
     });
 
+    $('.major__play').click(function(){
+        $('.major').addClass('hide');
+        $('.header').addClass('effect');
+    });
+
+    $('.header__close').click(function(){
+        $('.major').removeClass('hide');
+        $('.header').removeClass('effect');
+    });
+
 });

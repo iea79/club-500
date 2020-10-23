@@ -1,0 +1,87 @@
+.media{
+	padding: 14.5em 0;
+	position: relative;
+	text-align: center;
+	&__circle{
+		&-one{
+			position: absolute;
+	       	right: 48.5em;
+    		top: 24.6em;
+			width: 12.82em;
+			height: 12.82em;
+			background: linear-gradient(130.42deg, #6FC7B5 14.1%, #2F5C53 45.52%, #020202 74.85%);
+			border-radius: 50%;
+			z-index: 1;
+		}
+		&-two{
+			position: absolute;
+		    left: 16.2em;
+    		top: 28.5em;
+			width: 20.02em;
+			height: 20.02em;
+			background: linear-gradient(130.42deg, #345C66 14.1%, #213734 45.52%, #020202 74.85%);
+			border-radius: 50%;
+		}
+		&-three{
+			position: absolute;
+	        right: -11.8em;
+    		top: 11.5em;
+			width: 71.23em;
+			height: 71.23em;
+			background: linear-gradient(130.42deg, #72A79D 14.1%, #314D46 39.65%, #020202 64.9%);
+			border-radius: 50%;
+		}
+		&-four{
+			position: absolute;
+	        left: -4.8em;
+    		top: 50.7em;
+			width: 37.3em;
+			height: 37.3em;
+			background: linear-gradient(130.42deg, #73A79D 14.1%, #324C48 45.52%, #020202 74.85%);
+			border-radius: 50%;
+		}
+	}
+	&__container{
+		max-width: 76.11em;
+		width: 100%;
+		padding: 0 0.95em;
+    	margin: 0 auto;
+    	position: relative;
+    	z-index: 2;
+	}
+	&__title{
+		font-weight: 300;
+		font-size: 15.8em;
+		line-height: 79.6%;
+		letter-spacing: -0.07em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+	&__set{
+		padding-top: 6em;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	&__box{
+		width: 25%;
+		position: relative;
+		padding-bottom: 15%;
+		border-right: 1px solid #272727;
+		border-top: 1px solid #272727;
+		&:nth-child(-n+4){
+			border-top: none;
+		}
+		&:nth-child(4n){
+			border-right: none;
+		}
+	}
+	&__logo{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 70%;
+		height: 70%;
+		transform: translate(-50%, -50%);
+	}
+}
