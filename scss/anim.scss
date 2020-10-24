@@ -1,0 +1,83 @@
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #000;
+}
+
+.viewport {
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.scroll-container {
+    position: absolute;
+    overflow: hidden;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.cursor {
+    position: fixed;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    opacity: 0;
+    transition: background 0.3s, color 0.3s, opacity 0.3s, left 0.1s, top 0.1s;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    line-height: 1.1;
+    text-transform: uppercase;
+
+    text-align: center;
+
+    &.active {
+        opacity: 1;
+        // transform: scale(3);
+        border: 0.1em solid #fff;
+        width: 8.7em;
+        height: 8.7em;
+        border-radius: 100%;
+        opacity: 1;
+
+        cursor: pointer;
+
+    }
+
+    // &.menu-active {
+    //     opacity: 1;
+    //     transform: scale(3);
+    // }
+
+    &.hovered {
+        opacity: 1;
+    }
+
+    &.pressed {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+.major__stencil {
+    cursor: none;
+}
+
+.parallax {
+    transition: transform 1.5s;
+    // transform-style: preserve-3d;
+}

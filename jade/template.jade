@@ -1,14 +1,18 @@
+block variables
+    -var vers = '?0.1'
 <!DOCTYPE html>
 html(lang="ru")
-	
-	include head.jade
 
-	body#body
+    include head.jade
 
-		.wrapper
+    body#body
+        .viewport
+            .scroll-container#scroll-container
+                .wrapper
+                    .cursor
 
-			include block/header.jade
-												
-			block content	
+                    include block/header.jade
 
-		include scripts.jade
+                    block content	
+
+        include scripts.jade
