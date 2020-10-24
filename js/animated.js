@@ -62,6 +62,8 @@ gsap.registerPlugin(EaselPlugin, MotionPathPlugin, ScrollToPlugin, ScrollTrigger
 
         let scrollY = window.pageYOffset || html.scrollTop || body.scrollTop || 0;
 
+        console.log(scrollY);
+
         scroller.endY = scrollY;
         scroller.y += (scrollY - scroller.y) * scroller.ease;
 
