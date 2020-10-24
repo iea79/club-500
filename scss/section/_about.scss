@@ -2,6 +2,9 @@
 	padding: 14.5em 0;
 	text-align: center;
 	position: relative;
+	@media (max-width: 767px) {
+		padding: 12.3em 0;
+	}
 	&__circle{
 		&-one{
 			position: absolute;
@@ -12,6 +15,12 @@
 			height: 12.82em;
 			border-radius: 50%;
 			z-index: 2;
+			@media (max-width: 767px) {
+				width: 7.2em;
+				height: 7.2em;
+            	left: 14.7em;
+    			top: 64.9em;
+			}
 		}
 		&-two{
 			position: absolute;
@@ -21,6 +30,13 @@
 			width: 20.02em;
 			height: 20.02em;
 			border-radius: 50%;
+			@media (max-width: 767px) {
+				width: 11.15em;
+				height: 11.15em;
+			    left: 2em;
+    			top: 9.5em;
+				z-index: 0;
+			}
 		}
 		&-three{
 			position: absolute;
@@ -31,6 +47,12 @@
 			height: 71.23em;
 			border-radius: 50%;
 			z-index: 1;
+			@media (max-width: 767px) {
+				width: 33.2em;
+				height: 33.2em;
+            	left: 16.3em;
+    			top: 42.5em;
+			}
 		}
 		&-four{
 			position: absolute;
@@ -41,6 +63,12 @@
 			height: 37.3em;
 			border-radius: 50%;
 			z-index: 1;
+			@media (max-width: 767px) {
+				width: 20.8em;
+				height: 20.8em;
+		        left: -10em;
+    			top: 31.2em;
+			}
 		}
 		&-blur{
 			position: absolute;
@@ -69,10 +97,16 @@
 		letter-spacing: -0.07em;
 		text-transform: uppercase;
 		color: #FFFFFF;
+		@media (max-width: 767px) {
+			font-size: 2.4em;
+		}
 		&sub{
 			padding-top: 0.04em;
 			position: relative;
 			z-index: 2;
+			@media (max-width: 767px) {
+				padding-top: 0.08em;
+			}
 		}
 	}
 	&__set{
@@ -82,6 +116,9 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		padding-top: 25em;
+		@media (max-width: 767px) {
+			padding-top: 5em;
+		}
 	}
 	&__unit{
 		margin-top: 5em;
@@ -89,6 +126,17 @@
 		color: #FFFFFF;
 		text-transform: uppercase;
 		position: relative;
+		@media (max-width: 767px) {
+			width: 50%;
+			padding: 1em;
+			border-bottom: 1px solid #FFFFFF;
+			margin-top: 0;
+			min-height: 13.8em;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
 		&:after{
 			content: '';
 			position: absolute;
@@ -97,18 +145,62 @@
 			width: 0.15em;
 			height: 6.7em;
 			background-color: #FFFFFF;
+			@media (max-width: 767px) {
+				height: 100%;
+			}
 		}
 		&:nth-child(3n+3):after{
 			display: none;
+			@media (max-width: 767px) {
+				display: block;
+			}
+		}
+		&:nth-child(2n+2):after{
+			@media (max-width: 767px) {
+				display: none;
+			}
+		}
+		&:nth-last-child(-n+2){
+			@media (max-width: 767px) {
+				border-bottom: none;
+			}		
+		}
+		&:last-child{
+			display: none;
+			@media (max-width: 767px) {
+				display: block;
+			}
 		}
 		&-num{
 			font-size: 5.6em;
+			@media (max-width: 767px) {
+				font-size: 5em;
+			}
 		}
 		&-name{
 			padding-top: 2.6em;
 			font-weight: 500;
 			font-size: 1.5em;
 		    letter-spacing: -0.8px;
+		    @media (max-width: 767px) {
+				padding-top: 0.75em;
+				font-size: 0.78em;
+			}
+		}
+		&-link{
+			border: 1px solid #FFFFFF;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			font-size: 0.76em;
+			transition: all .5s;
+			&:hover{
+				background-color: #FFFFFF;
+				color: #000;
+			}
 		}
 	}
 }
