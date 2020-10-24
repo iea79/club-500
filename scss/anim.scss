@@ -1,29 +1,81 @@
+@import "/node_modules/locomotive-scroll/dist/locomotive-scroll.css";
+
 body {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    background-color: #000;
+    // overflow-x: hidden;
+    // overflow-y: scroll;
+    // background-color: #000;
 }
 
-.viewport {
-    overflow: hidden;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+// .viewport {
+//     overflow: hidden;
+//     position: fixed;
+//     height: 100%;
+//     width: 100%;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+// }
+//
+// .scroll-container {
+//     position: absolute;
+//     overflow: hidden;
+//     left: 0;
+//     z-index: 10;
+//     display: flex;
+//     justify-content: center;
+//     backface-visibility: hidden;
+//     transform-style: preserve-3d;
+// }
+
+.c-scrollbar_thumb {
+    background-color: rgba(#fff, 0.2);
+    width: 0.5em;
+    border-radius: 0.2em;
+    margin: 0 0.3em;
 }
 
-.scroll-container {
-    position: absolute;
-    overflow: hidden;
-    left: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
+[data-scroll] {
+    transition: 0s;
+}
+
+.about__title {
+    color: transparent;
+    // opacity: 0;
+
+    &.show {
+        animation: show 1s forwards;
+    }
+}
+
+.about__unit {
+    opacity: 0;
+}
+
+.speakers__box {
+    opacity: 0;
+}
+
+.slideUp {
+    animation: slideUp 1s forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(10em);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes show {
+    to {
+        color: #fff;
+    }
 }
 
 .cursor {

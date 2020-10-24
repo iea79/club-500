@@ -11,481 +11,477 @@
   </head>
   <!-- Head-->
   <body id="body">
-    <div class="viewport">
-      <div class="scroll-container" id="scroll-container">
-        <div class="wrapper">
-          <div class="cursor"></div>
-          <header class="header">
-            <div class="header__container">
-              <div class="header__left"><a class="header__company" href="#">club 500 <span class='header__symbol'>®</span></a></div>
-              <div class="header__center">
-                <div class="header__toggle">
-                  <div class="header__toggle-burger"><span></span><span></span></div>
-                  <div class="header__toggle-text">MENU</div>
-                </div>
-                <nav class="menu">
-                  <div class="menu__close">закрыть</div>
-                  <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link" href="#">О клубе</a>
-                      <ul class="menu__listsub">
-                        <li class="menu__itemsub"><a class="menu__linksub" href="#">что такое клуб</a></li>
-                        <li class="menu__itemsub"><a class="menu__linksub" href="#">как вступить</a></li>
-                        <li class="menu__itemsub"><a class="menu__linksub" href="#">резиденты</a></li>
-                        <li class="menu__itemsub"><a class="menu__linksub" href="#">CLUB 500 в цифрах</a></li>
-                      </ul>
-                    </li>
-                    <li class="menu__item"><a class="menu__link" href="#">резиденты</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">club 500 в цифрах</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">кейсы</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">афиша</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Travel</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Dom club 500</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">приложение</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Тарифы</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">сми</a></li>
+    <div class="wrapper" data-scroll-container="">
+      <div class="cursor"></div>
+      <header class="header" data-scroll-sticky="">
+        <div class="header__container">
+          <div class="header__left"><a class="header__company" href="#">club 500 <span class='header__symbol'>®</span></a></div>
+          <div class="header__center">
+            <div class="header__toggle">
+              <div class="header__toggle-burger"><span></span><span></span></div>
+              <div class="header__toggle-text">MENU</div>
+            </div>
+            <nav class="menu">
+              <div class="menu__close">закрыть</div>
+              <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="#">О клубе</a>
+                  <ul class="menu__listsub">
+                    <li class="menu__itemsub"><a class="menu__linksub" href="#">что такое клуб</a></li>
+                    <li class="menu__itemsub"><a class="menu__linksub" href="#">как вступить</a></li>
+                    <li class="menu__itemsub"><a class="menu__linksub" href="#">резиденты</a></li>
+                    <li class="menu__itemsub"><a class="menu__linksub" href="#">CLUB 500 в цифрах</a></li>
                   </ul>
-                </nav>
-              </div>
-              <div class="header__right"><a class="header__action" href="#">подать заявку</a>
-                <div class="header__close"></div>
-              </div>
-            </div>
-          </header>
-          <div class="major">
-            <div class="major__video">
-              <video preload="auto" autoplay="true" loop="loop" muted="muted">
-                <source src="video/video.mp4" type="video/mp4"/>
-                <source src="video/video.webm" type="video/webm"/>
-              </video>
-            </div>
-            <div class="major__background">
-              <div class="major__stencil"><svg viewBox="0 0 1113 583" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill-rule="evenodd" clip-rule="evenodd" d="M450.007 0H464.255V99.3375H524.81V113.231H450.007V0ZM624.918 98.6428C642.201 98.6428 656.264 84.93 656.264 68.0774V0H670.512V68.0774C670.512 92.5853 650.052 112.536 624.918 112.536H623.493C598.359 112.536 577.899 92.5853 577.899 68.0774V0H592.147V68.0774C592.147 84.93 606.21 98.6428 623.493 98.6428H624.918ZM352.021 98.6431C328.056 98.6431 308.564 79.637 308.564 56.2684C308.564 32.8998 328.056 13.8937 352.021 13.8937C365.058 13.8937 376.756 19.5205 384.735 28.4122L394.224 17.9505C383.68 6.9192 368.663 0.000308398 352.021 0.000308398C320.205 0.000308398 294.316 25.2445 294.316 56.2684C294.316 87.2922 320.205 112.536 352.021 112.536C369.575 112.536 385.319 104.84 395.905 92.7384L385.262 83.5132C377.283 92.7662 365.343 98.6431 352.021 98.6431ZM802.606 50.4329C811.768 56.5737 817.794 66.8548 817.794 78.4974C817.794 96.795 802.905 111.772 784.311 112.494V112.536H728.031V0H782.174C798.673 0 812.095 13.0875 812.095 29.176C812.095 37.5537 808.434 45.1117 802.606 50.4329ZM797.847 29.176C797.847 20.7428 790.823 13.8934 782.174 13.8934H742.28V44.4587H782.174C790.823 44.4587 797.847 37.6093 797.847 29.176ZM742.28 98.6428H782.887C794.285 98.6428 803.546 89.6121 803.546 78.4974C803.546 67.3827 794.285 58.3521 782.887 58.3521H742.28V98.6428ZM703.015 269.802C740.16 204.433 811.866 160 894.124 160C1014.33 160 1112.15 254.87 1112.1 371.459C1112.1 488.049 1014.28 582.919 894.07 582.919C811.812 582.919 740.106 538.486 702.961 473.117C665.815 538.486 594.109 582.919 511.851 582.919C435.515 582.919 368.277 544.647 329.301 486.848C300.231 543.707 239.775 582.919 170.007 582.919C89.9562 582.919 22.1257 531.281 0 460.534L49.1502 436.516C61.4243 490.294 110.951 530.707 170.061 530.707C238.322 530.707 293.878 476.824 293.878 410.619C293.878 344.414 238.322 290.531 170.061 290.531C127.586 290.531 90.1178 311.363 67.7768 343.056V342.743H6.83699C6.87089 342.655 6.9048 342.565 6.93922 342.474C7.06874 342.13 7.20539 341.767 7.37552 341.437L54.9105 160H268.846L256.679 212.212H96.7932L84.3577 259.778C109.767 246.098 138.999 238.318 170.061 238.318C224.864 238.318 273.906 262.493 306.529 300.451C336.676 218.687 417.373 160 511.905 160C594.163 160 665.869 204.433 703.015 269.802ZM347.712 371.459C347.712 459.28 421.357 530.707 511.905 530.707C602.453 530.707 676.098 459.28 676.098 371.459C676.098 283.638 602.453 212.212 511.905 212.212C421.357 212.212 347.712 283.638 347.712 371.459ZM729.932 371.459C729.932 459.28 803.576 530.707 894.124 530.707C984.673 530.707 1058.32 459.28 1058.32 371.459C1058.32 283.638 984.673 212.212 894.124 212.212C803.576 212.212 729.932 283.638 729.932 371.459Z" fill="#ffffff"/><defs></defs></svg></div>
-            </div>
-            <div class="major__content">
-              <div class="major__title">Закрытый клуб предпринимателей</div>
-              <div class="major__titlesub">и топ-менеджеров с личным доходом от 300 000 рублей в год</div>
-            </div>
-            <div class="major__networks"><a class="major__networks-item" href="#"><img class="major__networks-icon" src="img/instagram.svg"/></a><a class="major__networks-item" href="#"><img class="major__networks-icon" src="img/youtube.svg"/></a><a class="major__networks-item" href="#"><img class="major__networks-icon" src="img/whatsapp.svg"/></a><a class="major__networks-item" href="#"><img class="major__networks-icon" src="img/telegram.svg"/></a></div>
-            <div class="major__year">©2020</div>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">резиденты</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">club 500 в цифрах</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">кейсы</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">афиша</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Travel</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Dom club 500</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">приложение</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Тарифы</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">сми</a></li>
+              </ul>
+            </nav>
           </div>
-          <div class="about">
-            <div class="about__circle-one about__circle parallax" data-depth="0.10"></div>
-            <div class="about__circle-two about__circle parallax" data-depth="0.20"></div>
-            <div class="about__circle-three about__circle parallax" data-depth="0.10"></div>
-            <div class="about__circle-four about__circle parallax" data-depth="0.30"></div>
-            <div class="about__circle-blur about__circle parallax" data-depth="0.10"></div>
-            <div class="about__container">
-              <div class="about__title">club 500
-                <div class="about__titlesub">—это</div>
-              </div>
-              <div class="about__set">
-                <div class="about__unit">
-                  <div class="about__unit-num">40</div>
-                  <div class="about__unit-name">стран</div>
-                </div>
-                <div class="about__unit">
-                  <div class="about__unit-num">100+</div>
-                  <div class="about__unit-name">меропритяий<br>в год</div>
-                </div>
-                <div class="about__unit">
-                  <div class="about__unit-num">500</div>
-                  <div class="about__unit-name">сильнейших<br>резидентов</div>
-                </div>
-                <div class="about__unit">
-                  <div class="about__unit-link">СТАТЬ<br>РЕЗИДЕНТОВ<br>КЛУБА</div>
-                </div>
-              </div>
+          <div class="header__right"><a class="header__action" href="#">подать заявку</a>
+            <div class="header__close"></div>
+          </div>
+        </div>
+      </header>
+      <div class="major" data-scroll-section="">
+        <div class="major__video">
+          <video preload="auto" autoplay="true" loop="loop" muted="muted">
+            <source src="video/video.mp4" type="video/mp4"/>
+            <source src="video/video.webm" type="video/webm"/>
+          </video>
+        </div>
+        <div class="major__background">
+          <div class="major__stencil"><svg viewBox="0 0 1113 583" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill-rule="evenodd" clip-rule="evenodd" d="M450.007 0H464.255V99.3375H524.81V113.231H450.007V0ZM624.918 98.6428C642.201 98.6428 656.264 84.93 656.264 68.0774V0H670.512V68.0774C670.512 92.5853 650.052 112.536 624.918 112.536H623.493C598.359 112.536 577.899 92.5853 577.899 68.0774V0H592.147V68.0774C592.147 84.93 606.21 98.6428 623.493 98.6428H624.918ZM352.021 98.6431C328.056 98.6431 308.564 79.637 308.564 56.2684C308.564 32.8998 328.056 13.8937 352.021 13.8937C365.058 13.8937 376.756 19.5205 384.735 28.4122L394.224 17.9505C383.68 6.9192 368.663 0.000308398 352.021 0.000308398C320.205 0.000308398 294.316 25.2445 294.316 56.2684C294.316 87.2922 320.205 112.536 352.021 112.536C369.575 112.536 385.319 104.84 395.905 92.7384L385.262 83.5132C377.283 92.7662 365.343 98.6431 352.021 98.6431ZM802.606 50.4329C811.768 56.5737 817.794 66.8548 817.794 78.4974C817.794 96.795 802.905 111.772 784.311 112.494V112.536H728.031V0H782.174C798.673 0 812.095 13.0875 812.095 29.176C812.095 37.5537 808.434 45.1117 802.606 50.4329ZM797.847 29.176C797.847 20.7428 790.823 13.8934 782.174 13.8934H742.28V44.4587H782.174C790.823 44.4587 797.847 37.6093 797.847 29.176ZM742.28 98.6428H782.887C794.285 98.6428 803.546 89.6121 803.546 78.4974C803.546 67.3827 794.285 58.3521 782.887 58.3521H742.28V98.6428ZM703.015 269.802C740.16 204.433 811.866 160 894.124 160C1014.33 160 1112.15 254.87 1112.1 371.459C1112.1 488.049 1014.28 582.919 894.07 582.919C811.812 582.919 740.106 538.486 702.961 473.117C665.815 538.486 594.109 582.919 511.851 582.919C435.515 582.919 368.277 544.647 329.301 486.848C300.231 543.707 239.775 582.919 170.007 582.919C89.9562 582.919 22.1257 531.281 0 460.534L49.1502 436.516C61.4243 490.294 110.951 530.707 170.061 530.707C238.322 530.707 293.878 476.824 293.878 410.619C293.878 344.414 238.322 290.531 170.061 290.531C127.586 290.531 90.1178 311.363 67.7768 343.056V342.743H6.83699C6.87089 342.655 6.9048 342.565 6.93922 342.474C7.06874 342.13 7.20539 341.767 7.37552 341.437L54.9105 160H268.846L256.679 212.212H96.7932L84.3577 259.778C109.767 246.098 138.999 238.318 170.061 238.318C224.864 238.318 273.906 262.493 306.529 300.451C336.676 218.687 417.373 160 511.905 160C594.163 160 665.869 204.433 703.015 269.802ZM347.712 371.459C347.712 459.28 421.357 530.707 511.905 530.707C602.453 530.707 676.098 459.28 676.098 371.459C676.098 283.638 602.453 212.212 511.905 212.212C421.357 212.212 347.712 283.638 347.712 371.459ZM729.932 371.459C729.932 459.28 803.576 530.707 894.124 530.707C984.673 530.707 1058.32 459.28 1058.32 371.459C1058.32 283.638 984.673 212.212 894.124 212.212C803.576 212.212 729.932 283.638 729.932 371.459Z" fill="#ffffff"/><defs></defs></svg></div>
+        </div>
+        <div class="major__content">
+          <div class="major__title">Закрытый клуб предпринимателей</div>
+          <div class="major__titlesub">и топ-менеджеров с личным доходом от 300 000 рублей в год</div>
+        </div>
+        <div class="major__networks" data-scroll="data-scroll" data-scroll-speed="-4" data-scroll-position="top" data-scroll-direction="horizontal"><a class="major__networks-item" href="#"><img class="major__networks-icon" src="img/instagram.svg"/></a><a class="major__networks-item" href="#"><img class="major__networks-icon" src="img/youtube.svg"/></a><a class="major__networks-item" href="#"><img class="major__networks-icon" src="img/whatsapp.svg"/></a><a class="major__networks-item" href="#"><img class="major__networks-icon" src="img/telegram.svg"/></a></div>
+        <div class="major__year" data-scroll="data-scroll" data-scroll-speed="4" data-scroll-position="top" data-scroll-direction="horizontal">©2020</div>
+      </div>
+      <div class="about" data-scroll-section="">
+        <div class="about__circle-one" data-scroll="" data-scroll-speed="1"></div>
+        <div class="about__circle-two" data-scroll="" data-scroll-speed="3"></div>
+        <div class="about__circle-three" data-scroll="" data-scroll-speed="2"></div>
+        <div class="about__circle-four" data-scroll="" data-scroll-speed="4"></div>
+        <div class="about__circle-blur" data-scroll="" data-scroll-speed="1"></div>
+        <div class="about__container">
+          <div class="about__title" data-scroll="" data-scroll-offset="250" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="show">club 500
+            <div class="about__titlesub">—это</div>
+          </div>
+          <div class="about__set">
+            <div class="about__unit" data-scroll="" data-scroll-offset="100" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp" data-scroll-delay="0">
+              <div class="about__unit-num">40</div>
+              <div class="about__unit-name">стран</div>
+            </div>
+            <div class="about__unit" data-scroll="" data-scroll-offset="150" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp">
+              <div class="about__unit-num">100+</div>
+              <div class="about__unit-name">меропритяий<br>в год</div>
+            </div>
+            <div class="about__unit" data-scroll="" data-scroll-offset="200" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp">
+              <div class="about__unit-num">500</div>
+              <div class="about__unit-name">сильнейших<br>резидентов</div>
+            </div>
+            <div class="about__unit" data-scroll="" data-scroll-offset="240" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp">
+              <div class="about__unit-link">СТАТЬ<br>РЕЗИДЕНТОВ<br>КЛУБА</div>
             </div>
           </div>
-          <div class="speakers">
-            <div class="speakers__circle-one speakers__circle parallax" data-depth="0.10"></div>
-            <div class="speakers__circle-two speakers__circle parallax" data-depth="0.30"></div>
-            <div class="speakers__circle-three speakers__circle parallax" data-depth="0.20"></div>
-            <div class="speakers__circle-four speakers__circle parallax" data-depth="0.15"></div>
-            <div class="speakers__head">
-              <div class="speakers__title">спикеры</div>
-              <div class="speakers__titlesub">club 500</div>
-            </div>
-            <div class="speakers__set">
-              <div class="speakers__box"></div>
-              <div class="speakers__box"></div>
-              <div class="speakers__box">
-                <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/>
-                  <div class="speakers__content">
-                    <div class="speakers__name">Оскар Хартманн</div>
-                    <div class="speakers__post">Основатель проектов KupiVIP.ru, Carprice, Aktivo, CarFix</div>
-                  </div>
-                </div>
-              </div>
-              <div class="speakers__box">
-                <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/>
-                  <div class="speakers__content">
-                    <div class="speakers__name">Михаил Кучмент</div>
-                    <div class="speakers__post">Совладелец Hoff</div>
-                  </div>
-                </div>
-              </div>
-              <div class="speakers__box">
-                <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
-              </div>
-              <div class="speakers__box"></div>
-              <div class="speakers__box">
-                <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
-              </div>
-              <div class="speakers__box">
-                <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
-              </div>
-              <div class="speakers__box">
-                <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
-              </div>
-              <div class="speakers__box"></div>
-              <div class="speakers__box">
-                <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
-              </div>
-              <div class="speakers__box">
-                <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
-              </div>
-              <div class="speakers__box">
-                <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
-              </div>
-              <div class="speakers__box">
-                <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
-              </div>
-              <div class="speakers__box"></div>
-              <div class="speakers__box">
-                <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
-              </div>
-              <div class="speakers__box"></div>
-              <div class="speakers__box">
-                <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
+        </div>
+      </div>
+      <div class="speakers" data-scroll-section="">
+        <div class="speakers__circle-one" data-scroll="" data-scroll-speed="1"></div>
+        <div class="speakers__circle-two" data-scroll="" data-scroll-speed="3"></div>
+        <div class="speakers__circle-three" data-scroll="" data-scroll-speed="2"></div>
+        <div class="speakers__circle-four" data-scroll="" data-scroll-speed="1"></div>
+        <div class="speakers__head">
+          <div class="speakers__title">спикеры</div>
+          <div class="speakers__titlesub">club 500</div>
+        </div>
+        <div class="speakers__set">
+          <div class="speakers__box" data-scroll="" data-scroll-offset="100" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp"></div>
+          <div class="speakers__box" data-scroll="" data-scroll-offset="150" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp"></div>
+          <div class="speakers__box" data-scroll="" data-scroll-offset="200" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp">
+            <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/>
+              <div class="speakers__content">
+                <div class="speakers__name">Оскар Хартманн</div>
+                <div class="speakers__post">Основатель проектов KupiVIP.ru, Carprice, Aktivo, CarFix</div>
               </div>
             </div>
           </div>
-          <div class="residents">
-            <div class="residents__circle-one residents__circle parallax" data-depth="0.10"></div>
-            <div class="residents__circle-two residents__circle parallax" data-depth="0.30"></div>
-            <div class="residents__circle-three residents__circle parallax" data-depth="0.20"></div>
-            <div class="residents__circle-four residents__circle parallax" data-depth="0.15"></div>
-            <div class="residents__head">
-              <div class="residents__title">Резиденты</div>
-              <div class="residents__titlesub">club 500</div>
-            </div>
-            <div class="residents__set">
-              <div class="residents__box">
-                <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
-                <div class="residents__content">
-                  <div class="residents__name">Дмитрий Белорусов</div>
-                  <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
-                </div>
+          <div class="speakers__box" data-scroll="" data-scroll-offset="250" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp">
+            <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/>
+              <div class="speakers__content">
+                <div class="speakers__name">Михаил Кучмент</div>
+                <div class="speakers__post">Совладелец Hoff</div>
               </div>
-              <div class="residents__box">
-                <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
-                <div class="residents__content">
-                  <div class="residents__name">Дмитрий Белорусов</div>
-                  <div class="residents__post">Совладелец компании Dating Group</div>
-                </div>
-              </div>
-              <div class="residents__box"></div>
-              <div class="residents__box"></div>
-              <div class="residents__box">
-                <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
-                <div class="residents__content">
-                  <div class="residents__name">Дмитрий Белорусов</div>
-                  <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
-                </div>
-              </div>
-              <div class="residents__box"></div>
-              <div class="residents__box">
-                <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
-                <div class="residents__content">
-                  <div class="residents__name">Дмитрий Белорусов</div>
-                  <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
-                </div>
-              </div>
-              <div class="residents__box">
-                <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
-                <div class="residents__content">
-                  <div class="residents__name">Дмитрий Белорусов</div>
-                  <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
-                </div>
-              </div>
-              <div class="residents__box">
-                <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
-                <div class="residents__content">
-                  <div class="residents__name">Дмитрий Белорусов</div>
-                  <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
-                </div>
-              </div>
-              <div class="residents__box">
-                <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
-                <div class="residents__content">
-                  <div class="residents__name">Дмитрий Белорусов</div>
-                  <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
-                </div>
-              </div>
-              <div class="residents__box"></div>
-              <div class="residents__box">
-                <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
-                <div class="residents__content">
-                  <div class="residents__name">Дмитрий Белорусов</div>
-                  <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
-                </div>
-              </div>
-              <div class="residents__box">
-                <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
-                <div class="residents__content">
-                  <div class="residents__name">Дмитрий Белорусов</div>
-                  <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
-                </div>
-              </div>
-              <div class="residents__box"></div>
-              <div class="residents__box">
-                <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
-                <div class="residents__content">
-                  <div class="residents__name">Дмитрий Белорусов</div>
-                  <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
-                </div>
-              </div>
-              <div class="residents__box"></div>
             </div>
           </div>
-          <div class="media">
-            <div class="media__circle-one media__circle parallax" data-depth="0.10"></div>
-            <div class="media__circle-two media__circle parallax" data-depth="0.30"></div>
-            <div class="media__circle-three media__circle parallax" data-depth="0.20"></div>
-            <div class="media__circle-four media__circle parallax" data-depth="0.15"></div>
-            <div class="media__container">
-              <div class="media__title">СМИ</div>
-              <div class="media__set">
-                <div class="media__box">
-                  <div class="media__logo"><img src="img/media1.svg" alt="media__logo"/></div>
-                  <div class="media__modal">
-                    <div class="media__modal-head">
-                      <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
-                      <div class="media__modal-close"></div>
-                    </div>
-                    <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
-                    <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
-                    <div class="media__modal-content">
-                      <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
-                      <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
-                      <div class="media__modal-line"></div>
-                    </div>
-                  </div>
+          <div class="speakers__box" data-scroll="" data-scroll-offset="300" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp">
+            <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
+          </div>
+          <div class="speakers__box" data-scroll="" data-scroll-offset="350" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp"></div>
+          <div class="speakers__box" data-scroll="" data-scroll-offset="100" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp">
+            <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
+          </div>
+          <div class="speakers__box" data-scroll="" data-scroll-offset="150" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp">
+            <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
+          </div>
+          <div class="speakers__box" data-scroll="" data-scroll-offset="200" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp">
+            <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
+          </div>
+          <div class="speakers__box" data-scroll="" data-scroll-offset="250" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp"></div>
+          <div class="speakers__box" data-scroll="" data-scroll-offset="300" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp">
+            <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
+          </div>
+          <div class="speakers__box" data-scroll="" data-scroll-offset="350" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp">
+            <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
+          </div>
+          <div class="speakers__box" data-scroll="" data-scroll-offset="100" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp">
+            <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
+          </div>
+          <div class="speakers__box" data-scroll="" data-scroll-offset="150" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp">
+            <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
+          </div>
+          <div class="speakers__box" data-scroll="" data-scroll-offset="200" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp"></div>
+          <div class="speakers__box" data-scroll="" data-scroll-offset="250" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp">
+            <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
+          </div>
+          <div class="speakers__box" data-scroll="" data-scroll-offset="300" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp"></div>
+          <div class="speakers__box" data-scroll="" data-scroll-offset="350" data-scroll-repeat="" data-scroll-position="top" data-scroll-class="slideUp">
+            <div class="speakers__item"><img class="speakers__img" src="img/speaker.jpg" alt="speaker-name"/></div>
+          </div>
+        </div>
+      </div>
+      <div class="residents" data-scroll-section="">
+        <div class="residents__circle-one" data-scroll="" data-scroll-speed="1"></div>
+        <div class="residents__circle-two" data-scroll="" data-scroll-speed="3"></div>
+        <div class="residents__circle-three" data-scroll="" data-scroll-speed="2"></div>
+        <div class="residents__circle-four" data-scroll="" data-scroll-speed="1"></div>
+        <div class="residents__head">
+          <div class="residents__title">Резиденты</div>
+          <div class="residents__titlesub">club 500</div>
+        </div>
+        <div class="residents__set">
+          <div class="residents__box">
+            <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+          </div>
+          <div class="residents__box">
+            <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Совладелец компании Dating Group</div>
+            </div>
+          </div>
+          <div class="residents__box"></div>
+          <div class="residents__box"></div>
+          <div class="residents__box">
+            <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+          </div>
+          <div class="residents__box"></div>
+          <div class="residents__box">
+            <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+          </div>
+          <div class="residents__box">
+            <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+          </div>
+          <div class="residents__box">
+            <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+          </div>
+          <div class="residents__box">
+            <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+          </div>
+          <div class="residents__box"></div>
+          <div class="residents__box">
+            <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+          </div>
+          <div class="residents__box">
+            <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+          </div>
+          <div class="residents__box"></div>
+          <div class="residents__box">
+            <div class="residents__picture"><img class="residents__img" src="img/resident.jpg" alt="resident-name"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+          </div>
+          <div class="residents__box"></div>
+        </div>
+      </div>
+      <div class="media" data-scroll-section="">
+        <div class="media__circle-one" data-scroll="" data-scroll-speed="1"></div>
+        <div class="media__circle-two" data-scroll="" data-scroll-speed="3"></div>
+        <div class="media__circle-three" data-scroll="" data-scroll-speed="2"></div>
+        <div class="media__circle-four" data-scroll="" data-scroll-speed="1"></div>
+        <div class="media__container">
+          <div class="media__title">СМИ</div>
+          <div class="media__set">
+            <div class="media__box">
+              <div class="media__logo"><img src="img/media1.svg" alt="media__logo"/></div>
+              <div class="media__modal">
+                <div class="media__modal-head">
+                  <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
+                  <div class="media__modal-close"></div>
                 </div>
-                <div class="media__box">
-                  <div class="media__logo"><img src="img/media2.svg" alt="media__logo"/></div>
-                  <div class="media__modal">
-                    <div class="media__modal-head">
-                      <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
-                      <div class="media__modal-close"></div>
-                    </div>
-                    <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
-                    <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
-                    <div class="media__modal-content">
-                      <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
-                      <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
-                      <div class="media__modal-line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="media__box">
-                  <div class="media__logo"><img src="img/media3.svg" alt="media__logo"/></div>
-                  <div class="media__modal">
-                    <div class="media__modal-head">
-                      <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
-                      <div class="media__modal-close"></div>
-                    </div>
-                    <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
-                    <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
-                    <div class="media__modal-content">
-                      <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
-                      <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
-                      <div class="media__modal-line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="media__box">
-                  <div class="media__logo"><img src="img/media4.svg" alt="media__logo"/></div>
-                  <div class="media__modal">
-                    <div class="media__modal-head">
-                      <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
-                      <div class="media__modal-close"></div>
-                    </div>
-                    <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
-                    <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
-                    <div class="media__modal-content">
-                      <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
-                      <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
-                      <div class="media__modal-line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="media__box">
-                  <div class="media__logo"><img src="img/media5.svg" alt="media__logo"/></div>
-                  <div class="media__modal">
-                    <div class="media__modal-head">
-                      <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
-                      <div class="media__modal-close"></div>
-                    </div>
-                    <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
-                    <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
-                    <div class="media__modal-content">
-                      <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
-                      <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
-                      <div class="media__modal-line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="media__box">
-                  <div class="media__logo"><img src="img/media6.svg" alt="media__logo"/></div>
-                  <div class="media__modal">
-                    <div class="media__modal-head">
-                      <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
-                      <div class="media__modal-close"></div>
-                    </div>
-                    <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
-                    <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
-                    <div class="media__modal-content">
-                      <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
-                      <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
-                      <div class="media__modal-line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="media__box">
-                  <div class="media__logo"><img src="img/media7.svg" alt="media__logo"/></div>
-                  <div class="media__modal">
-                    <div class="media__modal-head">
-                      <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
-                      <div class="media__modal-close"></div>
-                    </div>
-                    <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
-                    <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
-                    <div class="media__modal-content">
-                      <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
-                      <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
-                      <div class="media__modal-line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="media__box">
-                  <div class="media__logo"><img src="img/media8.svg" alt="media__logo"/></div>
-                  <div class="media__modal">
-                    <div class="media__modal-head">
-                      <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
-                      <div class="media__modal-close"></div>
-                    </div>
-                    <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
-                    <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
-                    <div class="media__modal-content">
-                      <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
-                      <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
-                      <div class="media__modal-line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="media__box">
-                  <div class="media__logo"><img src="img/media9.svg" alt="media__logo"/></div>
-                  <div class="media__modal">
-                    <div class="media__modal-head">
-                      <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
-                      <div class="media__modal-close"></div>
-                    </div>
-                    <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
-                    <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
-                    <div class="media__modal-content">
-                      <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
-                      <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
-                      <div class="media__modal-line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="media__box">
-                  <div class="media__logo"><img src="img/media10.svg" alt="media__logo"/></div>
-                  <div class="media__modal">
-                    <div class="media__modal-head">
-                      <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
-                      <div class="media__modal-close"></div>
-                    </div>
-                    <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
-                    <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
-                    <div class="media__modal-content">
-                      <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
-                      <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
-                      <div class="media__modal-line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="media__box">
-                  <div class="media__logo"><img src="img/media11.svg" alt="media__logo"/></div>
-                  <div class="media__modal">
-                    <div class="media__modal-head">
-                      <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
-                      <div class="media__modal-close"></div>
-                    </div>
-                    <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
-                    <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
-                    <div class="media__modal-content">
-                      <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
-                      <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
-                      <div class="media__modal-line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="media__box">
-                  <div class="media__logo"><img src="img/media12.svg" alt="media__logo"/></div>
-                  <div class="media__modal">
-                    <div class="media__modal-head">
-                      <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
-                      <div class="media__modal-close"></div>
-                    </div>
-                    <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
-                    <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
-                    <div class="media__modal-content">
-                      <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
-                      <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
-                      <div class="media__modal-line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="media__box">
-                </div>
-                <div class="media__box">
-                  <div class="media__logo"><img src="img/media13.svg" alt="media__logo"/></div>
-                  <div class="media__modal">
-                    <div class="media__modal-head">
-                      <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
-                      <div class="media__modal-close"></div>
-                    </div>
-                    <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
-                    <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
-                    <div class="media__modal-content">
-                      <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
-                      <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
-                      <div class="media__modal-line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="media__box">
-                  <div class="media__logo"><img src="img/media14.svg" alt="media__logo"/></div>
-                  <div class="media__modal">
-                    <div class="media__modal-head">
-                      <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
-                      <div class="media__modal-close"></div>
-                    </div>
-                    <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
-                    <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
-                    <div class="media__modal-content">
-                      <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
-                      <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
-                      <div class="media__modal-line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="media__box">
+                <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
+                <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
+                <div class="media__modal-content">
+                  <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
+                  <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
+                  <div class="media__modal-line"></div>
                 </div>
               </div>
+            </div>
+            <div class="media__box">
+              <div class="media__logo"><img src="img/media2.svg" alt="media__logo"/></div>
+              <div class="media__modal">
+                <div class="media__modal-head">
+                  <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
+                  <div class="media__modal-close"></div>
+                </div>
+                <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
+                <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
+                <div class="media__modal-content">
+                  <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
+                  <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
+                  <div class="media__modal-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="media__box">
+              <div class="media__logo"><img src="img/media3.svg" alt="media__logo"/></div>
+              <div class="media__modal">
+                <div class="media__modal-head">
+                  <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
+                  <div class="media__modal-close"></div>
+                </div>
+                <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
+                <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
+                <div class="media__modal-content">
+                  <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
+                  <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
+                  <div class="media__modal-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="media__box">
+              <div class="media__logo"><img src="img/media4.svg" alt="media__logo"/></div>
+              <div class="media__modal">
+                <div class="media__modal-head">
+                  <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
+                  <div class="media__modal-close"></div>
+                </div>
+                <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
+                <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
+                <div class="media__modal-content">
+                  <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
+                  <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
+                  <div class="media__modal-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="media__box">
+              <div class="media__logo"><img src="img/media5.svg" alt="media__logo"/></div>
+              <div class="media__modal">
+                <div class="media__modal-head">
+                  <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
+                  <div class="media__modal-close"></div>
+                </div>
+                <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
+                <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
+                <div class="media__modal-content">
+                  <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
+                  <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
+                  <div class="media__modal-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="media__box">
+              <div class="media__logo"><img src="img/media6.svg" alt="media__logo"/></div>
+              <div class="media__modal">
+                <div class="media__modal-head">
+                  <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
+                  <div class="media__modal-close"></div>
+                </div>
+                <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
+                <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
+                <div class="media__modal-content">
+                  <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
+                  <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
+                  <div class="media__modal-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="media__box">
+              <div class="media__logo"><img src="img/media7.svg" alt="media__logo"/></div>
+              <div class="media__modal">
+                <div class="media__modal-head">
+                  <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
+                  <div class="media__modal-close"></div>
+                </div>
+                <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
+                <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
+                <div class="media__modal-content">
+                  <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
+                  <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
+                  <div class="media__modal-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="media__box">
+              <div class="media__logo"><img src="img/media8.svg" alt="media__logo"/></div>
+              <div class="media__modal">
+                <div class="media__modal-head">
+                  <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
+                  <div class="media__modal-close"></div>
+                </div>
+                <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
+                <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
+                <div class="media__modal-content">
+                  <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
+                  <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
+                  <div class="media__modal-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="media__box">
+              <div class="media__logo"><img src="img/media9.svg" alt="media__logo"/></div>
+              <div class="media__modal">
+                <div class="media__modal-head">
+                  <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
+                  <div class="media__modal-close"></div>
+                </div>
+                <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
+                <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
+                <div class="media__modal-content">
+                  <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
+                  <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
+                  <div class="media__modal-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="media__box">
+              <div class="media__logo"><img src="img/media10.svg" alt="media__logo"/></div>
+              <div class="media__modal">
+                <div class="media__modal-head">
+                  <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
+                  <div class="media__modal-close"></div>
+                </div>
+                <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
+                <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
+                <div class="media__modal-content">
+                  <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
+                  <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
+                  <div class="media__modal-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="media__box">
+              <div class="media__logo"><img src="img/media11.svg" alt="media__logo"/></div>
+              <div class="media__modal">
+                <div class="media__modal-head">
+                  <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
+                  <div class="media__modal-close"></div>
+                </div>
+                <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
+                <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
+                <div class="media__modal-content">
+                  <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
+                  <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
+                  <div class="media__modal-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="media__box">
+              <div class="media__logo"><img src="img/media12.svg" alt="media__logo"/></div>
+              <div class="media__modal">
+                <div class="media__modal-head">
+                  <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
+                  <div class="media__modal-close"></div>
+                </div>
+                <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
+                <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
+                <div class="media__modal-content">
+                  <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
+                  <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
+                  <div class="media__modal-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="media__box">
+            </div>
+            <div class="media__box">
+              <div class="media__logo"><img src="img/media13.svg" alt="media__logo"/></div>
+              <div class="media__modal">
+                <div class="media__modal-head">
+                  <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
+                  <div class="media__modal-close"></div>
+                </div>
+                <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
+                <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
+                <div class="media__modal-content">
+                  <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
+                  <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
+                  <div class="media__modal-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="media__box">
+              <div class="media__logo"><img src="img/media14.svg" alt="media__logo"/></div>
+              <div class="media__modal">
+                <div class="media__modal-head">
+                  <div class="media__modal-logo">club 500 <span class='media__modal-symbol'>®</span></div>
+                  <div class="media__modal-close"></div>
+                </div>
+                <div class="media__modal-company"><img src="img/media3.svg" alt="media__modal-logo"/></div>
+                <div class="media__modal-description">Немного текста про источник.<br>Типа самы бла бля.</div>
+                <div class="media__modal-content">
+                  <div class="media__modal-name">500 предпринимателей на одной площадке: итоговый слет «CLUB 500»</div>
+                  <div class="media__modal-text">3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.</div>
+                  <div class="media__modal-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="media__box">
             </div>
           </div>
         </div>

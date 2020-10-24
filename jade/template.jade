@@ -6,13 +6,11 @@ html(lang="ru")
     include head.jade
 
     body#body
-        .viewport
-            .scroll-container#scroll-container
-                .wrapper
-                    .cursor
+        .wrapper(data-scroll-container="")
+            .cursor
 
-                    include block/header.jade
+            include block/header.jade
 
-                    block content	
+            block content	
 
         include scripts.jade
