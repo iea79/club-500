@@ -5,8 +5,8 @@
 	&__circle{
 		&-one{
 			position: absolute;
-	       	right: 48.5em;
-    		top: 24.6em;
+       	    right: 48.8em;
+    		top: -1.8em;
 			width: 12.82em;
 			height: 12.82em;
 			background: linear-gradient(130.42deg, #6FC7B5 14.1%, #2F5C53 45.52%, #020202 74.85%);
@@ -15,8 +15,8 @@
 		}
 		&-two{
 			position: absolute;
-		    left: 16.2em;
-    		top: 28.5em;
+	       	left: 15.2em;
+    		top: 1.5em;
 			width: 20.02em;
 			height: 20.02em;
 			background: linear-gradient(130.42deg, #345C66 14.1%, #213734 45.52%, #020202 74.85%);
@@ -24,8 +24,8 @@
 		}
 		&-three{
 			position: absolute;
-	        right: -11.8em;
-    		top: 11.5em;
+	        right: -11.2em;
+    		top: -15.5em;
 			width: 71.23em;
 			height: 71.23em;
 			background: linear-gradient(130.42deg, #72A79D 14.1%, #314D46 39.65%, #020202 64.9%);
@@ -33,8 +33,8 @@
 		}
 		&-four{
 			position: absolute;
-	        left: -4.8em;
-    		top: 50.7em;
+	        left: -5.8em;
+    		top: 23.7em;
 			width: 37.3em;
 			height: 37.3em;
 			background: linear-gradient(130.42deg, #73A79D 14.1%, #324C48 45.52%, #020202 74.85%);
@@ -58,7 +58,7 @@
 		color: #FFFFFF;
 	}
 	&__set{
-		padding-top: 6em;
+		padding-top: 25.8em;
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
@@ -66,7 +66,6 @@
 	&__box{
 		width: 25%;
 		position: relative;
-		padding-bottom: 15%;
 		border-right: 1px solid #272727;
 		border-top: 1px solid #272727;
 		&:nth-child(-n+4){
@@ -76,12 +75,143 @@
 			border-right: none;
 		}
 	}
+	&__item{
+		position: relative;
+		padding-bottom: 54%;			
+		&:hover{
+			.media__link{
+				opacity: 1;
+				z-index: 1;
+			    right: -5%; 
+    			top: -20%;
+				&:hover{
+					background: #FFFFFF;
+					color: #000;
+				}
+			}
+			.media__logo svg path{
+				fill: #FFFFFF;
+				fill-opacity: 1;
+			}
+		}
+		
+	}
 	&__logo{
 		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		svg{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			max-width: 70%;
+			max-height: 70%;
+			transform: translate(-50%, -50%);
+			path{
+				fill: #AEAEAE;
+				fill-opacity: 0.36;
+				transition: all .5s;
+			}
+		}
+	}
+	&__link{
+		opacity: 0;
+		z-index: -1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		cursor: pointer;
+		right: 0;
+		top: 0;
+		width: 10.51em;
+		height: 10.51em;
+		font-weight: 500;
+		font-size: 1em;
+		text-align: center;
+		letter-spacing: -0.035em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		border: 1px solid #FFFFFF;
+		border-radius: 50%;
+		transition: all .5s;
+	}
+	&__modal{
+		display: none;
+		position: fixed;
+		z-index: 10;
 		left: 50%;
 		top: 50%;
-		width: 70%;
-		height: 70%;
+		max-width: 52em;
+		width: 100%;
+		max-height: 63em;
+		height: 100%;
 		transform: translate(-50%, -50%);
+		background: rgba(30, 30, 30, 0.25);
+		backdrop-filter: blur(18px);
+		color: #FFFFFF;
+		font-size: 1em;
+		text-align: left;
+		padding: 1.6em 1.4em 5.3em 4.2em;
+		&-close{
+			cursor: pointer;
+			margin-left: auto;
+			display: block;
+			min-width: 1.4em;
+			max-width: 1.4em;
+			height: 1.4em;
+			background-image: url(../img/close.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			margin-bottom: 2em;
+		}
+		&-logo{
+			max-width: 12.2em;
+			width: 100%;
+			height: 4.4em;
+		    display: block;
+			margin-right: auto;
+			margin-bottom: 2em;
+			svg{
+				width: 100%;
+				height: 100%;
+				path{
+					fill: #FFFFFF;
+					fill-opacity: 1;
+				}
+			}
+		}
+		&-content{
+			margin-top: 8.6em;
+			position: relative;
+			padding-right: 3em;
+		}
+		&-name{
+		    font-size: 2.48em;
+		    letter-spacing: -0.02em;
+		    text-transform: uppercase;
+		    max-width: 13.8em;
+		    line-height: 1;
+		}
+		&-text{
+		    font-weight: 500;
+		    font-size: 1em;
+		    letter-spacing: -0.035em;
+		    max-width: 21.4em;
+		    margin-left: auto;
+		    padding-top: 4.7em;
+		    line-height: 1.35em;
+		}
+		&-line{
+			position: absolute;
+			top: 0;
+			right: 0.65em;
+			height: 72%;
+			width: 1px;
+			background-color: #FFFFFF;
+		}
 	}
 }
