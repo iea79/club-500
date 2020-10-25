@@ -35,25 +35,32 @@ body {
     margin: 0 0.3em;
 }
 
-[data-scroll] {
-    transition: 0s;
-}
-
-.about__title {
-    color: transparent;
-    // opacity: 0;
-
-    &.show {
-        animation: show 1s forwards;
+@media (min-width: 768px) {
+    [data-scroll] {
+        transition: 0s;
     }
-}
 
-.about__unit {
-    opacity: 0;
-}
+    .about__title {
+        color: transparent;
+        // opacity: 0;
 
-.speakers__box {
-    opacity: 0;
+        &.show {
+            animation: show 1s forwards;
+        }
+    }
+
+    .about__unit {
+        opacity: 0;
+    }
+
+    .speakers__box {
+        opacity: 0;
+    }
+
+    .residents__box {
+        opacity: 0;
+    }
+
 }
 
 .slideUp {

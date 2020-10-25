@@ -3,9 +3,10 @@ import { gsap, TweenLite, TweenMax, TimelineLite, TimelineMax } from "gsap";
 (function() {
 
     let container = document.querySelector('[data-scroll-container]'),
-    soc = document.querySelector('.major__networks'),
-    a_title = document.querySelector('.about__title'),
-    year = document.querySelector('.major__year');
+        elem = document.querySelector('[data-scroll]'),
+        soc = document.querySelector('.major__networks'),
+        aTitle = document.querySelector('.about__title'),
+        year = document.querySelector('.major__year');
 
     const scroll = new LocomotiveScroll({
         el: container,
@@ -13,17 +14,18 @@ import { gsap, TweenLite, TweenMax, TimelineLite, TimelineMax } from "gsap";
         smoothMobile: false
     });
 
-    // scroll.on('.about__title', func => {
-    //     this.call();
-    // });
-    //
-    // scroll.scrollTo({
-    //     target: a_title,
-    //     callback: function() {
-    //         console.log(this);
-    //         console.log();
-    //     }
-    // });
+    scroll.on('call', (func) => {
+        // Using modularJS
+        // aTitle.call(func);
+
+        "lazyload" == function(func) {
+            repeat: true
+            // console.log(func);
+        };
+        // Using jQuery events
+        // $(document).trigger(func);
+        // Or do it your own way 😎
+    });
 
 
     // CURSOR
