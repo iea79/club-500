@@ -130,6 +130,7 @@
 		width: 33.3%;
 		text-align: right;
 		position: relative;
+		transition: all .8s;
 		@media (max-width: 767px) {
 			display: none;
 		}
@@ -142,7 +143,6 @@
 		letter-spacing: -0.035em;
 		text-transform: uppercase;
 		color: #FFFFFF;
-		transition: all .8s;
 	}
 }
 

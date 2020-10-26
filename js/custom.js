@@ -62,12 +62,6 @@ $(document).ready(function(){
         $('.header').removeClass('effect');
     });
 
-    if (isXsWidth()) {
-        $('.major__stencil').appendTo($('.major__content-background'));
-    } else{
-        $('.major__stencil').appendTo($('.major__content-background'));
-    }
-
     $('.media__logo').click(function(){
         $(this).next('.media__modal').addClass('open');
         $('body').addClass('no-scroll');
