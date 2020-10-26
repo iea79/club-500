@@ -3,11 +3,13 @@ import { gsap, TweenLite, TweenMax, TimelineLite, TimelineMax } from "gsap";
 
 (function() {
 
+
     let container = document.querySelector('[data-scroll-container]'),
         // elem = document.querySelector('[data-scroll]'),
         soc = document.querySelector('.major__networks'),
         aTitle = document.querySelector('.about__title'),
         year = document.querySelector('.major__year');
+
 
     const scroll = new LocomotiveScroll({
         el: container,
@@ -86,11 +88,24 @@ import { gsap, TweenLite, TweenMax, TimelineLite, TimelineMax } from "gsap";
     showCoursor(".poster__descr", 'Подробнее');
 
     $(document).ready(function() {
-        scroll.init();
+        if ($(window).width() >= 768) {
+            scroll.init();
+        } else {
+            scroll.destroy();
+            $('[data-scroll-section]').removeAttr('style');
+            return false;
+        }
     });
 
     $(window).resize(function() {
-        scroll.update();
+        if ($(window).width() >= 768) {
+            // scroll.init();
+            scroll.update();
+        } else {
+            scroll.destroy();
+            $('[data-scroll-section]').removeAttr('style');
+            return false;
+        }
     });
 
 
