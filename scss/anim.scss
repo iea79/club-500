@@ -37,29 +37,35 @@ body {
 
 @media (min-width: 768px) {
     [data-scroll] {
+        // transition: 0s;
+    }
+
+    .major__networks,
+    .major__year {
         transition: 0s;
     }
 
     .about__title {
-        position: static;
-        // opacity: 1;
-        color: transparent;
+        // position: static;
         // opacity: 0;
+        color: transparent;
+
+        &.showTitle {
+            // z-index: 0;
+            // opacity: 1;
+        }
 
     }
 
-    [data-scroll-class] {
+    .about__titlesub {
+        color: transparent;
+
+    }
+
+    [data-scroll-class]:not([class*="about__"]) {
         opacity: 0;
         transition: opacity 1s;
     }
-    //
-    // .speakers__box {
-    //     opacity: 0;
-    // }
-    //
-    // .residents__box {
-    //     opacity: 0;
-    // }
 
 }
 
@@ -138,11 +144,13 @@ body {
 @keyframes showTitle {
     from {
         color: transparent;
+        // opacity: 0;
         // transform: translateY(5em);
     }
 
     to {
         color: #fff;
+        // opacity: 1;
         // transform: translateY(0);
     }
 }

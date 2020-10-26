@@ -83,9 +83,14 @@ import { gsap, TweenLite, TweenMax, TimelineLite, TimelineMax } from "gsap";
 
     showCoursor(".major__stencil", 'Смотреть видео');
     showCoursor(".media__logo", 'Читать');
+    showCoursor(".poster__descr", 'Подробнее');
 
     $(document).ready(function() {
         scroll.init();
+    });
+
+    $(window).resize(function() {
+        scroll.update();
     });
 
 
