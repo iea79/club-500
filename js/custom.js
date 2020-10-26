@@ -63,6 +63,7 @@ $(document).ready(function(){
     $('.header__close').click(function(){
         $('.major').removeClass('hide');
         $('.header').removeClass('effect');
+        $('#majorVideo').trigger('play');
     });
 
     $('.media__logo').click(function(){
@@ -82,7 +83,7 @@ $(document).ready(function(){
 
     if (isXsWidth()) {
         $('.media__box').each(function( index, element ) {
-            if ($(this).children('.media__logo').length > 0)  {
+            if ($(this).children('.media__logo').length == 1)  {
                 $(this).css('display', 'block');
             } else {
                 $(this).css('display', 'none');
@@ -100,46 +101,40 @@ document.addEventListener('DOMContentLoaded', function(){
         modal__column = document.querySelectorAll('.tarrifs__column'),
         modal__close = document.querySelector('.tarrifs__title');
 
-        modalOpen.onclick = () => {
-            event.preventDefault();
+    $('.residents__picture').click(function(){
+
+        var modal = $(this).parents('.residents__box').find('.residents__modal');
+
+        modal.fadeIn('500', function() {
+            $('body').addClass('no-scroll');
+        });
+
+        if (isXsWidth()) {
+            modal.find('.residents__modal-post').after(modal.find(".residents__modal-img"));
+        }
+    });
 
             let click = event.target;
 
             if (click.classList.contains('tarrifs-modal__open')) {
 
-                let clickAttr = click.getAttribute('data-open');
-
-                switch (clickAttr) {
-                    case 'start':
-                    modalActiveClose(modal__column, 'start')
-                    break;
-                    case 'vip':
-                    modalActiveClose(modal__column, 'vip')
-                    break;
-                    case 'member':
-                    modalActiveClose(modal__column, 'member')
-
-                    break;
-                }
-            }
+    $('#majorVideo').on('click', function() {
+        if (!$(this).hasClass('play')) {
+            $(this).addClass('play');
+            $(this).trigger('pause');
+            $('.major__video-status').html('ВОСПРОИЗВЕСТИ');
+        } else {
+            $(this).removeClass('play');
+            $(this).trigger('play');
+            $('.major__video-status').html('ПАУЗА');
         }
+    });
 
-    }
+    var majorVideo = document.getElementById('majorVideo');
+    majorVideo.addEventListener("timeupdate", function() {
+        var currentTime = majorVideo.currentTime;
+        var duration = majorVideo.duration;
+        $('.major__video-current').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
+    });
 
-    let modalActiveClose = (arr, attr) => {
-        let clos,
-        item;
-        for (var i = 0; i < arr.length; i++) {
-            if (arr[i].getAttribute('data-tarrifs') == attr) {
-                arr[i].classList.add('active');
-                item = arr[i];
-                clos = arr[i].querySelector('.tarrifs__column-close');
-            }
-        }
-        clos.onclick = () => {
-            item.classList.remove('active');
-        }
-    }
-    tarrifModalOpen();
-    // конец Модалки секции тарифы
-})
+});
