@@ -48,12 +48,18 @@
       </header>
       <div class="major">
         <div class="major__video">
-          <video preload="auto" autoplay="true" loop="loop" muted="muted">
+          <div class="major__head"><a href="#" class="major__company">club 500 <span class='major__symbol'>®</span></a>
+            <div class="major__video-close"></div>
+          </div>
+          <video id="majorVideo" preload="auto" autoplay="true" loop="loop" muted="muted">
             <source src="video/video.mp4" type="video/mp4"/>
             <source src="video/video.webm" type="video/webm"/>
           </video>
-          <div class="major__head"><a href="#" class="major__company">club 500 <span class='major__symbol'>®</span></a>
-            <div class="major__video-close"></div>
+          <div class="major__video-cellar">
+            <div class="major__video-status">пауза</div>
+            <div class="major__video-bar">
+              <div class="major__video-current"></div>
+            </div>
           </div>
         </div>
         <div class="major__background">
@@ -203,6 +209,11 @@
         <div class="residents__circle-two"></div>
         <div class="residents__circle-three"></div>
         <div class="residents__circle-four"></div>
+        <div class="residents__circle-five"></div>
+        <div class="residents__circle-six"></div>
+        <div class="residents__circle-seven"></div>
+        <div class="residents__circle-eight"></div>
+        <div class="residents__circle-nine"></div>
         <div class="residents__head">
           <div class="residents__title">Резиденты</div>
           <div class="residents__titlesub">club 500</div>
@@ -216,47 +227,51 @@
             </div>
             <div class="residents__modal tab">
               <div class="residents__modal-cirsleOne"></div>
-              <div class="residents__modal-cirsleTwo"></div>
-              <div class="residents__modal-cirsleThree"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
               <div class="residents__modal-head">
                 <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
                 <div class="residents__modal-nav">
-                  <div data-tab="achievements" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
-                  <div data-tab="about" class="residents__modal-link tab__item">О СЕБЕ</div>
+                  <div data-tab="achievements1" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about1" class="residents__modal-link tab__item">О СЕБЕ</div>
                 </div>
                 <div class="residents__modal-close"></div>
               </div>
               <div class="residents__modal-body">
-                <div class="residents__modal-name">Дмитрий Белорусов</div>
-                <div class="residents__modal-post">контент-маркетолог</div>
-                <div id="achievements" class="tab__mass open">
-                  <div class="residents__modal-facts">
-                    <div class="residents__modal-cell">
-                      <div class="residents__modal-value"><span>12</span> лет</div>
-                      <div class="residents__modal-property">экспертизы</div>
-                    </div>
-                    <div class="residents__modal-cell">
-                      <div class="residents__modal-value"><span>340</span></div>
-                      <div class="residents__modal-property">проектов</div>
-                    </div>
-                    <div class="residents__modal-cell">
-                      <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
-                      <div class="residents__modal-property">общая прибыль</div>
-                    </div>
-                  </div>
-                  <div class="residents__modal-skills">
-                    <div class="residents__modal-topic">навыки</div>
-                    <div class="residents__modal-set">
-                      <div class="residents__modal-elem">Оптовая торговля</div>
-                      <div class="residents__modal-elem">Digital</div>
-                    </div>
-                    <div class="residents__modal-set">
-                      <div class="residents__modal-elem">Оптовая торговля</div>
-                    </div>
-                  </div>
-                  <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
                 </div>
-                <div id="about" class="tab__mass">
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements1" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about1" class="tab__mass">
                   <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
                 </div>
               </div>
@@ -266,24 +281,180 @@
             <div class="residents__picture"><img src="img/resident.jpg" alt="Дмитрий Белорусов" class="residents__img"/></div>
             <div class="residents__content">
               <div class="residents__name">Дмитрий Белорусов</div>
-              <div class="residents__post">Совладелец компании Dating Group</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+            <div class="residents__modal tab">
+              <div class="residents__modal-cirsleOne"></div>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-head">
+                <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
+                <div class="residents__modal-nav">
+                  <div data-tab="achievements2" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about2" class="residents__modal-link tab__item">О СЕБЕ</div>
+                </div>
+                <div class="residents__modal-close"></div>
+              </div>
+              <div class="residents__modal-body">
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
+                </div>
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements2" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about2" class="tab__mass">
+                  <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="residents__box"></div>
-          <div class="residents__box"></div>
+          <div class="residents__box">
+          </div>
+          <div class="residents__box">
+          </div>
           <div class="residents__box">
             <div class="residents__picture"><img src="img/resident.jpg" alt="Дмитрий Белорусов" class="residents__img"/></div>
             <div class="residents__content">
               <div class="residents__name">Дмитрий Белорусов</div>
               <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
             </div>
+            <div class="residents__modal tab">
+              <div class="residents__modal-cirsleOne"></div>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-head">
+                <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
+                <div class="residents__modal-nav">
+                  <div data-tab="achievements5" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about5" class="residents__modal-link tab__item">О СЕБЕ</div>
+                </div>
+                <div class="residents__modal-close"></div>
+              </div>
+              <div class="residents__modal-body">
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
+                </div>
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements5" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about5" class="tab__mass">
+                  <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="residents__box"></div>
+          <div class="residents__box">
+          </div>
           <div class="residents__box">
             <div class="residents__picture"><img src="img/resident.jpg" alt="Дмитрий Белорусов" class="residents__img"/></div>
             <div class="residents__content">
               <div class="residents__name">Дмитрий Белорусов</div>
               <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+            <div class="residents__modal tab">
+              <div class="residents__modal-cirsleOne"></div>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-head">
+                <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
+                <div class="residents__modal-nav">
+                  <div data-tab="achievements7" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about7" class="residents__modal-link tab__item">О СЕБЕ</div>
+                </div>
+                <div class="residents__modal-close"></div>
+              </div>
+              <div class="residents__modal-body">
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
+                </div>
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements7" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about7" class="tab__mass">
+                  <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="residents__box">
@@ -292,12 +463,56 @@
               <div class="residents__name">Дмитрий Белорусов</div>
               <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
             </div>
-          </div>
-          <div class="residents__box">
-            <div class="residents__picture"><img src="img/resident.jpg" alt="Дмитрий Белорусов" class="residents__img"/></div>
-            <div class="residents__content">
-              <div class="residents__name">Дмитрий Белорусов</div>
-              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            <div class="residents__modal tab">
+              <div class="residents__modal-cirsleOne"></div>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-head">
+                <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
+                <div class="residents__modal-nav">
+                  <div data-tab="achievements8" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about8" class="residents__modal-link tab__item">О СЕБЕ</div>
+                </div>
+                <div class="residents__modal-close"></div>
+              </div>
+              <div class="residents__modal-body">
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
+                </div>
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements8" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about8" class="tab__mass">
+                  <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="residents__box">
@@ -306,13 +521,56 @@
               <div class="residents__name">Дмитрий Белорусов</div>
               <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
             </div>
-          </div>
-          <div class="residents__box"></div>
-          <div class="residents__box">
-            <div class="residents__picture"><img src="img/resident.jpg" alt="Дмитрий Белорусов" class="residents__img"/></div>
-            <div class="residents__content">
-              <div class="residents__name">Дмитрий Белорусов</div>
-              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            <div class="residents__modal tab">
+              <div class="residents__modal-cirsleOne"></div>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-head">
+                <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
+                <div class="residents__modal-nav">
+                  <div data-tab="achievements9" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about9" class="residents__modal-link tab__item">О СЕБЕ</div>
+                </div>
+                <div class="residents__modal-close"></div>
+              </div>
+              <div class="residents__modal-body">
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
+                </div>
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements9" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about9" class="tab__mass">
+                  <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="residents__box">
@@ -321,16 +579,826 @@
               <div class="residents__name">Дмитрий Белорусов</div>
               <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
             </div>
+            <div class="residents__modal tab">
+              <div class="residents__modal-cirsleOne"></div>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-head">
+                <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
+                <div class="residents__modal-nav">
+                  <div data-tab="achievements10" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about10" class="residents__modal-link tab__item">О СЕБЕ</div>
+                </div>
+                <div class="residents__modal-close"></div>
+              </div>
+              <div class="residents__modal-body">
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
+                </div>
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements10" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about10" class="tab__mass">
+                  <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="residents__box"></div>
+          <div class="residents__box">
+          </div>
           <div class="residents__box">
             <div class="residents__picture"><img src="img/resident.jpg" alt="Дмитрий Белорусов" class="residents__img"/></div>
             <div class="residents__content">
               <div class="residents__name">Дмитрий Белорусов</div>
               <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
             </div>
+            <div class="residents__modal tab">
+              <div class="residents__modal-cirsleOne"></div>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-head">
+                <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
+                <div class="residents__modal-nav">
+                  <div data-tab="achievements12" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about12" class="residents__modal-link tab__item">О СЕБЕ</div>
+                </div>
+                <div class="residents__modal-close"></div>
+              </div>
+              <div class="residents__modal-body">
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
+                </div>
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements12" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about12" class="tab__mass">
+                  <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="residents__box"></div>
+          <div class="residents__box">
+            <div class="residents__picture"><img src="img/resident.jpg" alt="Дмитрий Белорусов" class="residents__img"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+            <div class="residents__modal tab">
+              <div class="residents__modal-cirsleOne"></div>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-head">
+                <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
+                <div class="residents__modal-nav">
+                  <div data-tab="achievements13" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about13" class="residents__modal-link tab__item">О СЕБЕ</div>
+                </div>
+                <div class="residents__modal-close"></div>
+              </div>
+              <div class="residents__modal-body">
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
+                </div>
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements13" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about13" class="tab__mass">
+                  <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="residents__box">
+          </div>
+          <div class="residents__box">
+            <div class="residents__picture"><img src="img/resident.jpg" alt="Дмитрий Белорусов" class="residents__img"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+            <div class="residents__modal tab">
+              <div class="residents__modal-cirsleOne"></div>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-head">
+                <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
+                <div class="residents__modal-nav">
+                  <div data-tab="achievements15" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about15" class="residents__modal-link tab__item">О СЕБЕ</div>
+                </div>
+                <div class="residents__modal-close"></div>
+              </div>
+              <div class="residents__modal-body">
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
+                </div>
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements15" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about15" class="tab__mass">
+                  <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="residents__box">
+          </div>
+          <div class="residents__box">
+            <div class="residents__picture"><img src="img/resident.jpg" alt="Дмитрий Белорусов" class="residents__img"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+            <div class="residents__modal tab">
+              <div class="residents__modal-cirsleOne"></div>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-head">
+                <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
+                <div class="residents__modal-nav">
+                  <div data-tab="achievements17" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about17" class="residents__modal-link tab__item">О СЕБЕ</div>
+                </div>
+                <div class="residents__modal-close"></div>
+              </div>
+              <div class="residents__modal-body">
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
+                </div>
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements17" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about17" class="tab__mass">
+                  <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="residents__box">
+            <div class="residents__picture"><img src="img/resident.jpg" alt="Дмитрий Белорусов" class="residents__img"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+            <div class="residents__modal tab">
+              <div class="residents__modal-cirsleOne"></div>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-head">
+                <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
+                <div class="residents__modal-nav">
+                  <div data-tab="achievements18" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about18" class="residents__modal-link tab__item">О СЕБЕ</div>
+                </div>
+                <div class="residents__modal-close"></div>
+              </div>
+              <div class="residents__modal-body">
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
+                </div>
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements18" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about18" class="tab__mass">
+                  <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="residents__box">
+          </div>
+          <div class="residents__box">
+            <div class="residents__picture"><img src="img/resident.jpg" alt="Дмитрий Белорусов" class="residents__img"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+            <div class="residents__modal tab">
+              <div class="residents__modal-cirsleOne"></div>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-head">
+                <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
+                <div class="residents__modal-nav">
+                  <div data-tab="achievements19" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about19" class="residents__modal-link tab__item">О СЕБЕ</div>
+                </div>
+                <div class="residents__modal-close"></div>
+              </div>
+              <div class="residents__modal-body">
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
+                </div>
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements19" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about19" class="tab__mass">
+                  <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="residents__box">
+            <div class="residents__picture"><img src="img/resident.jpg" alt="Дмитрий Белорусов" class="residents__img"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+            <div class="residents__modal tab">
+              <div class="residents__modal-cirsleOne"></div>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-head">
+                <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
+                <div class="residents__modal-nav">
+                  <div data-tab="achievements20" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about20" class="residents__modal-link tab__item">О СЕБЕ</div>
+                </div>
+                <div class="residents__modal-close"></div>
+              </div>
+              <div class="residents__modal-body">
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
+                </div>
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements20" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about20" class="tab__mass">
+                  <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="residents__box">
+          </div>
+          <div class="residents__box">
+            <div class="residents__picture"><img src="img/resident.jpg" alt="Дмитрий Белорусов" class="residents__img"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+            <div class="residents__modal tab">
+              <div class="residents__modal-cirsleOne"></div>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-head">
+                <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
+                <div class="residents__modal-nav">
+                  <div data-tab="achievements22" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about22" class="residents__modal-link tab__item">О СЕБЕ</div>
+                </div>
+                <div class="residents__modal-close"></div>
+              </div>
+              <div class="residents__modal-body">
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
+                </div>
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements22" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about22" class="tab__mass">
+                  <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="residents__box">
+            <div class="residents__picture"><img src="img/resident.jpg" alt="Дмитрий Белорусов" class="residents__img"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+            <div class="residents__modal tab">
+              <div class="residents__modal-cirsleOne"></div>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-head">
+                <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
+                <div class="residents__modal-nav">
+                  <div data-tab="achievements23" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about23" class="residents__modal-link tab__item">О СЕБЕ</div>
+                </div>
+                <div class="residents__modal-close"></div>
+              </div>
+              <div class="residents__modal-body">
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
+                </div>
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements23" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about23" class="tab__mass">
+                  <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="residents__box">
+            <div class="residents__picture"><img src="img/resident.jpg" alt="Дмитрий Белорусов" class="residents__img"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+            <div class="residents__modal tab">
+              <div class="residents__modal-cirsleOne"></div>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-head">
+                <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
+                <div class="residents__modal-nav">
+                  <div data-tab="achievements24" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about24" class="residents__modal-link tab__item">О СЕБЕ</div>
+                </div>
+                <div class="residents__modal-close"></div>
+              </div>
+              <div class="residents__modal-body">
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
+                </div>
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements24" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about24" class="tab__mass">
+                  <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="residents__box">
+            <div class="residents__picture"><img src="img/resident.jpg" alt="Дмитрий Белорусов" class="residents__img"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+            <div class="residents__modal tab">
+              <div class="residents__modal-cirsleOne"></div>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-head">
+                <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
+                <div class="residents__modal-nav">
+                  <div data-tab="achievements25" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about25" class="residents__modal-link tab__item">О СЕБЕ</div>
+                </div>
+                <div class="residents__modal-close"></div>
+              </div>
+              <div class="residents__modal-body">
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
+                </div>
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements25" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about25" class="tab__mass">
+                  <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="residents__box">
+          </div>
+          <div class="residents__box">
+            <div class="residents__picture"><img src="img/resident.jpg" alt="Дмитрий Белорусов" class="residents__img"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+            <div class="residents__modal tab">
+              <div class="residents__modal-cirsleOne"></div>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-head">
+                <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
+                <div class="residents__modal-nav">
+                  <div data-tab="achievements27" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about27" class="residents__modal-link tab__item">О СЕБЕ</div>
+                </div>
+                <div class="residents__modal-close"></div>
+              </div>
+              <div class="residents__modal-body">
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
+                </div>
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements27" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about27" class="tab__mass">
+                  <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="residents__box">
+          </div>
+          <div class="residents__box">
+            <div class="residents__picture"><img src="img/resident.jpg" alt="Дмитрий Белорусов" class="residents__img"/></div>
+            <div class="residents__content">
+              <div class="residents__name">Дмитрий Белорусов</div>
+              <div class="residents__post">Сооснователь международного<br>интернет-холдинга Social Discovery Ventures</div>
+            </div>
+            <div class="residents__modal tab">
+              <div class="residents__modal-cirsleOne"></div>
+              <div class="residents__modal-cirsleTwo"></div><img src="img/resident-detail.png" alt="Дмитрий Белорусов" class="residents__modal-img"/>
+              <div class="residents__modal-head">
+                <div class="residents__modal-logo">club 500 <span class='residents__modal-symbol'>®</span></div>
+                <div class="residents__modal-nav">
+                  <div data-tab="achievements29" class="residents__modal-link tab__item active">ДОСТИЖЕНИЯ</div>
+                  <div data-tab="about29" class="residents__modal-link tab__item">О СЕБЕ</div>
+                </div>
+                <div class="residents__modal-close"></div>
+              </div>
+              <div class="residents__modal-body">
+                <div class="residents__modal-forename">
+                  <div class="residents__modal-name">Дмитрий</div>
+                  <div class="residents__modal-surname">Белорусов</div>
+                </div>
+                <div class="residents__modal-post">контент-маркетолог</div>
+                <div id="achievements29" class="tab__mass open">
+                  <div class="residents__modal-mass">
+                    <div class="residents__modal-facts">
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>12</span> лет</div>
+                        <div class="residents__modal-property">Экспертизы</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>340</span></div>
+                        <div class="residents__modal-property">Проектов</div>
+                      </div>
+                      <div class="residents__modal-cell">
+                        <div class="residents__modal-value"><span>2,2</span> млрд.р</div>
+                        <div class="residents__modal-property">Общая прибыль</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-skills">
+                      <div class="residents__modal-topic">навыки</div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                        <div class="residents__modal-elem">Digital</div>
+                      </div>
+                      <div class="residents__modal-set">
+                        <div class="residents__modal-elem">Оптовая торговля</div>
+                      </div>
+                    </div>
+                    <div class="residents__modal-networks"><a href="#" class="residents__modal-icon"><img src="img/facebook.svg" alt="residents__modal-icon"/></a><a href="#" class="residents__modal-icon"><img src="img/instagram.svg" alt="residents__modal-icon"/></a></div>
+                  </div>
+                </div>
+                <div id="about29" class="tab__mass">
+                  <div class="residents__modal-about">О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="media">

@@ -2,16 +2,25 @@
 
 	.major__video
 
-		video(preload="auto" autoplay="true" loop="loop" muted)
-
-			source(src="video/video.mp4" type="video/mp4")
-			source(src="video/video.webm" type="video/webm")
-
 		.major__head
 
 			a(href='#' class='major__company') club 500 <span class='major__symbol'>®</span>
 
 			.major__video-close
+
+		video(id="majorVideo" preload="auto" autoplay="true" loop="loop" muted)
+
+			source(src="video/video.mp4" type="video/mp4")
+			source(src="video/video.webm" type="video/webm")
+
+		.major__video-cellar
+
+			.major__video-status пауза
+
+			.major__video-bar
+
+				.major__video-current
+		
 
 	.major__background
 
