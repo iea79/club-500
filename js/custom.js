@@ -139,4 +139,27 @@ $(document).ready(function(){
         $('.major__video-current').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
     });
 
+    $('.dom__counter__all').text($('.dom__slider__block').length)
+    $('.dom__counter__num').text($('.slick-active').index())
+
+    $('.dom__slider__top').slick({
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         fade: true,
+         draggable: false,
+         infinite: true,
+         asNavFor: '.dom__slider__bottom'
+    });
+
+    $('.dom__slider__bottom').slick({
+         slidesToShow: 5,
+         slidesToScroll: 1,
+         arrows: true,
+         infinite: true,
+         draggable: false,
+         asNavFor: '.dom__slider__top',
+         centerMode: true,
+         focusOnSelect: true
+    });
+
 });

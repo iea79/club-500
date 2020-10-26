@@ -1,0 +1,196 @@
+.dom {
+    &__sliders {
+        position: relative;
+    }
+
+    &__slider__top {
+
+    }
+
+    &__slider__block {
+        background-size: cover;
+        opacity: 1;
+        width: 100%;
+        height: 100vh;
+    }
+
+    &__slider_map {
+        position: absolute;
+        left: 15vw;
+        top: 15vh;
+        max-height: 500px;
+    }
+
+    &__slider__top_img {
+        width: 100%;
+        height: 100vh;
+    }
+
+    &__slider__title {
+        max-width: 300px;
+        text-align: left;
+        width: 100%;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.035em;
+        text-transform: uppercase;
+        margin-left: 70px;
+    }
+
+    &__slider__sub {
+        max-width: 300px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: -0.035em;
+        margin-left: 70px;
+        margin-top: 30px;
+    }
+
+    &__slider__hrefs {
+        display: none;
+        margin-top: 45px;
+    }
+
+    &__slider_a {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        margin: 0 10px;
+        &:before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+    }
+
+    &__slider__360 {
+        background-color: #ffffff;
+        &:before {
+          content: '';
+          background-image: url("/img/dom/slider/360.png");
+        }
+    }
+
+    &__slider__eye {
+        background-color: transparent;
+        &:before {
+          content: '';
+          background-image: url("/img/dom/slider/eye.png");
+        }
+    }
+
+    &__slider__bottom {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        .slick-list{
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .slick-slide{
+            opacity:0.5;
+        }
+        .slick-current{
+            opacity: 1;
+            img{
+                border:4px solid #219653;
+            }
+        }
+    }
+
+    &__slider__bottom__block {
+        // max-width: 213px;
+    }
+
+    &__slider__bottom_img {
+        max-width: 213px;
+        height: 120px;
+        margin: 0 auto;
+    }
+
+    &__slider__top__convert {
+        position: absolute;
+        color: #ffffff;
+        width: 100%;
+        top: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .slick-arrow{
+        position: absolute;
+        bottom: 170px;
+        z-index: 10;
+        font-size: 0;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        &:before {
+          content: '';
+          display: block;
+          width: 400px;
+          height: 4px;
+          background-color: #ffffff;
+        }
+    }
+    .slick-prev{
+        left: 0;
+        &:after {
+            position: absolute;
+            left: 40px;
+            top: -11.5px;
+          content: '\25B2';
+          display: block;
+          font-size: 24px;
+          color: white;
+          transform: rotate(270deg);
+        }
+        &:before {
+            position: absolute;
+            left: 60px;
+        }
+    }
+    .slick-next{
+        right: 0;
+        &:after {
+            position: absolute;
+            right: 40px;
+            top: -11.5px;
+          content: '\25B2';
+          display: block;
+          font-size: 24px;
+          color: white;
+            transform: rotate(90deg);
+        }
+        &:before {
+            position: absolute;
+            right: 60px;
+        }
+    }
+    .dom__counter{
+        color: #ffffff;
+        display: flex;
+        position: absolute;
+        bottom: 170px;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        justify-content: center;
+    }
+    .dom__counter__num{
+
+    }
+    .dom__counter__dot{
+        margin: 0 5px;
+    }
+    .dom__counter__all{
+
+    }
+}
