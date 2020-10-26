@@ -1,6 +1,9 @@
 .speakers{
 	padding: 14.5em 0;
 	position: relative;
+	@media (max-width: 767px) {
+		display: none;
+	}
 	&__circle{
 		&-one{
 			position: absolute;

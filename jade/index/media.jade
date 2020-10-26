@@ -11,100 +11,36 @@
 
 		.media__set
 
-			.media__box
+			each item in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, '', 13, 14, '']
 
-				.media__logo
-					img(src='img/media1.svg' class='' alt='media__logo')
+				.media__box
 
-				.media__link читать					
+					if item !== ''
 
-			.media__box
+						.media__logo
 
-				.media__logo
-					img(src='img/media2.svg' alt='media__logo')
+							img(src='img/media'+ item +'.svg' alt='media__logo')
 
-			.media__box
+						.media__modal
 
-				.media__logo
-					img(src='img/media3.svg' alt='media__logo')
+							.media__modal-block
 
-				.media__modal
+								.media__modal-head
 
-					.media__modal-head
+									.media__modal-logo club 500 <span class='media__modal-symbol'>®</span>
 
-						.media__modal-logo club 500 <span class='media__modal-symbol'>®</span>
+									.media__modal-close
 
-						.media__modal-close
+								.media__modal-company
 
-					.media__modal-company
+									img(src='img/media'+ item +'.svg' alt='media__modal-logo')
 
-						img(src='img/media3.svg' alt='media__modal-logo')
+								.media__modal-description Немного текста про источник.<br>Типа самы бла бля.
 
-					.media__modal-description Немного текста про источник.<br>Типа самы бла бля.
+								.media__modal-content
 
-					.media__modal-content
+									.media__modal-name 500 предпринимателей на одной площадке: итоговый слет «CLUB 500»
 
-						.media__modal-name 500 предпринимателей на одной площадке: итоговый слет «CLUB 500»
+									.media__modal-text 3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.
 
-						.media__modal-text 3 августа 2020 года в бизнес-отрасли  состоялось масштабное событие — XVI международная встреча резидентов «CLUB 500» на одной из самых приватных площадок Москвы Barvikha Luxury Village.<br><br>«CLUB 500» —  самый большой премиальный бизнес-клуб России и стран СНГ. В него входят 500 предпринимателей и топ-менеджеров с личным доходом от 1 000 000 рублей в месяц.<br><br>XVI встреча резидентов «CLUB 500» объединила сразу три праздника: День Рождения клуба, посвящение новых резидентов и достижение главной цели — объединение 500 предпринимателей на одной площадке.
-
-						.media__modal-line
-
-			.media__box
-
-				.media__logo
-					img(src='img/media4.svg' alt='media__logo')
-
-			.media__box
-
-				.media__logo
-					img(src='img/media5.svg' alt='media__logo')
-
-			.media__box
-
-				.media__logo
-					img(src='img/media6.svg' alt='media__logo')
-
-			.media__box
-
-				.media__logo
-					img(src='img/media7.svg' alt='media__logo')
-
-			.media__box
-
-				.media__logo
-					img(src='img/media8.svg' alt='media__logo')
-
-			.media__box
-
-				.media__logo
-					img(src='img/media9.svg' alt='media__logo')
-
-			.media__box
-
-				.media__logo
-					img(src='img/media10.svg' alt='media__logo')
-
-			.media__box
-
-				.media__logo
-					img(src='img/media11.svg' alt='media__logo')
-
-			.media__box
-
-				.media__logo
-					img(src='img/media12.svg' alt='media__logo')
-
-			.media__box
-
-			.media__box
-
-				.media__logo
-					img(src='img/media13.svg' alt='media__logo')
-
-			.media__box
-
-				.media__logo
-					img(src='img/media14.svg' alt='media__logo')
-
-			.media__box
+									.media__modal-line

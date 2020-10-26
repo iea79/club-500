@@ -1,0 +1,90 @@
+.steps{
+	padding: 14.5em 0;
+	@media (max-width: 767px) {
+		padding: 12.3em 0;
+	}
+	&__container{
+		width: 100%;
+		padding: 0 0.95em;
+    	margin: 0 auto;
+	}
+	&__title{
+		font-size: 5.37em;
+		line-height: 1em;
+		letter-spacing: -0.025em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		max-width: 11.2em;
+		margin-left: auto;
+	}
+	&__set{
+		display: flex;
+		flex-wrap: wrap;
+		padding-top: 47em;
+		padding-left: 0.8em;
+	}
+	&__row{
+		display: flex;
+		align-items: center;
+		&:nth-child(1){
+			margin-left: 5.4em;
+		}
+		&:nth-child(4){
+			margin-left: 22em;
+		}
+	}
+	&__num{
+		font-weight: 500;
+		font-size: 9.37em;
+		background: #219653;
+		text-transform: uppercase;
+		min-width: 1.198em;
+		max-width: 1.198em;
+		height: 1.198em;
+		text-align: center;
+		border-radius: 50%;
+		margin-left: 0.16em;
+	}
+	&__name{
+		font-weight: 300;
+		font-size: 15.5em;
+		letter-spacing: -0.085em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		line-height: 0.78em;
+		text-align: left;
+		padding-right: 0.05em;
+	}
+	&__action{
+		line-height: 0.78em;
+		font-weight: 300;
+		color: #219653;
+		font-size: 15.5em;
+		letter-spacing: -0.085em;
+		text-transform: uppercase;
+		&-text{
+			display: flex;
+			justify-content: flex-start;
+			&:nth-child(2){
+				margin-left: 1.28em;
+			}
+		}
+		&-arrow{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 3.86755px solid #FFFFFF;
+			border-radius: 50%;
+			min-width: 0.723em;
+			max-width: 0.723em;
+			height: 0.723em;
+			margin-top: 0.05em;
+			&:nth-child(1){
+				margin-left: 0.1em;
+			}
+			svg path{
+				stroke: #FFFFFF;
+			}
+		}
+	}
+}

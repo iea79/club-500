@@ -6,6 +6,9 @@
 
 body{
 	font-size: calc(.00838 * 100vw + 0px);
+	&.no-scroll{
+		overflow: hidden;
+	}
 	@media (max-width: 767px) {
 		font-size: calc(.034 * 100vw + 0px);
 	}
@@ -18,4 +21,25 @@ body{
 	font-size: 1em;
 	background-color: #000000;
 	position: relative;
+}
+
+@keyframes modal {
+	0% {
+    	opacity: 0;
+	}
+	20% {
+    	opacity: 0.2;
+	}
+	40% {
+    	opacity: 0.4;
+	}
+	60% {
+    	opacity: 0.6;
+	}
+	80% {
+    	opacity: 0.8;
+	}
+	100% {
+	    opacity: 1;
+	}
 }

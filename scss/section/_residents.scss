@@ -1,6 +1,7 @@
 .residents{
 	padding: 14.5em 0;
 	position: relative;
+	z-index: 5;
 	&__circle{
 		&-one{
 			position: absolute;
@@ -77,6 +78,7 @@
 	&__picture{
 		position: relative;
 		padding-bottom: 117%;
+		cursor: pointer;
 	}
 	&__img{
 		position: absolute;
@@ -100,5 +102,220 @@
 	}
 	&__post{
 		font-size: 1em;
+	}
+	&__modal{
+		display: none;
+		position: fixed;
+		left: 0;
+		top: 0;
+		height: 100vh;
+		width: 100%;
+		z-index: 10;
+		background-color: #000000;
+		color: #FFFFFF;
+		padding: 2.3em 3.6em;
+		&-cirsleOne{
+			position: absolute;
+		    left: 47em;
+		    top: 8.8em;
+		    width: 28.22em;
+		    height: 28.22em;
+			background: linear-gradient(130.42deg, #73A79D 14.1%, #324C48 45.52%, #020202 74.85%);
+			transform: rotate(80.82deg);
+			border-radius: 50%;
+		}
+		&-cirsleTwo{
+			position: absolute;
+	        left: 3.2em;
+    		top: 14.5em;
+		    width: 66.1em;
+		    height: 66.1em;
+		    background: linear-gradient(130.42deg, #72A79D 14.1%, #314D46 39.65%, #020202 64.9%), #C4C4C4;
+			border-radius: 50%;
+			z-index: 1;
+		}
+		&-cirsleThree{
+			position: absolute;
+            left: 8.6em;
+    		top: 17.5em;
+		    width: 12.81em;
+		    height: 12.81em;
+		    background: linear-gradient(130.42deg, #6FC7B5 14.1%, #2F5C53 45.52%, #020202 74.85%);
+			border-radius: 50%;
+			z-index: 2;
+		}
+		&-img{
+		    position: absolute;
+		    width: 65.8em;
+		    height: 65em;
+		    left: 3.5em;
+			bottom: 0;
+			z-index: 3;
+		    object-fit: contain;
+		}
+		&-head{
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			position: relative;
+			z-index: 5;
+		}
+		&-logo{
+			text-decoration: none;
+			display: inline-flex;
+			align-items: flex-start;
+			font-weight: 500;
+			font-size: 1.3em;
+			letter-spacing: -0.035em;
+			text-transform: uppercase;
+		}
+		&-symbol{
+		    font-size: 0.75em;
+	    	padding-left: 0.4em;
+		}
+		&-nav{
+			display: flex;
+			padding-left: 11em;
+		}
+		&-link{
+			margin-right: 4.36em;
+			cursor: pointer;
+			&.active{
+				color: #575757;
+				cursor: default;
+			}
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+		&-close{
+			cursor: pointer;
+			margin-left: 0.95em;
+			display: block;
+			min-width: 1.4em;
+			max-width: 1.4em;
+			height: 1.4em;
+			background-image: url(../img/close.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			@media (max-width: 767px) {
+				min-width: 1.73em;
+				max-width: 1.73em;
+				height: 1.73em;
+			}
+		}
+		&-body{
+			position: relative;
+			z-index: 5;
+		    padding-top: 8em;
+			max-width: 55.9em;
+		    margin-left: auto;
+		}
+		&-name{
+			font-weight: 500;
+			font-size: 2.8em;
+			letter-spacing: -0.02em;
+			text-transform: uppercase;
+			padding-bottom: 0.26em;
+		}
+		&-post{
+			font-weight: 500;
+			font-size: 1.48em;
+			letter-spacing: -0.035em;
+			text-transform: uppercase;
+			padding-bottom: 1em;
+		}
+		&-facts{
+			text-align: center;
+			display: flex;
+			width: 100%;
+		}
+		&-cell{
+			width: 100%;
+			&:last-child{
+				.residents__modal-value{
+					border-right: none;
+				}
+			}
+		}
+		&-value{
+			white-space: nowrap;
+			font-size: 3em;
+			text-align: center;
+			letter-spacing: -0.02em;
+			border-bottom: 1px solid #ffffff;
+			border-right: 1px solid #ffffff;
+			padding: 0 0.3em 0.32em 0.3em;
+			text-transform: uppercase;
+			span{
+				font-size: 1.57em;
+				padding-right: 0.1em;
+			}
+		}
+		&-property{
+			font-weight: 500;
+			font-size: 1.1em;
+			letter-spacing: -0.045em;
+			text-transform: uppercase;
+			padding: 1.5em 0 0 0;
+		}
+		&-about{
+			font-size: 1em;
+		}
+		&-skills{
+			padding-top: 7.5em;
+		}
+		&-topic{
+			font-size: 1em;
+			text-transform: uppercase;
+			border-bottom: 1px solid #ffffff;
+			padding-bottom: 0.5em;
+		}
+		&-set{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-end;
+			padding-top: 1em;
+		}
+		&-elem{
+			font-weight: 500;
+			font-size: 1.48em;
+			letter-spacing: -0.035em;
+			padding: 0.5em 1.4em;
+			border: 2px solid #ffffff;
+			border-radius: 62px;
+			margin-left: 0.7em;
+		}
+		&-networks{
+			padding-top: 5em;
+			display: flex;
+			justify-content: flex-end;
+		}
+		&-icon{
+			cursor: pointer;
+			max-height: 2.1em;
+			max-width: 2.1em;
+			width: 100%;
+			margin-top: 1.8em;
+			margin-left: 2.5em;
+			transition: all .5s;
+			svg{
+				height: 100%;
+				width: 100%;
+			}
+			&:hover{
+				opacity: 0.6;
+			}
+		}
+	}
+}
+
+.tab{
+	&__mass{
+		display: none;
+		&.open{
+			display: block;
+		}
 	}
 }
