@@ -1,4 +1,4 @@
-@import "/node_modules/locomotive-scroll/dist/locomotive-scroll.css";
+@import "../node_modules/locomotive-scroll/dist/locomotive-scroll";
 
 body {
     // overflow-x: hidden;
@@ -41,12 +41,11 @@ body {
     }
 
     .about__title {
+        position: static;
+        // opacity: 1;
         color: transparent;
         // opacity: 0;
 
-        &.show {
-            animation: show 1s forwards;
-        }
     }
 
     .about__unit {
@@ -61,6 +60,16 @@ body {
         opacity: 0;
     }
 
+}
+
+.showTitle {
+    // position: static;
+    animation: showTitle 1s forwards;
+
+    &.about__titlesub {
+        // position: relative;
+        // z-index: 4;
+    }
 }
 
 .slideUp {
@@ -79,9 +88,15 @@ body {
     }
 }
 
-@keyframes show {
+@keyframes showTitle {
+    from {
+        color: transparent;
+        // transform: translateY(5em);
+    }
+
     to {
         color: #fff;
+        // transform: translateY(0);
     }
 }
 

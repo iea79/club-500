@@ -1,5 +1,6 @@
 import LocomotiveScroll from 'locomotive-scroll';
 import { gsap, TweenLite, TweenMax, TimelineLite, TimelineMax } from "gsap";
+
 (function() {
 
     let container = document.querySelector('[data-scroll-container]'),
@@ -14,17 +15,21 @@ import { gsap, TweenLite, TweenMax, TimelineLite, TimelineMax } from "gsap";
         smoothMobile: false
     });
 
-    scroll.on('call', (func) => {
-        // Using modularJS
-        // aTitle.call(func);
+    scroll.on('call', (e, i, f) => {
 
-        "lazyload" == function(func) {
-            repeat: true
-            // console.log(func);
+        "lazyload" === function() {
+            console.log(e, i, f);
         };
-        // Using jQuery events
-        // $(document).trigger(func);
-        // Or do it your own way 😎
+
+        // "lazyload" === e && t.lazyLoad(i, n),
+        // "updateBg" === e && t.updateBg(i, n),
+        // "updateNav" === e && t.updateNav(i, n),
+        // "updateSideNav" === e && t.updateSideNav(i, n),
+        // "lazyload" === e && t.lazyLoad(i, n),
+        // "recogInView" === e && t.recogInView(i, n),
+        // "scaleImg" === e && t.scaleImg(i, n),
+        // "toggleVideo" === e && t.toggleVideo(i, n)
+
     });
 
 
@@ -38,7 +43,7 @@ import { gsap, TweenLite, TweenMax, TimelineLite, TimelineMax } from "gsap";
         let mouseX = 0,
         mouseY = 0;
 
-        TweenMax.to({}, 0.0016, {
+        TweenMax.to({}, 0.016, {
             repeat: -1,
             onRepeat: function() {
                 posX += (mouseX - posX) / 9;
