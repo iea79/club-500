@@ -1,0 +1,27 @@
+.poster {
+    &__title {}
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -2em;
+    }
+
+    &__col {
+        padding-left: 2em;
+        width: 25%;
+        flex-grow: 1;
+
+        &_lg {
+            width: 50%;
+        }
+
+    }
+
+    &__plate {}
+
+    &__month {}
+
+    &__img {}
+
+}
