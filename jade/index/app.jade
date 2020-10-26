@@ -1,25 +1,29 @@
 .app(data-scroll-section="")
-    .app__first-screen(data-scroll="")
-        .app__circle-path
+    .app__first-screen
+        .app__circle-path(
+            data-scroll="" 
+            data-scroll-offset="10%"  
+            data-scroll-class="fadeIn" 
+            )
         .app__title
-            .app__title-item(data-scroll=""
-                data-scroll-offset="50"  
-                data-scroll-position="top" 
+            .app__title-item(
+                data-scroll="" 
+                data-scroll-offset="20%"  
                 data-scroll-class="slideRight" 
                 ) Мобильное
-            .app__title-item(data-scroll=""
-                data-scroll-offset="50"  
-                data-scroll-position="top" 
+            .app__title-item(
+                data-scroll="" 
+                data-scroll-offset="20%"  
                 data-scroll-class="slideLeft" 
                 ) Приложение
-            .app__title-item(data-scroll=""
-                data-scroll-offset="50"  
-                data-scroll-position="top" 
+            .app__title-item(
+                data-scroll="" 
+                data-scroll-offset="20%"  
                 data-scroll-class="slideRight" 
                 ) club 500
-        .app__icon(data-scroll=""
-            data-scroll-offset="50"  
-            data-scroll-position="top" 
+        .app__icon(
+            data-scroll="" 
+            data-scroll-offset="30%"  
             data-scroll-class="slideUp" 
             )
             <svg width="77" height="42" viewBox="0 0 77 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,54 +36,69 @@
                 </g>
             </svg>
 
-        .app__subtitle(data-scroll=""
-            data-scroll-offset="0"  
+        .app__subtitle(
+            data-scroll="" 
+            data-scroll-offset="30%"  
             data-scroll-class="fadeIn" 
             ) Каждый в клубе ставит свою цель и идет к ней
-        .app__description(data-scroll=""
-            data-scroll-offset="100"  
+        .app__description(
+            data-scroll="" 
+            data-scroll-offset="30%"  
             data-scroll-class="fadeIn" 
             ) В приложении GarageBand для iOS играть и записывать музыку невероятно просто. И так же просто поделиться ею со всем миром, где бы вы ни находились. Одним касанием выбирайте любые музыкальные инструменты, включая этнические. И бесплатно загружайте наборы инструментов и лупов после каждого нового релиза — для этого есть новая функция «Фонотека». Вам не составит труда записать композицию в вашем любимом стиле. Всё, что для этого нужно, — только iPhone, iPad или iPod touch.
-    .app__main(data-scroll="")
-        .app-grid
-            .app-grid__item.app-grid__item_middle
-                .app-grid__name(data-scroll=""
-                    data-scroll-offset="0"  
-                    data-scroll-class="slideRight" 
-                    ) название
-                .app-grid__name(data-scroll=""
-                    data-scroll-offset="0"  
-                    data-scroll-class="slideRight" 
-                    ) раздела  app
-            .app-grid__item(data-scroll=""
+    .app__main()
+        .app-grid(
+            data-scroll="" 
+            )
+            .app-grid__item.app-grid__item_middle(
+                data-scroll="" 
+                data-scroll-offset="0"  
+                data-scroll-class="slideRight" 
+                )
+                .app-grid__name название
+                .app-grid__name раздела  app
+            .app-grid__item(
+                data-scroll="" 
                 data-scroll-offset="0"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img.app-grid__img_ellipse
                     img(src="img/app/app-1.png" alt="mobile-app.png")
-            .app-grid__item.app-grid__item_small.app-grid__item_center-center(data-scroll=""
-                data-scroll-offset="0"  
+            .app-grid__item.app-grid__item_small.app-grid__item_center-center(
+                data-scroll="" 
+                data-scroll-offset="0" 
                 data-scroll-class="fadeIn" 
                 )
-                .app-grid__title
+                .app-grid__title(
+                    data-scroll="" 
+                    data-scroll-offset="0" 
+                    data-scroll-class="slideLeft" 
+                    )
                     .app-grid__title-item описание
                     .app-grid__title-item срин.каст
-            .app-grid__item(data-scroll="" 
+            .app-grid__item(
+                data-scroll="" 
                 data-scroll-offset="100"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img
                     img(src="img/app/app-2.png" alt="mobile-app.png")
-            .app-grid__item.app-grid__item_big
+            .app-grid__item.app-grid__item_big(
+                data-scroll="" 
+                data-scroll-offset="0" 
+                data-scroll-class="slideUp" 
+                )
                 .app-grid__descript
-                    .app-grid__title(data-scroll=""
-                        data-scroll-offset="50"  
-                        data-scroll-class="fadeIn" 
+                    .app-grid__title(
+                        data-scroll="" 
+                        data-scroll-offset="10%" 
+                        data-scroll-class="slideLeft" 
                         )
                         .app-grid__title-item Бизнес парнер
                         .app-grid__title-item на вашем гаджете
-                    .app-grid__article(data-scroll=""
-                        data-scroll-offset="100"  
+                    .app-grid__article(
+                        data-scroll="" 
+                        data-scroll-offset="10%" 
                         data-scroll-class="fadeIn" 
                         ) В приложении GarageBand для iOS играть и записывать музыку невероятно просто. И так же просто поделиться ею со всем миром, где бы вы ни находились. Одним касанием выбирайте любые музыкальные инструменты, включая этнические. 
                     .app-grid__card
@@ -98,89 +117,118 @@
                                 data-scroll-offset="150"  
                                 data-scroll-class="slideRight" 
                                 style="background-image: url('../img/app/card-3.png');")
-            .app-grid__item(data-scroll=""
-                data-scroll-offset="50"  
+
+            .app-grid__item(
+                data-scroll="" 
+                data-scroll-offset="10%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img
                     img(src="img/app/app-3.png" alt="mobile-app.png")
-            .app-grid__item(data-scroll=""
-                data-scroll-offset="100"  
+            .app-grid__item(
+                data-scroll="" 
+                data-scroll-offset="15%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img
                     img(src="img/app/app-4.png" alt="mobile-app.png")
-            .app-grid__item(data-scroll=""
-                data-scroll-offset="50"  
+            .app-grid__item(
+                data-scroll="" 
+                data-scroll-offset="10%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img   
                     img(src="img/app/app-5.png" alt="mobile-app.png")
-            .app-grid__item(data-scroll=""
-                data-scroll-offset="100"  
+            .app-grid__item(
+                data-scroll="" 
+                data-scroll-offset="15%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img   
                     img(src="img/app/app-6.png" alt="mobile-app.png")
-            .app-grid__item.app-grid__item_big.app-grid__item_center-center
+            .app-grid__item.app-grid__item_big.app-grid__item_center-center(
+                data-scroll="" 
+                data-scroll-offset="20%"  
+                data-scroll-class="slideUp" 
+                )
                 .app-grid__descript
-                    .app-grid__title(data-scroll=""
-                        data-scroll-offset="100"  
+                    .app-grid__title(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
                         data-scroll-class="slideRight" 
                         )
                         .app-grid__title-item Удобные виджеты
-                    .app-grid__article.app-grid__article_big(data-scroll=""
-                        data-scroll-offset="100"  
+                    .app-grid__article.app-grid__article_big(
+                        data-scroll="" 
+                        data-scroll-offset="15%"  
                         data-scroll-class="fadeIn" 
                         ) В приложении GarageBand для iOS играть и записывать музыку невероятно просто. И так же просто поделиться ею со всем миром, где бы вы ни находились.
-                    .app-grid__img.app-grid__img_margin(data-scroll=""
-                        data-scroll-offset="100"  
+                    .app-grid__img.app-grid__img_margin(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
                         data-scroll-class="slideUp" 
                         )
                         img(src="img/app/widgets.png" alt="widgets.png")
-            .app-grid__item.app-grid__item_ticket(data-scroll=""
-                data-scroll-offset="50"  
+            .app-grid__item.app-grid__item_ticket(
+                data-scroll="" 
+                data-scroll-offset="5%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img   
                     img(src="img/app/ticket.png" alt="ticket.png")
-            .app-grid__item(data-scroll=""
-                data-scroll-offset="100"  
+            .app-grid__item(
+                data-scroll="" 
+                data-scroll-offset="10%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img   
                     img(src="img/app/app-7.png" alt="mobile-app.png")
-            .app-grid__item(data-scroll=""
-                data-scroll-offset="150"  
+            .app-grid__item(
+                data-scroll="" 
+                data-scroll-offset="15%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img   
                     img(src="img/app/app-8.png" alt="mobile-app.png")
             .app-grid__item.app-grid__item_center-start
                 .app-grid__descript
-                    .app-grid__title(data-scroll=""
-                        data-scroll-offset="100"  
+                    .app-grid__title(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
                         data-scroll-class="slideLeft" 
                         )
                         .app-grid__title-item Удобные
                         .app-grid__title-item виджеты
-                    .app-grid__article.app-grid__article_small(data-scroll=""
-                        data-scroll-offset="100"  
+                    .app-grid__article.app-grid__article_small(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
                         data-scroll-class="fadeIn" 
                         ) В приложении GarageBand для iOS играть и записывать музыку невероятно просто. И так же просто поделиться ею со всем миром, где бы вы ни находились.
-    .app__bottom(data-scroll="")
-        .app__bottom-title тестдрайв приложения
+    .app__bottom
+        .app__bottom-title(data-scroll="") тестдрайв приложения
         .app__bottom-container
-            .app__bottom-item
-            .app__bottom-item
+            .app__bottom-item(
+                data-scroll="" 
+                data-scroll-offset="10%"  
+                data-scroll-class="fadeIn" 
+                )
+            .app__bottom-item(
+                data-scroll="" 
+                data-scroll-offset="10%"  
+                data-scroll-class="slideUp" 
+                )
                 .app__bottom-img
                     img(src="img/app/app-9.png" alt="mobile-app.png")
                     .app__bottom-ellipse
-            .app__bottom-item
+            .app__bottom-item(
+                data-scroll="" 
+                data-scroll-offset="10%"  
+                data-scroll-class="fadeIn" 
+                )
                 .app__bottom-prompt
                     .app__bottom-arrow
-                        //- <svg width="233" height="246" viewBox="0 0 233 246" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        //-     <path d="M231.771 167.135C109.649 162.007 104.04 52.1216 8.52284 92.8887" stroke="white"/>
-                        //-     <path d="M22.3202 65.2462L8.4326 92.7324L35.9189 106.62" stroke="white"/>
-                        //- </svg>
+                        <svg width="233" height="246" viewBox="0 0 233 246" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M231.771 167.135C109.649 162.007 104.04 52.1216 8.52284 92.8887" stroke="white"/>
+                            <path d="M22.3202 65.2462L8.4326 92.7324L35.9189 106.62" stroke="white"/>
+                        </svg>
                     .app__bottom-text в этом разделе вы можете задать вопрос, а также помочь

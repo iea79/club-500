@@ -4,7 +4,7 @@ import { gsap, TweenLite, TweenMax, TimelineLite, TimelineMax } from "gsap";
 (function() {
 
     let container = document.querySelector('[data-scroll-container]'),
-        elem = document.querySelector('[data-scroll]'),
+        // elem = document.querySelector('[data-scroll]'),
         soc = document.querySelector('.major__networks'),
         aTitle = document.querySelector('.about__title'),
         year = document.querySelector('.major__year');
@@ -12,14 +12,15 @@ import { gsap, TweenLite, TweenMax, TimelineLite, TimelineMax } from "gsap";
     const scroll = new LocomotiveScroll({
         el: container,
         smooth: true,
-        smoothMobile: false
+        smoothMobile: false,
+        scrollFromAnywhere: true
     });
+
+    scroll.destroy();
 
     scroll.on('call', (e, i, f) => {
 
-        "lazyload" === function() {
-            console.log(e, i, f);
-        };
+        "fadeIn" === console.log(e, i, f);
 
         // "lazyload" === e && t.lazyLoad(i, n),
         // "updateBg" === e && t.updateBg(i, n),
@@ -82,6 +83,10 @@ import { gsap, TweenLite, TweenMax, TimelineLite, TimelineMax } from "gsap";
 
     showCoursor(".major__stencil", 'Смотреть видео');
     showCoursor(".media__logo", 'Читать');
+
+    $(document).ready(function() {
+        scroll.init();
+    });
 
 
 })();
