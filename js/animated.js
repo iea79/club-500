@@ -8,7 +8,9 @@ import { gsap, TweenLite, TweenMax, TimelineLite, TimelineMax } from "gsap";
         // elem = document.querySelector('[data-scroll]'),
         soc = document.querySelector('.major__networks'),
         aTitle = document.querySelector('.about__title'),
-        year = document.querySelector('.major__year');
+        year = document.querySelector('.major__year'),
+        cursor = document.querySelector('.cursor'),
+        isDesktop = $(window).width() >= 768;
 
 
     const scroll = new LocomotiveScroll({
@@ -38,13 +40,10 @@ import { gsap, TweenLite, TweenMax, TimelineLite, TimelineMax } from "gsap";
 
     // CURSOR
     function showCoursor(el, text) {
-        let cursor = $(".cursor");
-
         let posX = 0,
-        posY = 0;
-
-        let mouseX = 0,
-        mouseY = 0;
+            posY = 0,
+            mouseX = 0,
+            mouseY = 0;
 
         TweenMax.to({}, 0.016, {
             repeat: -1,
@@ -67,45 +66,56 @@ import { gsap, TweenLite, TweenMax, TimelineLite, TimelineMax } from "gsap";
         });
 
         $(el).on("mouseenter", function() {
-            cursor.addClass("active");
-            cursor.html(text);
+            $(cursor).addClass("active");
+            $(cursor).html(text);
         });
         $(el).on("mouseleave", function() {
-            cursor.removeClass("active");
-            cursor.html('');
+            $(cursor).removeClass("active");
+            $(cursor).html('');
         });
         $(el).on("mousedown", function() {
-            cursor.addClass("pressed");
+            $(cursor).addClass("pressed");
         });
         $(el).on("mouseup", function() {
-            cursor.removeClass("pressed");
+            $(cursor).removeClass("pressed");
         });
     }
 
-
-    showCoursor(".major__stencil", 'Смотреть видео');
-    showCoursor(".media__logo", 'Читать');
-    showCoursor(".poster__descr", 'Подробнее');
+    // console.log($(cursor).attr('style'));
+    function initCursors() {
+        if (isDesktop) {
+            if ($(cursor).attr('style') == undefined) {
+                showCoursor(".major__stencil", 'Смотреть видео');
+                showCoursor(".media__logo", 'Читать');
+                showCoursor(".poster__descr", 'Подробнее');
+            }
+        } else {
+            $(cursor).removeAttr('style');
+        }
+    }
 
     $(document).ready(function() {
-        if ($(window).width() >= 768) {
+        if (isDesktop) {
             scroll.init();
         } else {
             scroll.destroy();
             $('[data-scroll-section]').removeAttr('style');
             return false;
         }
+        initCursors();
     });
 
     $(window).resize(function() {
         if ($(window).width() >= 768) {
             // scroll.init();
             scroll.update();
+            console.log($(cursor).attr('style'));
         } else {
             scroll.destroy();
             $('[data-scroll-section]').removeAttr('style');
             return false;
         }
+        initCursors();
     });
 
 

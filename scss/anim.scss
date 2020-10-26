@@ -206,16 +206,13 @@ body {
 
 .major__stencil,
 .media__logo {
-    cursor: none;
+    @media (min-width: 768px) {
+        cursor: none;
+    }
 }
 
 .media__link {
     display: none !important;
-}
-
-.parallax {
-    transition: transform 1.5s;
-    transform-style: preserve-3d;
 }
 
 .app__first-screen {
