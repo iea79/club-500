@@ -34,7 +34,7 @@ $(document).ready(function(){
         $('.menu').addClass('open');
         $('.header').addClass('active');
         $(document).mousedown(function (e){
-            var menu = $('.menu'); 
+            var menu = $('.menu');
             if (!menu.is(e.target)
             && menu.has(e.target).length === 0) {
                 $(menu).removeClass('open');
@@ -68,7 +68,7 @@ $(document).ready(function(){
     $('.media__logo').click(function(){
         $(this).next('.media__modal').fadeIn(500);
         $(document).mousedown(function (e){
-            var modal = $('.media__modal'); 
+            var modal = $('.media__modal');
             if (!modal.is(e.target)
             && modal.has(e.target).length === 0) {
                 $(modal).fadeOut(500);
@@ -91,3 +91,55 @@ $(document).ready(function(){
     }
 
 });
+
+document.addEventListener('DOMContentLoaded', function(){
+    // начало Модалки секции тарифы
+    const tarrifModalOpen = () => {
+        let modalOpen = document.getElementById('wrap-modal'),
+        modal__item = modalOpen.querySelectorAll('.tarrifs-modal__open'),
+        modal__column = document.querySelectorAll('.tarrifs__column'),
+        modal__close = document.querySelector('.tarrifs__title');
+
+        modalOpen.onclick = () => {
+            event.preventDefault();
+
+            let click = event.target;
+
+            if (click.classList.contains('tarrifs-modal__open')) {
+
+                let clickAttr = click.getAttribute('data-open');
+
+                switch (clickAttr) {
+                    case 'start':
+                    modalActiveClose(modal__column, 'start')
+                    break;
+                    case 'vip':
+                    modalActiveClose(modal__column, 'vip')
+                    break;
+                    case 'member':
+                    modalActiveClose(modal__column, 'member')
+
+                    break;
+                }
+            }
+        }
+
+    }
+
+    let modalActiveClose = (arr, attr) => {
+        let clos,
+        item;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i].getAttribute('data-tarrifs') == attr) {
+                arr[i].classList.add('active');
+                item = arr[i];
+                clos = arr[i].querySelector('.tarrifs__column-close');
+            }
+        }
+        clos.onclick = () => {
+            item.classList.remove('active');
+        }
+    }
+    tarrifModalOpen();
+    // конец Модалки секции тарифы
+})
