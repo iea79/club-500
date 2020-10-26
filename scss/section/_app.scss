@@ -24,6 +24,10 @@
         align-items: center;
         justify-content: center;
         z-index: 10;
+
+        @media (max-width: 767px) {
+            height: 30em;
+        }
     }
 
     &__title {
@@ -46,28 +50,44 @@
             }
         }
 
+        @media (max-width: 767px) {
+            font-size: 1.750em;
+        }
+
     }
 
     &__icon {
-        width: 124px;
-        height: 124px;
+        width: 7.750em;
+        height: 7.750em;
         background: linear-gradient(28.02deg, #121212 40.32%, #303030 94.03%), #C4C4C4;
-        border-radius: 31px;
+        border-radius: 1.938em;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 45px auto 92px;
+        margin: 2.813em auto 5.75em;
         position: relative;
         z-index: 100;
+        padding: 1em;
+
+        @media (max-width: 767px) {
+            width: 4.5em;
+            height: 4.5em;
+            border-radius: 1.250em;
+            margin: 1.5em auto 2.5em;
+        }
     }
 
     &__subtitle {
         font-size: 3em;
         line-height: 98.6%;
         text-transform: uppercase;
-        max-width: 639px;
+        max-width: 13.3em;
         text-align: center;
         margin: 0 auto;
+
+        @media (max-width: 767px) {
+            font-size: 1.125em;
+        }
     }
 
     &__description {
@@ -76,8 +96,13 @@
         font-size: 1em;
         line-height: 130%;
         letter-spacing: -0.035em;
-        margin: 37px auto 0;
+        margin: 2.313em auto 0;
         color: #959595;
+
+        @media (max-width: 767px) {
+            font-size: 0.75em;
+            line-height: 1.6;
+        }
     }
 
     &__circle-path {
@@ -96,24 +121,37 @@
 
     &__main {
         width: 100%;
-        margin-top: 100px;
-    }
+        margin-top: 6.250em;
 
-    &__first-row {
-        display: flex;
-        margin-bottom: 100px;
+        @media (max-width: 767px) {
+            margin-top: 4em;
+        }
     }
 
     &-grid {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-left: -95px;
+        margin-left: -5.938em;
+
+        @media (max-width: 767px) {
+            margin-left: -2.5em;
+        }
 
         &__item {
             width: 25%;
-            padding-left: 95px;
-            margin-bottom: 95px;
+            padding-left: 5.938em;
+            margin-bottom: 5.938em;
+
+            @media (max-width: 767px) {
+                width: 50%;
+                padding-left: 2.5em;
+                margin-bottom: 2.5em;
+            }
+
+            &_full {
+                width: 100%;
+            }
 
             &_big {
                 width: 50%;
@@ -144,6 +182,50 @@
                 align-items: center;
                 justify-content: flex-end;
             }
+
+            &_desctop {
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+
+            &_mobile {
+                display: none;
+                @media (max-width: 767px) {
+                    display: block;
+                }
+            }
+
+        }
+
+        &__info {
+            margin-top: 2.5em;
+
+            &-icon {
+                width: 4.5em;
+                height: 4.5em;
+                background: linear-gradient(28.02deg, #121212 40.32%, #303030 94.03%), #C4C4C4;
+                border-radius: 1.250em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                z-index: 100;
+                padding: 1em;
+            }
+
+            &-title {
+                font-weight: 500;
+                font-size: 1.5em;
+                letter-spacing: -0.035em;
+                text-transform: uppercase;
+                margin: 1em 0 0.5em;
+            }
+
+            &-descript {
+                font-size: 0.75em;
+                line-height: 1.6;
+            }
         }
 
         &__name {
@@ -164,20 +246,15 @@
 
         &__article {
             margin-top: 3.125em;
-            max-width: 444px;
+            max-width: 27.75em;
 
             &_big {
-                max-width: 544px;
+                max-width: 34em;
             }
 
             &_small {
-                max-width: 275px;
+                max-width: 17.188em;
             }
-        }
-
-        &__txt {
-            margin: 56px 0 23px;
-            font-size: 1.75em;
         }
 
         &__img {
@@ -186,6 +263,7 @@
 
             &_margin {
                 margin-top: 3.750em;
+                width: 25.938em;
             }
 
             &_ellipse {
@@ -211,7 +289,7 @@
             &-title {
                 display: inline-block;
                 font-size: 2em;
-                margin-bottom: 23px;
+                margin-bottom: 1em;
                 color: #fff;
                 text-decoration: none;
             }
@@ -249,6 +327,11 @@
     }
 
     &__bottom {
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+
         &-title {
             text-align: center;
             text-transform: uppercase;
