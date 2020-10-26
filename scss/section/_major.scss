@@ -4,12 +4,15 @@
 	overflow: hidden;
 
 	&.hide {
-		.major__background,
 		.major__content,
 		.major__networks,
 		.major__year {
 			opacity: 0;
 			z-index: -2;
+		}
+
+		.major__video {
+			z-index: 10;
 		}
 	}
 
@@ -31,6 +34,8 @@
 			min-height: 100%;
 			min-width: 100%;
 			object-fit: cover;
+			z-index: 3;
+			position: relative;
 		}
 
 		&-close {
@@ -147,6 +152,10 @@
 			width: 100%;
 			height: 100%;
 		}
+		@media (max-width: 767px) {
+			width: 86%;
+			top: 9.8em;
+		}
 
 		&:hover {
 			.major__play {
@@ -171,7 +180,10 @@
 		align-items: center;
 		justify-content: space-between;
 		pointer-events: none;
-		transition: all 0.8s;
+		@media (max-width: 767px) {
+			top: 50%;
+			height: 58%;
+		}
 	}
 
 	&__title {
@@ -181,6 +193,9 @@
 		letter-spacing: -0.07em;
 		text-transform: uppercase;
 		color: #FFFFFF;
+		@media (max-width: 767px) {
+			font-size: 2.36em;
+		}
 
 		&sub {
 			max-width: 22em;
@@ -192,6 +207,33 @@
 			letter-spacing: -0.045em;
 			text-transform: uppercase;
 			color: #FFFFFF;
+			@media (max-width: 767px) {
+				font-size: 1.1em;
+				padding-bottom: 2.2em;
+			}
+		}
+	}
+
+	&__btn {
+		border: 1px solid #219653;
+		border-radius: 28px;
+		display: none;
+		font-weight: 500;
+		font-size: 1.15em;
+		line-height: 1em;
+		color: #219653;
+		background-color: transparent;
+		padding: 0.8em 1.2em;
+		pointer-events: visible;
+		transition: all 0.5s;
+		margin: 0 auto;
+
+		&:hover {
+			background: #219653;
+			color: #000;
+		}
+		@media (max-width: 767px) {
+			display: block;
 		}
 	}
 
@@ -229,6 +271,9 @@
 				text-align: center;
 			}
 		}
+		@media (max-width: 767px) {
+			display: none;
+		}
 	}
 
 	&__year {
@@ -242,5 +287,8 @@
 		text-transform: uppercase;
 		color: #FFFFFF;
 		transition: all 0.8s;
+		@media (max-width: 767px) {
+			display: none;
+		}
 	}
 }

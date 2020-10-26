@@ -25,9 +25,6 @@ $(document).ready(function(){
             $(img).hide();
             $(img).parent().append($(data));
         }, 'text');
-
-        console.log( $('img[src*=".svg"]').length );
-
     });
 
     $('.header__toggle').click(function(){
@@ -60,25 +57,28 @@ $(document).ready(function(){
         $('.header').addClass('effect');
     });
 
-    $('.header__close').click(function(){
+    $('.major__video-close').click(function(){
         $('.major').removeClass('hide');
         $('.header').removeClass('effect');
         $('#majorVideo').trigger('play');
     });
 
     $('.media__logo').click(function(){
-        $(this).next('.media__modal').fadeIn(500);
+        $(this).next('.media__modal').addClass('open');
+        $('body').addClass('no-scroll');
         $(document).mousedown(function (e){
-            var modal = $('.media__modal');
+            var modal = $('.media__modal-block');
             if (!modal.is(e.target)
             && modal.has(e.target).length === 0) {
-                $(modal).fadeOut(500);
+                $('.media__modal').removeClass('open');
+                $('body').removeClass('no-scroll');
             }
         });
     });
 
     $('.media__modal-close').click(function(){
-        $('.media__modal').fadeOut(500);
+        $('.media__modal').removeClass('open');
+        $('body').removeClass('no-scroll');
     });
 
     if (isXsWidth()) {
@@ -91,15 +91,15 @@ $(document).ready(function(){
         });
     }
 
-});
+    $('.tab__item').click(function() {
+        var tab_id = $(this).attr('data-tab'),
+        $container = $(this).closest('.tab');
+        $container.find('.tab__item').removeClass('active');
+        $container.find('.tab__mass').removeClass('open');
 
-document.addEventListener('DOMContentLoaded', function(){
-    // начало Модалки секции тарифы
-    const tarrifModalOpen = () => {
-        let modalOpen = document.getElementById('wrap-modal'),
-        modal__item = modalOpen.querySelectorAll('.tarrifs-modal__open'),
-        modal__column = document.querySelectorAll('.tarrifs__column'),
-        modal__close = document.querySelector('.tarrifs__title');
+        $(this).addClass('active');
+        $("#" + tab_id).addClass('open');
+    });
 
     $('.residents__picture').click(function(){
 
@@ -114,9 +114,11 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     });
 
-            let click = event.target;
-
-            if (click.classList.contains('tarrifs-modal__open')) {
+    $('.residents__modal-close').click(function(){
+        $('.residents__modal').fadeOut('500', function() {
+            $('body').removeClass('no-scroll');
+        });
+    });
 
     $('#majorVideo').on('click', function() {
         if (!$(this).hasClass('play')) {
