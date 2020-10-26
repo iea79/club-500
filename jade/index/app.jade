@@ -35,7 +35,6 @@
                     <path d="M61.4504 12.3343C55.884 12.3343 51.0317 15.3561 48.518 19.8018C46.0044 15.3561 41.1521 12.3343 35.5857 12.3343C29.1888 12.3343 23.7281 16.3255 21.688 21.8862C19.4804 19.3047 16.1617 17.6606 12.4533 17.6606C10.3513 17.6606 8.37322 18.1897 6.65376 19.12L7.49527 15.8852H18.3147L19.138 12.3343H4.66108L1.44441 24.6736C1.42984 24.702 1.4189 24.734 1.40797 24.7624H5.53174V24.7837C7.04355 22.6283 9.57901 21.2115 12.4533 21.2115C17.0725 21.2115 20.832 24.876 20.832 29.3785C20.832 33.881 17.0725 37.5455 12.4533 37.5455C8.45335 37.5455 5.10187 34.7972 4.27129 31.1398L0.945312 32.7732C2.44255 37.5846 7.03262 41.0964 12.4496 41.0964C17.1708 41.0964 21.2618 38.4297 23.229 34.5628C25.8665 38.4936 30.4164 41.0964 35.5821 41.0964C41.1484 41.0964 46.0008 38.0746 48.5144 33.6289C51.028 38.0746 55.8804 41.0964 61.4467 41.0964C69.5813 41.0964 76.2005 34.6445 76.2005 26.7154C76.2041 18.7862 69.585 12.3343 61.4504 12.3343ZM35.5857 37.5455C29.4584 37.5455 24.4749 32.6879 24.4749 26.7154C24.4749 20.7428 29.4584 15.8852 35.5857 15.8852C41.7131 15.8852 46.6966 20.7428 46.6966 26.7154C46.6966 32.6879 41.7131 37.5455 35.5857 37.5455ZM61.4504 37.5455C55.323 37.5455 50.3395 32.6879 50.3395 26.7154C50.3395 20.7428 55.323 15.8852 61.4504 15.8852C67.5777 15.8852 72.5612 20.7428 72.5612 26.7154C72.5612 32.6879 67.5777 37.5455 61.4504 37.5455Z" fill="white"/>
                 </g>
             </svg>
-
         .app__subtitle(
             data-scroll="" 
             data-scroll-offset="30%"  
@@ -50,21 +49,23 @@
         .app-grid(
             data-scroll="" 
             )
-            .app-grid__item.app-grid__item_middle(
+            .app-grid__item.app-grid__item_middle.app-grid__item_desctop(
                 data-scroll="" 
                 data-scroll-offset="0"  
                 data-scroll-class="slideRight" 
                 )
                 .app-grid__name название
                 .app-grid__name раздела  app
-            .app-grid__item(
-                data-scroll="" 
-                data-scroll-offset="0"  
-                data-scroll-class="slideUp" 
-                )
+            .app-grid__item.app-grid__item_mobile.app-grid__item_full
+                .app-grid__info
+                    .app-grid__info-icon
+                        img(src="img/app/icon/base.svg" alt="base")
+                    .app-grid__info-title База знаний
+                    .app-grid__info-descript В приложении GarageBand для iOS играть и записывать музыку невероятно просто. И так же просто поделиться ею со всем миром, где бы вы ни находились. Одним касанием выбирайте любые музыкальные инструменты, включая этнические. 
+            .app-grid__item
                 .app-grid__img.app-grid__img_ellipse
-                    img(src="img/app/app-1.png" alt="mobile-app.png")
-            .app-grid__item.app-grid__item_small.app-grid__item_center-center(
+                    img(src="img/app/app-1.png" alt="mobile-app")
+            .app-grid__item.app-grid__item_small.app-grid__item_center-center.app-grid__item_desctop(
                 data-scroll="" 
                 data-scroll-offset="0" 
                 data-scroll-class="fadeIn" 
@@ -82,8 +83,8 @@
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img
-                    img(src="img/app/app-2.png" alt="mobile-app.png")
-            .app-grid__item.app-grid__item_big(
+                    img(src="img/app/app-2.png" alt="mobile-app")
+            .app-grid__item.app-grid__item_big.app-grid__item_desctop(
                 data-scroll="" 
                 data-scroll-offset="0" 
                 data-scroll-class="slideUp" 
@@ -117,36 +118,47 @@
                                 data-scroll-offset="150"  
                                 data-scroll-class="slideRight" 
                                 style="background-image: url('../img/app/card-3.png');")
-
+            .app-grid__item.app-grid__item_mobile.app-grid__item_full
+                .app-grid__info
+                    .app-grid__info-icon
+                        img(src="img/app/icon/chat.svg" alt="chat")
+                    .app-grid__info-title Запросы
+                    .app-grid__info-descript В приложении GarageBand для iOS играть и записывать музыку невероятно просто. И так же просто поделиться ею со всем миром, где бы вы ни находились. Одним касанием выбирайте любые музыкальные инструменты, включая этнические. 
             .app-grid__item(
                 data-scroll="" 
                 data-scroll-offset="10%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img
-                    img(src="img/app/app-3.png" alt="mobile-app.png")
+                    img(src="img/app/app-3.png" alt="mobile-app")
             .app-grid__item(
                 data-scroll="" 
                 data-scroll-offset="15%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img
-                    img(src="img/app/app-4.png" alt="mobile-app.png")
+                    img(src="img/app/app-4.png" alt="mobile-app")
+            .app-grid__item.app-grid__item_mobile.app-grid__item_full
+                .app-grid__info
+                    .app-grid__info-icon
+                        img(src="img/app/icon/acc.svg" alt="acc")
+                    .app-grid__info-title Партнеры
+                    .app-grid__info-descript В приложении GarageBand для iOS играть и записывать музыку невероятно просто. И так же просто поделиться ею со всем миром, где бы вы ни находились. Одним касанием выбирайте любые музыкальные инструменты, включая этнические.
             .app-grid__item(
                 data-scroll="" 
                 data-scroll-offset="10%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img   
-                    img(src="img/app/app-5.png" alt="mobile-app.png")
+                    img(src="img/app/app-5.png" alt="mobile-app")
             .app-grid__item(
                 data-scroll="" 
                 data-scroll-offset="15%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img   
-                    img(src="img/app/app-6.png" alt="mobile-app.png")
-            .app-grid__item.app-grid__item_big.app-grid__item_center-center(
+                    img(src="img/app/app-6.png" alt="mobile-app")
+            .app-grid__item.app-grid__item_big.app-grid__item_center-center.app-grid__item_desctop(
                 data-scroll="" 
                 data-scroll-offset="20%"  
                 data-scroll-class="slideUp" 
@@ -168,29 +180,35 @@
                         data-scroll-offset="10%"  
                         data-scroll-class="slideUp" 
                         )
-                        img(src="img/app/widgets.png" alt="widgets.png")
-            .app-grid__item.app-grid__item_ticket(
+                        img(src="img/app/widgets.png" alt="widgets")
+            .app-grid__item.app-grid__item_ticket.app-grid__item_desctop(
                 data-scroll="" 
                 data-scroll-offset="5%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img   
-                    img(src="img/app/ticket.png" alt="ticket.png")
+                    img(src="img/app/ticket.png" alt="ticket")
+            .app-grid__item.app-grid__item_mobile.app-grid__item_full
+                .app-grid__info
+                    .app-grid__info-icon
+                        img(src="img/app/icon/map.svg" alt="map")
+                    .app-grid__info-title Карта
+                    .app-grid__info-descript В приложении GarageBand для iOS играть и записывать музыку невероятно просто. И так же просто поделиться ею со всем миром, где бы вы ни находились. Одним касанием выбирайте любые музыкальные инструменты, включая этнические.
             .app-grid__item(
                 data-scroll="" 
                 data-scroll-offset="10%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img   
-                    img(src="img/app/app-7.png" alt="mobile-app.png")
+                    img(src="img/app/app-7.png" alt="mobile-app")
             .app-grid__item(
                 data-scroll="" 
                 data-scroll-offset="15%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img   
-                    img(src="img/app/app-8.png" alt="mobile-app.png")
-            .app-grid__item.app-grid__item_center-start
+                    img(src="img/app/app-8.png" alt="mobile-app")
+            .app-grid__item.app-grid__item_center-start.app-grid__item_desctop
                 .app-grid__descript
                     .app-grid__title(
                         data-scroll="" 
@@ -204,6 +222,46 @@
                         data-scroll-offset="10%"  
                         data-scroll-class="fadeIn" 
                         ) В приложении GarageBand для iOS играть и записывать музыку невероятно просто. И так же просто поделиться ею со всем миром, где бы вы ни находились.
+            .app-grid__item.app-grid__item_mobile.app-grid__item_full
+                .app-grid__info
+                    .app-grid__info-icon
+                        img(src="img/app/icon/event.svg" alt="event")
+                    .app-grid__info-title События
+                    .app-grid__info-descript В приложении GarageBand для iOS играть и записывать музыку невероятно просто. И так же просто поделиться ею со всем миром, где бы вы ни находились. Одним касанием выбирайте любые музыкальные инструменты, включая этнические.
+            .app-grid__item.app-grid__item_mobile(
+                data-scroll="" 
+                data-scroll-offset="10%"  
+                data-scroll-class="slideUp" 
+                )
+                .app-grid__img   
+                    img(src="img/app/app-1.png" alt="mobile-app")
+            .app-grid__item.app-grid__item_mobile(
+                data-scroll="" 
+                data-scroll-offset="15%"  
+                data-scroll-class="slideUp" 
+                )
+                .app-grid__img   
+                    img(src="img/app/app-2.png" alt="mobile-app")
+            .app-grid__item.app-grid__item_mobile.app-grid__item_full
+                .app-grid__info
+                    .app-grid__info-icon
+                        img(src="img/app/icon/news.svg" alt="news")
+                    .app-grid__info-title Новости
+                    .app-grid__info-descript В приложении GarageBand для iOS играть и записывать музыку невероятно просто. И так же просто поделиться ею со всем миром, где бы вы ни находились. Одним касанием выбирайте любые музыкальные инструменты, включая этнические.
+            .app-grid__item.app-grid__item_mobile(
+                data-scroll="" 
+                data-scroll-offset="10%"  
+                data-scroll-class="slideUp" 
+                )
+                .app-grid__img   
+                    img(src="img/app/app-3.png" alt="mobile-app")
+            .app-grid__item.app-grid__item_mobile(
+                data-scroll="" 
+                data-scroll-offset="15%"  
+                data-scroll-class="slideUp" 
+                )
+                .app-grid__img   
+                    img(src="img/app/app-4.png" alt="mobile-app")
     .app__bottom
         .app__bottom-title(data-scroll="") тестдрайв приложения
         .app__bottom-container
@@ -218,7 +276,7 @@
                 data-scroll-class="slideUp" 
                 )
                 .app__bottom-img
-                    img(src="img/app/app-9.png" alt="mobile-app.png")
+                    img(src="img/app/app-9.png" alt="mobile-app")
                     .app__bottom-ellipse
             .app__bottom-item(
                 data-scroll="" 
