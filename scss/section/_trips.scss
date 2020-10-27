@@ -66,9 +66,9 @@
 
 	&__top__arrows {
         position: absolute;
-        bottom: 0;
         right: 0;
         display: flex;
+        bottom: -10vh;
 	}
 
 	&__top_a {
@@ -133,6 +133,7 @@
 	&__block__under {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
 	}
 
 	&__block__sub {

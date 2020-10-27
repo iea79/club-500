@@ -1662,9 +1662,9 @@ body {
 }
 .travel__top__arrows {
   position: absolute;
-  bottom: 0;
   right: 0;
   display: flex;
+  bottom: -10vh;
 }
 .travel__top_a {
   border-radius: 50%;
@@ -1719,6 +1719,7 @@ body {
 .travel__block__under {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .travel__block__sub {
   font-weight: 500;
