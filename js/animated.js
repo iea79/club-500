@@ -100,6 +100,29 @@ scroll.destroy();
         });
     });
 
+    $('.js_action').click(function(){
+        $('.steps__modal').addClass('open');
+        $('body').addClass('no-scroll');
+        scroll.stop();
+        $(document).mousedown(function (e){
+            var modal = $(this).find('.modal__block');
+            if (!modal.is(e.target)
+            && modal.has(e.target).length === 0) {
+                $('.modal').removeClass('open');
+                $('body').removeClass('no-scroll');
+                scroll.update();
+                scroll.start();
+            }
+        });
+    });
+
+    $('.modal__close').click(function(){
+        $('.modal').removeClass('open');
+        $('body').removeClass('no-scroll');
+        scroll.update();
+        scroll.start();
+    });
+
 
     // CURSOR
     function showCoursor(el, text) {
