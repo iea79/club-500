@@ -1,0 +1,218 @@
+.trips {
+
+}
+
+.travel {
+
+	&__top {
+
+	}
+
+	&__switch__travel {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 130%;
+        letter-spacing: -0.035em;
+        color: #219653;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 62px;
+        margin-right: 20px;
+        background-color: transparent;
+        padding: 10px;
+        outline: none;
+	}
+
+	&__switch__business {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 130%;
+        letter-spacing: -0.035em;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 62px;
+        background-color: transparent;
+        padding: 10px;
+        outline: none;
+	}
+
+	&__top__title {
+        font-size: 14em;
+        color: #219653;
+        letter-spacing: -0.07em;
+        font-weight: 300;
+        line-height: 79.6%;
+        text-align: right;
+        margin: 0 30px;
+        margin-top: 130px;
+	}
+
+	&__top__sub {
+        font-weight: 300;
+        font-size: 14em;
+        line-height: 83.1%;
+        letter-spacing: -0.07em;
+        color: #FFFFFF;
+        text-align: left;
+        position: relative;
+        margin: 0 30px;
+        margin-top: 160px;
+        z-index: 1;
+        position: relative;
+	}
+
+	&__top__arrows {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+	}
+
+	&__top_a {
+        border-radius: 50%;
+        height: 180px;
+        width: 180px;
+        border: 3px solid #ffffff;
+        color: #ffffff;
+        background-color: transparent;
+        display: block;
+        &:first-child {
+            background-color: #ffffff;
+            color: #000000;
+        }
+	}
+
+	&__blocks {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        margin-top: 190px;
+	}
+
+	&__blocks__block {
+        width: 50%;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       min-height: 540px;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       padding: 30px;
+       position: relative;
+       z-index: 2;
+        &:last-child {
+            background-color: #219653;
+        }
+	}
+
+	&__block__date {
+        font-weight: normal;
+        font-size: 56px;
+        line-height: 103.5%;
+        letter-spacing: -0.045em;
+        color: #FFFFFF;
+	}
+
+	&__block__bottom {
+
+	}
+
+	&__block__title {
+        font-weight: normal;
+        font-size: 56px;
+        line-height: 94.6%;
+        letter-spacing: -0.035em;
+        margin-bottom: 40px;
+	}
+
+	&__block__under {
+        display: flex;
+        justify-content: space-between;
+	}
+
+	&__block__sub {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: -0.035em;
+        max-width: 440px;
+	}
+
+	&__block__price {
+        font-weight: normal;
+        font-size: 56px;
+        line-height: 94.6%;
+        letter-spacing: -0.035em;
+	}
+
+	&__block__require {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: -0.035em;
+	}
+
+	&__block__tags {
+        margin-top: 25px;
+        margin-left: 45px;
+        display: flex;
+	}
+
+	&__block__tag {
+        border: 1px solid #FFFFFF;
+        border-radius: 37.6429px;
+        background-color: transparent;
+        margin: 0 6px;
+        font-weight: 500;
+        font-size: 14.5714px;
+        line-height: 130%;
+        letter-spacing: -0.035em;
+        color: #FFFFFF;
+        padding: 10px;
+	}
+
+	&__block__last {
+        font-weight: normal;
+        font-size: 86px;
+        line-height: 94.6%;
+        letter-spacing: -0.07em;
+        color: #000000;
+	}
+
+}
+
+.tavel__switch {
+    display: flex;
+    margin: 0 50px;
+}
+.paral{
+    position: absolute;
+    z-index: -1;
+}
+.paral1{
+    z-index: -1;
+    top: -40vh;
+    left: 25vw;
+    max-width: 400px;
+}
+.paral2{
+    display: none;
+}
+.paral3{
+    max-height: 540px;
+}
+.paral4{
+    z-index: 3;
+    max-height: 500px;
+    top: 80vh;
+    left: 36vw;
+}
+.paral5{
+    max-height: 540px;
+    left: 20%;
+}
