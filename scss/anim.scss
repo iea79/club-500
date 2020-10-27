@@ -3,7 +3,12 @@
 body {
     // overflow-x: hidden;
     // overflow-y: scroll;
-    // background-color: #000;
+    background-color: #000;
+    font-family: "Pragmatica";
+}
+
+.residents__modal {
+    z-index: 100;
 }
 
 // .viewport {
@@ -38,6 +43,10 @@ body {
 @media (min-width: 768px) {
     [data-scroll] {
         // transition: 0s;
+    }
+
+    [data-scroll-sticky] {
+        transition: transform 0s;
     }
 
     .major__networks,
@@ -153,6 +162,10 @@ body {
         // opacity: 1;
         // transform: translateY(0);
     }
+}
+
+.major.hide {
+    z-index: 10;
 }
 
 .cursor {

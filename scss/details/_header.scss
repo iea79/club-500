@@ -1,27 +1,28 @@
-.header{
+.header {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 10;
+	z-index: 9;
 	padding: 2em 0;
-	&.active{
-		.header__left, .header__toggle{
+
+	&.active {
+		.header__left,
+		.header__toggle {
 			opacity: 0;
 			z-index: -1;
 		}
 	}
-	&.effect{
-		.header__close{
-			opacity: 1;
-			z-index: 1;
-		}
-		.header__action, .header__center{
+
+	&.effect {
+		.header__center,
+		.header__right {
 			opacity: 0;
 			z-index: -1;
 		}
 	}
-	&__container{
+
+	&__container {
 		max-width: 114.8em;
 		width: 100%;
 		padding: 0 0.95em;
@@ -30,11 +31,17 @@
 		justify-content: space-between;
 		align-items: center;
 	}
-	&__left{
+
+	&__left {
 		width: 33.3%;
 		text-align: left;
+		@media (max-width: 767px) {
+			width: 50%;
+			padding-right: 0.95em;
+		}
 	}
-	&__company{
+
+	&__company {
 		text-decoration: none;
 		display: inline-flex;
 		align-items: flex-start;
@@ -43,38 +50,63 @@
 		letter-spacing: -0.035em;
 		text-transform: uppercase;
 		color: #FFFFFF;
+		@media (max-width: 767px) {
+			font-size: 1.56em;
+		}
 	}
-	&__symbol{
-	    font-size: 0.8em;
-    	padding-left: 0.4em;
+
+	&__symbol {
+		font-size: 0.8em;
+		padding-left: 0.4em;
+		@media (max-width: 767px) {
+			font-size: 0.75em;
+			padding-left: 0.2em;
+		}
 	}
-	&__center{
+
+	&__center {
 		width: 33.3%;
 		text-align: center;
-		transition: all .5s;
+		transition: all 0.5s;
+		@media (max-width: 767px) {
+			width: 50%;
+			text-align: right;
+			padding-left: 0.95em;
+		}
 	}
-	&__toggle{
+
+	&__toggle {
 		margin: 0 0.95em;
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
 		position: relative;
 		cursor: pointer;
-		transition: all .5s;
-		&-burger{
-			span{
+		transition: all 0.5s;
+		@media (max-width: 767px) {
+			margin: 0;
+		}
+
+		&-burger {
+			span {
 				display: block;
 				width: 3em;
 				height: 0.14em;
 				background-color: #FFFFFF;
 				margin-bottom: 0.51em;
-				transition: all .5s;
-				&:last-child{
+				transition: all 0.5s;
+
+				&:last-child {
 					margin-bottom: 0;
+				}
+				@media (max-width: 767px) {
+					width: 4em;
+					height: 0.16em;
 				}
 			}
 		}
-		&-text{
+
+		&-text {
 			position: absolute;
 			left: 0;
 			opacity: 0;
@@ -83,25 +115,44 @@
 			letter-spacing: -0.035em;
 			text-transform: uppercase;
 			color: #FFFFFF;
-			transition: all .5s;
+			transition: all 0.5s;
+			@media (max-width: 767px) {
+				left: auto;
+			}
 		}
-		&:hover{
-			.header__toggle-burger span:last-child{
+
+		&:hover {
+			@media (max-width: 767px) {
+				padding-right: 5em;
+			}
+
+			.header__toggle-burger span:last-child {
 				transform: translateX(1em);
 			}
-			.header__toggle-text{
+
+			.header__toggle-text {
 				left: 100%;
 				opacity: 1;
 				padding-left: 3em;
+				@media (max-width: 767px) {
+					left: auto;
+					right: 0;
+				}
 			}
 		}
 	}
-	&__right{
+
+	&__right {
 		width: 33.3%;
 		text-align: right;
 		position: relative;
+		transition: all 0.8s;
+		@media (max-width: 767px) {
+			display: none;
+		}
 	}
-	&__action{
+
+	&__action {
 		text-decoration: none;
 		display: inline-block;
 		font-weight: 500;
@@ -109,29 +160,10 @@
 		letter-spacing: -0.035em;
 		text-transform: uppercase;
 		color: #FFFFFF;
-		transition: all .8s;
-	}
-	&__close{
-		cursor: pointer;
-		display: inline-block;
-		min-width: 1.4em;
-		max-width: 1.4em;
-		height: 1.4em;
-		background-image: url(../img/close.svg);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: contain;
-		position: absolute;
-		top: 50%;
-		right: 0;
-		transform: translate(0, -50%);
-		opacity: 0;
-		z-index: -1;
-		transition: all .8s;
 	}
 }
 
-.menu{
+.menu {
 	position: fixed;
 	top: 0;
 	left: -100%;
@@ -139,13 +171,20 @@
 	height: 100%;
 	background: rgba(30, 30, 30, 0.15);
 	backdrop-filter: blur(18px);
-	transition: all .8s;
+	transition: all 0.8s;
 	text-align: left;
 	padding: 2.1em 3.5em;
-	&.open{
+	overflow: auto;
+	@media (max-width: 767px) {
+		width: 100%;
+		padding: 0.95em;
+	}
+
+	&.open {
 		left: 0;
 	}
-	&__close{
+
+	&__close {
 		display: inline-block;
 		font-weight: 500;
 		font-size: 1em;
@@ -153,60 +192,83 @@
 		text-transform: uppercase;
 		color: #FFFFFF;
 		cursor: pointer;
-		transition: all .5s;
-		&:hover{
+		transition: all 0.5s;
+
+		&:hover {
 			color: #219653;
 		}
 	}
-	&__list{
+
+	&__list {
 		margin-top: 15em;
 		position: relative;
+		@media (max-width: 767px) {
+			margin-top: 3em;
+		}
 	}
-	&__item{
+
+	&__item {
 		display: block;
 		width: 100%;
 		padding-bottom: 0.5em;
 	}
-	&__link{
+
+	&__link {
 		text-decoration: none;
 		font-size: 2.5em;
 		line-height: 1.05em;
 		text-transform: uppercase;
 		color: #FFFFFF;
 		letter-spacing: 0.015em;
-		transition: all .5s;
-		&.active{
+		transition: all 0.5s;
+
+		&.active {
 			color: #219653;
 		}
-		&:hover{
+		@media (max-width: 767px) {
+			font-size: 1.3em;
+		}
+
+		&:hover {
 			color: #219653;
 		}
 	}
-	&__listsub{
+
+	&__listsub {
 		position: absolute;
 		max-width: 15em;
 		right: 4.2em;
 		top: 0;
 		opacity: 0;
-		transition: all .5s;
-		&.open{
+		transition: all 0.5s;
+		@media (max-width: 767px) {
+			right: 0;
+		}
+
+		&.open {
 			opacity: 1;
 		}
 	}
-	&__itemsub{
+
+	&__itemsub {
 		display: block;
 		width: 100%;
 		padding-bottom: 0.5em;
 	}
-	&__linksub{
+
+	&__linksub {
 		text-decoration: none;
 		font-size: 1.4em;
 		line-height: 1.05em;
 		text-transform: uppercase;
 		color: #FFFFFF;
 		letter-spacing: 0.015em;
-		transition: all .5s;
-		&:hover{
+		transition: all 0.5s;
+		@media (max-width: 767px) {
+			font-size: 1em;
+		}
+
+		&:hover {
 			color: #219653;
 		}
 	}

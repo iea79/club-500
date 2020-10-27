@@ -1,5 +1,5 @@
 .app(data-scroll-section="")
-    .app__first-screen
+    .app__first-screen()
         .app__circle-path(
             data-scroll="" 
             data-scroll-offset="10%"  
@@ -262,8 +262,12 @@
                 )
                 .app-grid__img   
                     img(src="img/app/app-4.png" alt="mobile-app")
-    .app__bottom
-        .app__bottom-title(data-scroll="") тестдрайв приложения
+    .app__bottom()
+        .app__bottom-title(
+            data-scroll="" 
+            data-scroll-offset="10%"  
+            data-scroll-class="fadeIn" 
+            ) тестдрайв приложения
         .app__bottom-container
             .app__bottom-item(
                 data-scroll="" 

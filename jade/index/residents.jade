@@ -1,30 +1,44 @@
 .residents(data-scroll-section="")
 
-    .residents__circle-one
-    .residents__circle-two
-    .residents__circle-three
-    .residents__circle-four
-    .residents__circle-five
-    .residents__circle-six
-    .residents__circle-seven
-    .residents__circle-eight
-    .residents__circle-nine
+    .residents__circle-one(data-scroll="" data-scroll-speed="1")
+    .residents__circle-two(data-scroll="" data-scroll-speed="3")
+    .residents__circle-three(data-scroll="" data-scroll-speed="5")
+    .residents__circle-four(data-scroll="" data-scroll-speed="2")
+    .residents__circle-five(data-scroll="")
+    .residents__circle-six(data-scroll="")
+    .residents__circle-seven(data-scroll="")
+    .residents__circle-eight(data-scroll="")
+    .residents__circle-nine(data-scroll="")
 
     .residents__head
 
-        .residents__title Резиденты
+        .residents__title(
+            data-scroll="" 
+            data-scroll-class="slideRight" 
+            data-scroll-offset="10%" 
+            ) Резиденты
 
-        .residents__titlesub club 500
+        .residents__titlesub(
+            data-scroll="" 
+            data-scroll-class="slideLeft" 
+            data-scroll-offset="10%" 
+            ) club 500
 
     .residents__set
 
-        each item in [1, 2, '', '', 5, '', 7, 8, 9, 10, '', 12, 13, '', 15, '', 17, 18, '', 19, 20, '', 22, 23, 24, 25, '', 27, '', 29]
+        - residents = [1, 2, '', '', 5, '', 7, 8, 9, 10, '', 12, 13, '', 15, '', 17, 18, '', 19, 20, '', 22, 23, 24, 25, '', 27, '', 29];
 
-            .residents__box
+        each item in residents
+
+            .residents__box(
+                data-scroll="" 
+                data-scroll-class="slideUp" 
+                data-scroll-offset="10%" 
+                )
 
                 if item !== ''
 
-                    .residents__picture
+                    .residents__picture(data-modal-id="residents-modal-"+item+"")
 
                         img(src='img/resident.jpg' class='residents__img' alt='Дмитрий Белорусов')
 
@@ -33,79 +47,3 @@
                         .residents__name Дмитрий Белорусов
 
                         .residents__post Сооснователь международного<br>интернет-холдинга Social Discovery Ventures
-
-                    .residents__modal.tab
-
-                        .residents__modal-cirsleOne
-                        .residents__modal-cirsleTwo
-
-                        img(src='img/resident-detail.png' class='residents__modal-img' alt='Дмитрий Белорусов')
-
-                        .residents__modal-head
-
-                            .residents__modal-logo club 500 <span class='residents__modal-symbol'>®</span>
-
-                            .residents__modal-nav
-
-                                .residents__modal-link.tab__item.active(data-tab='achievements'+ item +'') ДОСТИЖЕНИЯ
-
-                                .residents__modal-link.tab__item(data-tab='about'+ item +'') О СЕБЕ
-
-                            .residents__modal-close
-
-                        .residents__modal-body
-
-                            .residents__modal-forename
-
-                                .residents__modal-name Дмитрий
-
-                                .residents__modal-surname Белорусов
-
-                            .residents__modal-post контент-маркетолог
-
-                            .tab__mass.open(id='achievements'+ item +'')
-
-                                .residents__modal-mass
-
-                                    .residents__modal-facts
-
-                                        .residents__modal-cell
-
-                                            .residents__modal-value <span>12</span> лет
-
-                                            .residents__modal-property Экспертизы
-
-                                        .residents__modal-cell
-
-                                            .residents__modal-value <span>340</span>
-
-                                            .residents__modal-property Проектов
-
-                                        .residents__modal-cell
-
-                                            .residents__modal-value <span>2,2</span> млрд.р
-
-                                            .residents__modal-property Общая прибыль
-
-                                    .residents__modal-skills
-
-                                        .residents__modal-topic навыки
-
-                                        .residents__modal-set
-                                            .residents__modal-elem Оптовая торговля
-                                            .residents__modal-elem Digital
-
-                                        .residents__modal-set
-                                            .residents__modal-elem Оптовая торговля
-
-                                    .residents__modal-networks
-
-                                        a(href='#').residents__modal-icon
-                                            img(src='img/facebook.svg' alt='residents__modal-icon')
-
-                                        a(href='#').residents__modal-icon
-                                            img(src='img/instagram.svg' alt='residents__modal-icon')
-
-                            .tab__mass(id='about'+ item +'')
-
-                                .residents__modal-about О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ

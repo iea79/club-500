@@ -1,30 +1,33 @@
 import LocomotiveScroll from 'locomotive-scroll';
 import { gsap, TweenLite, TweenMax, TimelineLite, TimelineMax } from "gsap";
 
+let container = document.querySelector('[data-scroll-container]'),
+    // elem = document.querySelector('[data-scroll]'),
+    soc = document.querySelector('.major__networks'),
+    aTitle = document.querySelector('.about__title'),
+    year = document.querySelector('.major__year'),
+    cursor = document.querySelector('.cursor'),
+    media = document.querySelector('.media'),
+    isDesktop = $(window).width() >= 768;
+
+
+const scroll = new LocomotiveScroll({
+    el: container,
+    smooth: true,
+    smoothMobile: false,
+    scrollFromAnywhere: true
+});
+
+scroll.destroy();
+
 (function() {
 
 
-    let container = document.querySelector('[data-scroll-container]'),
-        // elem = document.querySelector('[data-scroll]'),
-        soc = document.querySelector('.major__networks'),
-        aTitle = document.querySelector('.about__title'),
-        year = document.querySelector('.major__year'),
-        cursor = document.querySelector('.cursor'),
-        isDesktop = $(window).width() >= 768;
-
-
-    const scroll = new LocomotiveScroll({
-        el: container,
-        smooth: true,
-        smoothMobile: false,
-        scrollFromAnywhere: true
-    });
-
-    scroll.destroy();
-
     scroll.on('call', (e, i, f) => {
 
-        "fadeIn" === console.log(e, i, f);
+        console.log(e, i, f);
+
+        // "fadeIn" === console.log(e, i, f);
 
         // "lazyload" === e && t.lazyLoad(i, n),
         // "updateBg" === e && t.updateBg(i, n),
@@ -35,6 +38,66 @@ import { gsap, TweenLite, TweenMax, TimelineLite, TimelineMax } from "gsap";
         // "scaleImg" === e && t.scaleImg(i, n),
         // "toggleVideo" === e && t.toggleVideo(i, n)
 
+    });
+
+    $('.media__logo').click(function(){
+        let id = $(this).attr('data-modal-id'),
+            modal = $('#' + id);
+
+        // console.log($(window).height());
+        console.log($('body').offset().top);
+        modal
+            .height($(window).height())
+            .addClass('open');
+        // $('body').addClass('no-scroll');
+        scroll.stop();
+        $(document).mousedown(function (e){
+            var modalContent = $('.media__modal-block');
+            if (!modalContent.is(e.target)
+            && modalContent.has(e.target).length === 0) {
+                $('.media__modal').removeClass('open');
+                $('body').removeClass('no-scroll');
+                scroll.start();
+                scroll.update();
+            }
+        });
+    });
+
+    $('.media__modal-close').click(function(){
+        $('.media__modal').removeClass('open');
+        $('body').removeClass('no-scroll');
+        scroll.start();
+        scroll.update();
+    });
+
+    if (isXsWidth()) {
+        $('.media__box').each(function( index, element ) {
+            if ($(this).children('.media__logo').length == 1)  {
+                $(this).css('display', 'block');
+            } else {
+                $(this).css('display', 'none');
+            }
+        });
+    }
+
+    $('.residents__picture').click(function(){
+
+        let id = $(this).attr('data-modal-id'),
+            modal = $('#' + id);
+
+        modal.fadeIn('500', function() {
+            $('body').addClass('no-scroll');
+        });
+
+        if (isXsWidth()) {
+            modal.find('.residents__modal-post').after(modal.find(".residents__modal-img"));
+        }
+    });
+
+    $('.residents__modal-close').click(function(){
+        $('.residents__modal').fadeOut('500', function() {
+            $('body').removeClass('no-scroll');
+        });
     });
 
 
@@ -88,6 +151,7 @@ import { gsap, TweenLite, TweenMax, TimelineLite, TimelineMax } from "gsap";
                 showCoursor(".major__stencil", 'Смотреть видео');
                 showCoursor(".media__logo", 'Читать');
                 showCoursor(".poster__descr", 'Подробнее');
+                showCoursor(".residents__picture", 'Подробнее');
             }
         } else {
             $(cursor).removeAttr('style');
