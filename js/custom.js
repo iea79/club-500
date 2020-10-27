@@ -63,17 +63,6 @@ $(document).ready(function(){
         $('#majorVideo').trigger('play');
     });
 
-
-    $('.tab__item').click(function() {
-        var tab_id = $(this).attr('data-tab'),
-        $container = $(this).closest('.tab');
-        $container.find('.tab__item').removeClass('active');
-        $container.find('.tab__mass').removeClass('open');
-
-        $(this).addClass('active');
-        $("#" + tab_id).addClass('open');
-    });
-
     $('#majorVideo').on('click', function() {
         if (!$(this).hasClass('play')) {
             $(this).addClass('play');
@@ -91,6 +80,17 @@ $(document).ready(function(){
         var currentTime = majorVideo.currentTime;
         var duration = majorVideo.duration;
         $('.major__video-current').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
+    });
+
+
+    $('.tab__item').click(function() {
+        var tab_id = $(this).attr('data-tab'),
+        $container = $(this).closest('.tab');
+        $container.find('.tab__item').removeClass('active');
+        $container.find('.tab__mass').removeClass('open');
+
+        $(this).addClass('active');
+        $("#" + tab_id).addClass('open');
     });
 
     $('.dom__counter__all').text($('.dom__slider__block').length)
@@ -116,4 +116,74 @@ $(document).ready(function(){
          focusOnSelect: true
     });
 
+
+
+    let step = -1;
+
+    setInterval(function($items) {
+        $items.eq(step).removeClass('active');
+        step = (step + 1) % $items.length;
+        $items.eq(step).addClass('active');
+    }, 400, $('.steps__action-arrow'));
+
+    $('.poster__month').on('click', function() {
+        if (isXsWidth()) {
+            let events = $(this).data('events-month');
+            $('.poster__img').hide();
+            $('[data-events-month="'+events+'"]').show();
+        }
+    });
+
 });
+
+document.addEventListener('DOMContentLoaded', function(){
+    // начало Модалки секции тарифы
+    const tarrifModalOpen = () => {
+        let modalOpen = document.getElementById('wrap-modal'),
+        modal__item = modalOpen.querySelectorAll('.tarrifs-modal__open'),
+        modal__column = document.querySelectorAll('.tarrifs__column'),
+        modal__close = document.querySelector('.tarrifs__title');
+
+        modalOpen.onclick = () => {
+            event.preventDefault();
+
+            let click = event.target;
+
+            if (click.classList.contains('tarrifs-modal__open')) {
+
+                let clickAttr = click.getAttribute('data-open');
+
+                switch (clickAttr) {
+                    case 'start':
+                    modalActiveClose(modal__column, 'start')
+                    break;
+                    case 'vip':
+                    modalActiveClose(modal__column, 'vip')
+                    break;
+                    case 'member':
+                    modalActiveClose(modal__column, 'member')
+
+                    break;
+                }
+            }
+        }
+
+    }
+
+    let modalActiveClose = (arr, attr) => {
+        let clos,
+        item;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i].getAttribute('data-tarrifs') == attr) {
+                arr[i].classList.add('active');
+                item = arr[i];
+                clos = arr[i].querySelector('.tarrifs__column-close');
+            }
+        }
+        clos.onclick = () => {
+            item.classList.remove('active');
+        }
+    }
+    tarrifModalOpen();
+    // конец Модалки секции тарифы
+})

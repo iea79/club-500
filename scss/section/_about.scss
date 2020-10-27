@@ -81,6 +81,9 @@
 			opacity: 0.8;
 			filter: blur(159px);
 			transform: rotate(60deg);
+			@media (max-width: 767px) {
+				display: none;
+			}
 		}
 	}
 	&__container{
