@@ -63,6 +63,25 @@ $(document).ready(function(){
         $('#majorVideo').trigger('play');
     });
 
+    $('#majorVideo').on('click', function() {
+        if (!$(this).hasClass('play')) {
+            $(this).addClass('play');
+            $(this).trigger('pause');
+            $('.major__video-status').html('ВОСПРОИЗВЕСТИ');
+        } else {
+            $(this).removeClass('play');
+            $(this).trigger('play');
+            $('.major__video-status').html('ПАУЗА');
+        }
+    });
+
+    var majorVideo = document.getElementById('majorVideo');    
+    majorVideo.addEventListener("timeupdate", function() {
+        var currentTime = majorVideo.currentTime;
+        var duration = majorVideo.duration;
+        $('.major__video-current').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
+    });
+
     $('.media__logo').click(function(){
         $(this).next('.media__modal').addClass('open');
         $('body').addClass('no-scroll');
@@ -120,23 +139,31 @@ $(document).ready(function(){
         });
     });
 
-    $('#majorVideo').on('click', function() {
-        if (!$(this).hasClass('play')) {
-            $(this).addClass('play');
-            $(this).trigger('pause');
-            $('.major__video-status').html('ВОСПРОИЗВЕСТИ');
-        } else {
-            $(this).removeClass('play');
-            $(this).trigger('play');
-            $('.major__video-status').html('ПАУЗА');
-        }
+    
+    $('.steps__action').click(function(){
+        $('.steps__modal').addClass('open');
+        $('body').addClass('no-scroll');
+        $(document).mousedown(function (e){
+            var modal = $(this).find('.modal__block'); 
+            if (!modal.is(e.target)
+            && modal.has(e.target).length === 0) {
+                $('.modal').removeClass('open');
+                $('body').removeClass('no-scroll');
+            }
+        });
     });
 
-    var majorVideo = document.getElementById('majorVideo');    
-    majorVideo.addEventListener("timeupdate", function() {
-        var currentTime = majorVideo.currentTime;
-        var duration = majorVideo.duration;
-        $('.major__video-current').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
+    $('.modal__close').click(function(){
+        $('.modal').removeClass('open');
+        $('body').removeClass('no-scroll');
     });
+
+    let step = -1;
+
+    setInterval(function($items) {
+        $items.eq(step).removeClass('active');
+        step = (step + 1) % $items.length;
+        $items.eq(step).addClass('active');
+    }, 400, $('.steps__action-arrow'));
 
 });

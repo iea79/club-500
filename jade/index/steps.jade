@@ -4,6 +4,10 @@
 
 		.steps__title отбор резидентов club 500
 
+		.steps__title-mob чтобы стать резидентом клуба
+
+		.steps__appeal сделай <span class='steps__appeal-num'>4</span> шага
+
 		.steps__set
 
 			.steps__row
@@ -18,6 +22,8 @@
 
 				.steps__name консультация
 
+				.steps__prompt с личным менеджером
+
 			.steps__row
 
 				.steps__num 3
@@ -30,9 +36,13 @@
 
 				.steps__name проверка
 
+				.steps__num.mob 5
+
+				.steps__prompt службой безопасности
+
 			.steps__row
 
-				.steps__num 5
+				.steps__num.pc 5
 
 				.steps__name посвящение
 
@@ -42,6 +52,52 @@
 				.steps__action-text заявку <span class='steps__action-arrow'><img src='img/steps-arrow.svg'></span><span class='steps__action-arrow'><img src='img/steps-arrow.svg'></span><span class='steps__action-arrow'><img src='img/steps-arrow.svg'></span>
 
 
-.steps__modal
+.modal.steps__modal
 
-	
+	.modal__block
+
+		.modal__head
+
+			.modal__logo club 500 <span class='modal-symbol'>®</span>
+
+			.modal__close
+
+		.modal__mass
+
+			.modal__title получите доступ в club 500
+
+			form.modal__form
+
+				.modal__row
+
+					input(type='text' class='modal__field' placeholder='Ваше имя')
+
+				.modal__row
+
+					input(type='text' class='modal__field' placeholder='Сфера бизнеса')
+
+					.modal__icon
+
+						img(src='img/steps-icon.svg')
+
+				.modal__row.none
+
+					input(type='text' class='modal__field' placeholder='Обород компании в год')
+
+				.modal__row.none
+
+					input(type='text' class='modal__field' placeholder='Личный доход в год')
+
+				.modal__row
+
+					input(type='email' class='modal__field' placeholder='Email')
+
+				.modal__row
+
+					input(type='tel' class='modal__field' placeholder='Телефон')
+
+				.modal__cellar
+
+					button(class='modal__btn') отправить
+
+					.modal__notice Нажимая на кнопку отправить, вы даете согласие на обработку персональных данных
