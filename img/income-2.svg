@@ -1,9 +1,34 @@
-<svg width="101" height="231" viewBox="0 0 101 231" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M35.9918 230.847C21.5073 213.823 10.9831 193.794 5.1791 172.208C-0.62494 150.622 -1.56413 128.016 2.42933 106.023C6.42279 84.0298 15.2493 63.1975 28.2717 45.0297C41.2941 26.862 58.1877 11.812 77.7329 0.966158L100.091 41.257C86.5099 48.7933 74.7715 59.2506 65.723 71.8744C56.6744 84.4981 50.5414 98.9733 47.7665 114.255C44.9917 129.537 45.6443 145.244 49.6772 160.243C53.7101 175.242 61.0227 189.159 71.0872 200.989L35.9918 230.847Z" fill="url(#paint0_radial)" fill-opacity="0.18"/>
-<defs>
-<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(174.5 131) rotate(169.174) scale(162.39)">
-<stop offset="0.541985" stop-opacity="0"/>
-<stop offset="0.905492" stop-color="#219653"/>
-</radialGradient>
-</defs>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg13"
+   version="1.1"
+   fill="none"
+   viewBox="0 0 303 303"
+   height="303"
+   width="303">
+  <metadata
+     id="metadata17">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     id="path2"
+     stroke="#5B5B5B"
+     d="M36.8488 249C14.492 222.736 1 188.694 1 151.5C1 68.3811 68.3811 1 151.5 1C234.619 1 302 68.3811 302 151.5C302 188.694 288.508 222.736 266.151 249" />
+  <path
+     id="path824"
+     d="M 53.923729,234.31144 C -2.5521488,167.31794 24.567625,73.770945 90.193855,39.158897"
+     style="fill:none;stroke:#219653;stroke-width:44;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.15686275" />
 </svg>

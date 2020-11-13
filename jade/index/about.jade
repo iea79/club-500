@@ -4,46 +4,39 @@
     .about__circle-two(data-scroll="" data-scroll-speed="3")
     .about__circle-three(data-scroll="" data-scroll-speed="2")
     .about__circle-four(data-scroll="" data-scroll-speed="4")
-    .about__circle-blur(data-scroll="" data-scroll-speed="1")
+    //- .about__circle-blur
 
-    .about__container
+    .about__container(data-scroll="" data-scroll-call="about")
 
-        .about__title(data-scroll="" 
-            data-scroll-offset="0"  
-            data-scroll-repeat="" 
-            data-scroll-class="showTitle" 
-            data-scroll-call="lazyload" 
-            ) club 500
+        .about__title
+            span(data-scroll="" 
+                data-scroll-offset="0"  
+                data-scroll-class="showTitle" 
+                ) club 500
 
             .about__titlesub(data-scroll="" 
                 data-scroll-offset="0"  
-                data-scroll-repeat="" 
                 data-scroll-class="showTitle" 
-                data-scroll-call="lazyload" 
                 ) —это
 
         .about__set
 
             .about__unit(data-scroll=""
-                data-scroll-offset="100"  
-                data-scroll-position="top" 
+                data-scroll-offset="10%"  
                 data-scroll-class="slideUp" 
-                data-scroll-delay="0"
                 )
                 .about__unit-num 40
                 .about__unit-name стран
 
             .about__unit(data-scroll=""
-                data-scroll-offset="150"  
-                data-scroll-position="top" 
+                data-scroll-offset="15%"  
                 data-scroll-class="slideUp" 
                 )
                 .about__unit-num 100+
-                .about__unit-name меропритяий<br>в год
+                .about__unit-name мероприятий<br>в год
 
             .about__unit(data-scroll=""
-                data-scroll-offset="200"  
-                data-scroll-position="top" 
+                data-scroll-offset="20%"  
                 data-scroll-class="slideUp" 
                 )
                 .about__unit-num 500
@@ -51,7 +44,6 @@
 
             .about__unit(data-scroll=""
                 data-scroll-offset="240"  
-                data-scroll-position="top" 
                 data-scroll-class="slideUp" 
                 )
-                .about__unit-link СТАТЬ<br>РЕЗИДЕНТОВ<br>КЛУБА
+                .about__unit-link.js_action СТАТЬ<br>РЕЗИДЕНТОВ<br>КЛУБА

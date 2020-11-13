@@ -27,7 +27,7 @@
         .innumber__item
             .innumber__name оборот компани
             .innumber__counter
-                .innumber__counterNum 300
+                .innumber__counterNum 300+
                 .innumber__counterLabel млн в год
 
     .innumber__row(
@@ -50,15 +50,15 @@
             .innumber__income
                 .innumber__incomeItem
                     .innumber__round
-                        img(src="img/income-ellips.svg", alt="")
+                        //- img(src="img/income-ellips.svg", alt="")
                         img(src="img/income-1.svg", alt="")
                     .innumber__incomeContent
-                        .innumber__incomeNum 15%
+                        .innumber__incomeNum 13%
                         .innumber__incomeLabel 1 — 3 млн ₽
 
                 .innumber__incomeItem
                     .innumber__round
-                        img(src="img/income-ellips.svg", alt="")
+                        //- img(src="img/income-ellips.svg", alt="")
                         img(src="img/income-2.svg", alt="")
                     .innumber__incomeContent
                         .innumber__incomeNum 25%
@@ -66,15 +66,15 @@
 
                 .innumber__incomeItem
                     .innumber__round
-                        img(src="img/income-ellips.svg", alt="")
+                        //- img(src="img/income-ellips.svg", alt="")
                         img(src="img/income-3.svg", alt="")
                     .innumber__incomeContent
-                        .innumber__incomeNum 20%
+                        .innumber__incomeNum 22%
                         .innumber__incomeLabel 5 — 10 млн ₽
 
                 .innumber__incomeItem
                     .innumber__round
-                        img(src="img/income-ellips.svg", alt="")
+                        //- img(src="img/income-ellips.svg", alt="")
                         img(src="img/income-4.svg", alt="")
                     .innumber__incomeContent
                         .innumber__incomeNum 40%
@@ -93,16 +93,19 @@
                     data-scroll-offset="20%" 
                     data-scroll-class="slideLeft"
                     ) услуги
+                    .innumber__profPercent 28%
                 .innumber__profItem(
                     data-scroll="" 
                     data-scroll-offset="40%" 
                     data-scroll-class="slideLeft"
                     ) производство
+                    .innumber__profPercent 40%
                 .innumber__profItem(
                     data-scroll="" 
                     data-scroll-offset="60%" 
                     data-scroll-class="slideLeft"
                     ) продажи
+                    .innumber__profPercent 32%
 
     .innumber__row(
         data-scroll="" 
@@ -114,7 +117,7 @@
             .innumber__gender
                 .innumber__genderPhoto
                     img(src="img/man.png", alt="")
-                    .innumber__genderPercent 90%
+                    .innumber__genderPercent 86%
                 .innumber__genderName мужчины
 
         .innumber__item
@@ -122,7 +125,7 @@
             .innumber__gender
                 .innumber__genderPhoto
                     img(src="img/woman.png", alt="")
-                    .innumber__genderPercent 10%
+                    .innumber__genderPercent 14%
                 .innumber__genderName.innumber__genderName_woman женщины
 
 
@@ -136,19 +139,19 @@
             .innumber__place
                 .innumber__placeRow
                     .innumber__placeLine
-                        .innumber__placeImg(style="width: 50%")
+                        .innumber__placeImg(style="width: 50%" data-scroll="" data-scroll-class="animCity")
                             img(src="img/chart-1.svg", alt="")
-                        .innumber__placePercent 50%
+                        .innumber__placePercent 46%
                     .innumber__placeLabel москва
                 .innumber__placeRow
                     .innumber__placeLine
-                        .innumber__placeImg(style="width: 40%")
+                        .innumber__placeImg(style="width: 40%" data-scroll="" data-scroll-class="animCity")
                             img(src="img/chart-2.svg", alt="")
-                        .innumber__placePercent 40%
+                        .innumber__placePercent 33%
                     .innumber__placeLabel регионы
                 .innumber__placeRow
                     .innumber__placeLine
-                        .innumber__placeImg(style="width: 23%")
+                        .innumber__placeImg(style="width: 23%" data-scroll="" data-scroll-class="animCity")
                             img(src="img/chart-3.svg", alt="")
-                        .innumber__placePercent 20%
+                        .innumber__placePercent 21%
                     .innumber__placeLabel зарубеж

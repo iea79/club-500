@@ -1,5 +1,5 @@
 .app(data-scroll-section="")
-    .app__first-screen()
+    .app__first-screen(data-scroll="")
         .app__circle-path(
             data-scroll="" 
             data-scroll-offset="10%"  
@@ -45,10 +45,8 @@
             data-scroll-offset="30%"  
             data-scroll-class="fadeIn" 
             ) В приложении GarageBand для iOS играть и записывать музыку невероятно просто. И так же просто поделиться ею со всем миром, где бы вы ни находились. Одним касанием выбирайте любые музыкальные инструменты, включая этнические. И бесплатно загружайте наборы инструментов и лупов после каждого нового релиза — для этого есть новая функция «Фонотека». Вам не составит труда записать композицию в вашем любимом стиле. Всё, что для этого нужно, — только iPhone, iPad или iPod touch.
-    .app__main()
-        .app-grid(
-            data-scroll="" 
-            )
+    .app__main
+        .app-grid
             .app-grid__item.app-grid__item_middle.app-grid__item_desctop(
                 data-scroll="" 
                 data-scroll-offset="10%"  
@@ -58,18 +56,27 @@
                 .app-grid__name раздела  app
             .app-grid__item.app-grid__item_mobile.app-grid__item_full
                 .app-grid__info
-                    .app-grid__info-icon
+                    .app-grid__info-icon(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideUp" 
+                        )
                         img(src="img/app/icon/base.svg" alt="base")
-                    .app-grid__info-title База знаний
-                    .app-grid__info-descript В приложении GarageBand для iOS играть и записывать музыку невероятно просто. И так же просто поделиться ею со всем миром, где бы вы ни находились. Одним касанием выбирайте любые музыкальные инструменты, включая этнические. 
+                    .app-grid__info-title(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideUp" 
+                        ) База знаний
+                    .app-grid__info-descript(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideUp" 
+                        ) В приложении GarageBand для iOS играть и записывать музыку невероятно просто. И так же просто поделиться ею со всем миром, где бы вы ни находились. Одним касанием выбирайте любые музыкальные инструменты, включая этнические. 
             .app-grid__item
-                .app-grid__img.app-grid__img_ellipse
-                    img(src="img/app/app-1.png" alt="mobile-app")
-            .app-grid__item.app-grid__item_small.app-grid__item_center-center.app-grid__item_desctop(
-                data-scroll="" 
-                data-scroll-offset="10%" 
-                data-scroll-class="fadeIn" 
-                )
+                //- .app-grid__img.app-grid__img_ellipse
+                .app-grid__img
+                    img(src="img/app/min/app-1.png" alt="mobile-app")
+            .app-grid__item.app-grid__item_small.app-grid__item_center-center.app-grid__item_desctop
                 .app-grid__title(
                     data-scroll="" 
                     data-scroll-offset="10%" 
@@ -83,12 +90,8 @@
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img
-                    img(src="img/app/app-2.png" alt="mobile-app")
-            .app-grid__item.app-grid__item_big.app-grid__item_desctop(
-                data-scroll="" 
-                data-scroll-offset="10%" 
-                data-scroll-class="slideUp" 
-                )
+                    img(src="img/app/min/app-2.png" alt="mobile-app")
+            .app-grid__item.app-grid__item_big.app-grid__item_desctop
                 .app-grid__descript
                     .app-grid__title(
                         data-scroll="" 
@@ -130,14 +133,14 @@
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img
-                    img(src="img/app/app-3.png" alt="mobile-app")
+                    img(src="img/app/min/app-3.png" alt="mobile-app")
             .app-grid__item(
                 data-scroll="" 
                 data-scroll-offset="15%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img
-                    img(src="img/app/app-4.png" alt="mobile-app")
+                    img(src="img/app/min/app-4.png" alt="mobile-app")
             .app-grid__item.app-grid__item_mobile.app-grid__item_full
                 .app-grid__info
                     .app-grid__info-icon
@@ -150,14 +153,14 @@
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img   
-                    img(src="img/app/app-5.png" alt="mobile-app")
+                    img(src="img/app/min/app-5.png" alt="mobile-app")
             .app-grid__item(
                 data-scroll="" 
                 data-scroll-offset="15%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img   
-                    img(src="img/app/app-6.png" alt="mobile-app")
+                    img(src="img/app/min/app-6.png" alt="mobile-app")
             .app-grid__item.app-grid__item_big.app-grid__item_center-center.app-grid__item_desctop(
                 data-scroll="" 
                 data-scroll-offset="20%"  
@@ -180,15 +183,19 @@
                         data-scroll-offset="25%"  
                         data-scroll-class="slideUp" 
                         )
-                        img(src="img/app/widgets.png" alt="widgets")
+                        img(src="img/app/min/widgets.png" alt="widgets")
             .app-grid__item.app-grid__item_ticket.app-grid__item_desctop(
                 data-scroll="" 
                 data-scroll-offset="5%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img   
-                    img(src="img/app/ticket.png" alt="ticket")
-            .app-grid__item.app-grid__item_mobile.app-grid__item_full
+                    img(src="img/app/min/ticket.png" alt="ticket")
+            .app-grid__item.app-grid__item_mobile.app-grid__item_full(
+                data-scroll="" 
+                data-scroll-offset="5%"  
+                data-scroll-class="slideUp" 
+                )
                 .app-grid__info
                     .app-grid__info-icon
                         img(src="img/app/icon/map.svg" alt="map")
@@ -200,14 +207,14 @@
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img   
-                    img(src="img/app/app-7.png" alt="mobile-app")
+                    img(src="img/app/min/app-7.png" alt="mobile-app")
             .app-grid__item(
                 data-scroll="" 
                 data-scroll-offset="15%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img   
-                    img(src="img/app/app-8.png" alt="mobile-app")
+                    img(src="img/app/min/app-8.png" alt="mobile-app")
             .app-grid__item.app-grid__item_center-start.app-grid__item_desctop
                 .app-grid__descript
                     .app-grid__title(
@@ -222,7 +229,11 @@
                         data-scroll-offset="15%"  
                         data-scroll-class="fadeIn" 
                         ) В приложении GarageBand для iOS играть и записывать музыку невероятно просто. И так же просто поделиться ею со всем миром, где бы вы ни находились.
-            .app-grid__item.app-grid__item_mobile.app-grid__item_full
+            .app-grid__item.app-grid__item_mobile.app-grid__item_full(
+                data-scroll="" 
+                data-scroll-offset="15%"  
+                data-scroll-class="slideUp" 
+                )
                 .app-grid__info
                     .app-grid__info-icon
                         img(src="img/app/icon/event.svg" alt="event")
@@ -234,15 +245,19 @@
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img   
-                    img(src="img/app/app-1.png" alt="mobile-app")
+                    img(src="img/app/min/app-1.png" alt="mobile-app")
             .app-grid__item.app-grid__item_mobile(
                 data-scroll="" 
                 data-scroll-offset="15%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img   
-                    img(src="img/app/app-2.png" alt="mobile-app")
-            .app-grid__item.app-grid__item_mobile.app-grid__item_full
+                    img(src="img/app/min/app-2.png" alt="mobile-app")
+            .app-grid__item.app-grid__item_mobile.app-grid__item_full(
+                data-scroll="" 
+                data-scroll-offset="20%"  
+                data-scroll-class="slideUp" 
+                )
                 .app-grid__info
                     .app-grid__info-icon
                         img(src="img/app/icon/news.svg" alt="news")
@@ -254,15 +269,15 @@
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img   
-                    img(src="img/app/app-3.png" alt="mobile-app")
+                    img(src="img/app/min/app-3.png" alt="mobile-app")
             .app-grid__item.app-grid__item_mobile(
                 data-scroll="" 
                 data-scroll-offset="15%"  
                 data-scroll-class="slideUp" 
                 )
                 .app-grid__img   
-                    img(src="img/app/app-4.png" alt="mobile-app")
-    .app__bottom()
+                    img(src="img/app/min/app-4.png" alt="mobile-app")
+    //- .app__bottom(data-scroll="")
         .app__bottom-title(
             data-scroll="" 
             data-scroll-offset="10%"  
@@ -280,7 +295,7 @@
                 data-scroll-class="slideUp" 
                 )
                 .app__bottom-img
-                    img(src="img/app/app-9.png" alt="mobile-app")
+                    img(src="img/app/min/app-9.png" alt="mobile-app")
                     .app__bottom-ellipse
             .app__bottom-item(
                 data-scroll="" 

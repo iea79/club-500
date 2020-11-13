@@ -1,15 +1,16 @@
-.about{
-	padding: 14.5em 0;
+.about {
+	padding: 12.3em 0;
 	text-align: center;
 	position: relative;
-	@media (max-width: 767px) {
-		padding: 12.3em 0;
+	@media (min-width: 768px) {
+		padding: 14.5em 0;
 	}
-	&__circle{
-		&-one{
+
+	&__circle {
+		&-one {
 			position: absolute;
-		    right: 7.8em;
-    		top: 15.3em;
+			right: 7.8em;
+			top: 15.3em;
 			background: linear-gradient(130.42deg, #6FC7B5 14.1%, #2F5C53 45.52%, #020202 74.85%);
 			width: 12.82em;
 			height: 12.82em;
@@ -18,14 +19,15 @@
 			@media (max-width: 767px) {
 				width: 7.2em;
 				height: 7.2em;
-            	left: 14.7em;
-    			top: 64.9em;
+				left: 14.7em;
+				top: 64.9em;
 			}
 		}
-		&-two{
+
+		&-two {
 			position: absolute;
-		    left: 16.2em;
-    		top: 27.5em;
+			left: 16.2em;
+			top: 27.5em;
 			background: linear-gradient(130.42deg, #345C66 14.1%, #213734 45.52%, #020202 74.85%);
 			width: 20.02em;
 			height: 20.02em;
@@ -33,15 +35,16 @@
 			@media (max-width: 767px) {
 				width: 11.15em;
 				height: 11.15em;
-			    left: 2em;
-    			top: 9.5em;
+				left: 2em;
+				top: 9.5em;
 				z-index: 0;
 			}
 		}
-		&-three{
+
+		&-three {
 			position: absolute;
-		    right: -9.8em;
-    		top: 21.5em;
+			right: -9.8em;
+			top: 21.5em;
 			background: linear-gradient(130.42deg, #72A79D 14.1%, #314D46 39.65%, #020202 64.9%);
 			width: 71.23em;
 			height: 71.23em;
@@ -50,15 +53,16 @@
 			@media (max-width: 767px) {
 				width: 33.2em;
 				height: 33.2em;
-            	left: 16.3em;
-    			top: 42.5em;
+				left: 16.3em;
+				top: 42.5em;
 			}
 		}
-		&-four{
+
+		&-four {
 			position: absolute;
-	        left: -4.8em;
-    		top: 49.7em;
-    		background: linear-gradient(130.42deg, #73A79D 14.1%, #324C48 45.52%, #020202 74.85%);
+			left: -4.8em;
+			top: 49.7em;
+			background: linear-gradient(130.42deg, #73A79D 14.1%, #324C48 45.52%, #020202 74.85%);
 			width: 37.3em;
 			height: 37.3em;
 			border-radius: 50%;
@@ -66,14 +70,15 @@
 			@media (max-width: 767px) {
 				width: 20.8em;
 				height: 20.8em;
-		        left: -10em;
-    			top: 31.2em;
+				left: -10em;
+				top: 31.2em;
 			}
 		}
-		&-blur{
+
+		&-blur {
 			position: absolute;
-	        left: -12.2em;
-    		top: 53.7em;
+			left: -12.2em;
+			top: 53.7em;
 			width: 101em;
 			height: 101em;
 			border-radius: 50%;
@@ -86,13 +91,15 @@
 			}
 		}
 	}
-	&__container{
+
+	&__container {
 		max-width: 86em;
 		width: 100%;
 		padding: 0 0.95em;
-    	margin: 0 auto;
+		margin: 0 auto;
 	}
-	&__title{
+
+	&__title {
 		position: relative;
 		font-weight: 300;
 		font-size: 15.8em;
@@ -103,7 +110,8 @@
 		@media (max-width: 767px) {
 			font-size: 2.4em;
 		}
-		&sub{
+
+		&sub {
 			padding-top: 0.04em;
 			position: relative;
 			z-index: 2;
@@ -112,7 +120,8 @@
 			}
 		}
 	}
-	&__set{
+
+	&__set {
 		position: relative;
 		z-index: 2;
 		display: flex;
@@ -123,7 +132,8 @@
 			padding-top: 5em;
 		}
 	}
-	&__unit{
+
+	&__unit {
 		margin-top: 5em;
 		width: 33.3%;
 		color: #FFFFFF;
@@ -140,7 +150,8 @@
 			align-items: center;
 			justify-content: center;
 		}
-		&:after{
+
+		&:after {
 			content: '';
 			position: absolute;
 			right: 0;
@@ -152,45 +163,52 @@
 				height: 100%;
 			}
 		}
-		&:nth-child(3n+3):after{
+
+		&:nth-child(3n+3):after {
 			display: none;
 			@media (max-width: 767px) {
 				display: block;
 			}
 		}
-		&:nth-child(2n+2):after{
+
+		&:nth-child(2n+2):after {
 			@media (max-width: 767px) {
 				display: none;
 			}
 		}
-		&:nth-last-child(-n+2){
+
+		&:nth-last-child(-n+2) {
 			@media (max-width: 767px) {
 				border-bottom: none;
-			}		
+			}
 		}
-		&:last-child{
+
+		&:last-child {
 			display: none;
 			@media (max-width: 767px) {
 				display: block;
 			}
 		}
-		&-num{
+
+		&-num {
 			font-size: 5.6em;
 			@media (max-width: 767px) {
 				font-size: 5em;
 			}
 		}
-		&-name{
+
+		&-name {
 			padding-top: 2.6em;
 			font-weight: 500;
 			font-size: 1.5em;
-		    letter-spacing: -0.8px;
-		    @media (max-width: 767px) {
+			letter-spacing: -0.8px;
+			@media (max-width: 767px) {
 				padding-top: 0.75em;
 				font-size: 0.78em;
 			}
 		}
-		&-link{
+
+		&-link {
 			border: 1px solid #FFFFFF;
 			width: 100%;
 			height: 100%;
@@ -199,8 +217,9 @@
 			justify-content: center;
 			border-radius: 50%;
 			font-size: 0.76em;
-			transition: all .5s;
-			&:hover{
+			transition: all 0.5s;
+
+			&:hover {
 				background-color: #FFFFFF;
 				color: #000;
 			}

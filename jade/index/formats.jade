@@ -1,5 +1,5 @@
 .formats(data-scroll-section="")
-    .formats__top
+    .formats__top(data-scroll="" data-scroll-call="update")
         .formats__title(
             data-scroll="" 
             data-scroll-offset="10%"  
@@ -9,167 +9,231 @@
             data-scroll="" 
             data-scroll-offset="10%"  
             data-scroll-class="slideLeft" 
-            ) КЛУБА
+            ) CLUB 500
     .formats__blocks
-        img(src="img/formats/Ellipse 41.png", alt="").ellipse.ellipse1
-        img(src="img/formats/Ellipse 41.png", alt="").ellipse.ellipse2
-        img(src="img/formats/Ellipse 41.png", alt="").ellipse.ellipse3
-        .formats__block(
-            data-scroll="" 
-            data-scroll-offset="10%"  
-            data-scroll-class="slideRight" 
-            )
-            img(src="img/formats/Rectangle 3.jpg", alt="").formats__block_img
-        .formats__block
-            .formats__block__title(
-                data-scroll="" 
-                data-scroll-offset="10%"  
-                data-scroll-class="slideLeft" 
-                ) БОЛЬШОЙ СЛЕТ РЕЗИДЕНТОВ
-            .formats__block__sub(
-                data-scroll="" 
-                data-scroll-offset="10%"  
-                data-scroll-class="slideLeft" 
-                ) Ставим мировой рекорд, поднявшись на самую высокую точку Африки в команде предпринимателей!
-        .formats__block(
-            data-scroll="" 
-            data-scroll-offset="10%"  
-            data-scroll-class="slideRight" 
-            )
-            .formats__block__title БОЛЬШОЙ СЛЕТ РЕЗИДЕНТОВ
-            .formats__block__sub Ставим мировой рекорд, поднявшись на самую высокую точку Африки в команде предпринимателей!
-        .formats__block(
-            data-scroll="" 
-            data-scroll-offset="10%"  
-            data-scroll-class="slideLeft" 
-            )
-            img(src="img/formats/Rectangle 4.jpg", alt="").formats__block_img
-        .formats__block.formats__block__circle 
-            img(src="img/formats/Ellipse 38.png", alt="").formats__block_img
-            div ЭКСКУРСИИ<br>В КОРПОРАЦИИ
-        .formats__block(
-            data-scroll="" 
-            data-scroll-offset="10%"  
-            data-scroll-class="slideRight" 
-            )
-        .formats__block
-            .formats__block__title(
+        //- img(src="img/formats/Ellipse_41.png", alt="").ellipse.ellipse1
+        //- img(src="img/formats/Ellipse_41.png", alt="").ellipse.ellipse2
+        //- img(src="img/formats/Ellipse_41.png", alt="").ellipse.ellipse3
+        .formats__row
+            .formats__block(
                 data-scroll="" 
                 data-scroll-offset="10%"  
                 data-scroll-class="slideRight" 
-                ) ВСТРЕЧИ СО СПИКЕРОМ
-            .formats__block__sub(
+                )
+                img(src="img/formats/formats-1.jpg", alt="").formats__block_img
+            .formats__block
+                .formats__block_text
+                    .formats__block__title(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideLeft" 
+                        ) Итоговый слет CLUB 500
+                    .formats__block__sub(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideLeft" 
+                        ) Шесть самых масштабных мероприятий клуба в год, куда слетаются резиденты со всего мира. Максимальная концентрация успеха и энергии сосредоточены в одном месте. Лучшие спикеры, масштабный нетворкинг, шоу-программа, уникальные локации. <br>Слёт — это другая реальность, где энергетика бизнес-сообщества достигает предела.
+
+        .formats__row
+            .formats__block(
                 data-scroll="" 
                 data-scroll-offset="10%"  
                 data-scroll-class="slideRight" 
-                ) Экслюзивно для резилентов клуба,мы приглашаем самых интересных спикеров из разных сфер.
-                <br>Формат проходит в 2 этапа:
-                <br><br>Выступление спикера и сессия вопросов от резидентов.
-                <br><br>Что решает?
-                <br>Глубоко изучаем опыт интереснейших спикеров и крупнейших компаний. Личное знакомство.
-                <br>Нетворкинг.
-        .formats__block
-            img(src="img/formats/Rectangle 3.jpg", alt="").formats__block_img
-        .formats__block(
-            data-scroll="" 
-            data-scroll-offset="10%"  
-            data-scroll-class="slideRight" 
-            )
-            img(src="img/formats/Rectangle 4.jpg", alt="").formats__block_img
-        .formats__block
-            .formats__block__title(
+                )
+                .formats__block_text
+                    .formats__block__title ПУТЕШЕСТВИЯ
+                    .formats__block__sub CLUB 500 - это не только про бизнес. Клуб единомышленников способных на любые подвиги. Вместе мы покоряем вершины, исследуем новые горизонты и скрытые от обычных туристов локации. Уникальные маршруты наших экспедиций - это незабываемые эмоции абсолютной свободы.
+            .formats__block(
                 data-scroll="" 
                 data-scroll-offset="10%"  
                 data-scroll-class="slideLeft" 
-                ) ИНВЕСТИЦИОННЫЙ КЛУБ
-            .formats__block__sub(
-                data-scroll="" 
-                data-scroll-offset="10%"  
-                data-scroll-class="slideLeft" 
-                ) Ставим мировой рекорд, поднявшись на самую высокую точку Африки в команде предпринимателей!
-        .formats__block
-            .formats__block__sub.formats__block__onlySub(
+                )
+                img(src="img/formats/formats-2.jpg", alt="").formats__block_img
+
+        .formats__row.formats__row_circle
+            .formats__block
+                .formats__circle 
+                    .formats__circleText ЭКСКУРСИИ<br>В КОРПОРАЦИИ
+                    .formats__circleBox(
+                        )
+                        img(src="img/formats-circle-1.jpg", alt="")
+
+            .formats__block
+                .formats__block_text
+                    .formats__block__sub.formats__block__onlySub(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideLeft" 
+                        ) CLUB 500 это безграничные возможности. Наши резиденты получают доступ к уникальному формату - vip-экскурсии в топ компании России и мира. Нас приглашали: mail.ru Group, Белая дача, Абрау Дюрсо, Грасс, Сколково, Аскона, Ройстат.
+
+        .formats__row
+            .formats__block
+                .formats__block_text
+                    .formats__block__title(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideRight" 
+                        ) встречи <br>с ментором
+                    .formats__block__sub(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideRight" 
+                        ) Мероприятие закрытого типа. Мы приглашаем основателей и топ-менеджеров крупнейших компаний. Опыт, компетенции, внутренняя информация из первых уст. Только у резидентов CLUB 500 есть возможность задать и получить ответы на все интересующие их вопросы.
+            .formats__block
+                img(src="img/formats/formats-3.jpg", alt="").formats__block_img
+
+        .formats__row
+            .formats__block(
                 data-scroll="" 
                 data-scroll-offset="10%"  
                 data-scroll-class="slideRight" 
-                ) Ставим мировой рекорд, поднявшись на самую высокую точку Африки в команде предпринимателей!
-        .formats__block.formats__block__circle 
-            img(src="img/formats/Ellipse 38.png", alt="").formats__block_img
-            div ONLINE<br>ОБУЧЕНИЕ
-        .formats__block(
-            data-scroll="" 
-            data-scroll-offset="10%"  
-            data-scroll-class="slideRight" 
-            )
-            img(src="img/formats/Rectangle 3.jpg", alt="").formats__block_img
-        .formats__block
-            .formats__block__title(
-                data-scroll="" 
-                data-scroll-offset="10%"  
-                data-scroll-class="slideLeft" 
-                ) БОЛЬШОЙ СЛЕТ РЕЗИДЕНТОВ
-            .formats__block__sub(
-                data-scroll="" 
-                data-scroll-offset="10%"  
-                data-scroll-class="slideLeft" 
-                ) Ставим мировой рекорд, поднявшись на самую высокую точку Африки в команде предпринимателей!
-        .formats__block
-            .formats__block__title(
-                data-scroll="" 
-                data-scroll-offset="10%"  
-                data-scroll-class="slideRight" 
-                ) ЗАКРЫТЫЕ ЧАТЫ
-            .formats__block__sub(
-                data-scroll="" 
-                data-scroll-offset="10%"  
-                data-scroll-class="slideRight" 
-                ) Ставим мировой рекорд, поднявшись на самую высокую точку Африки в команде предпринимателей!
-        .formats__block.formats__block__chat(
-            data-scroll="" 
-            data-scroll-offset="10%"  
-            data-scroll-class="slideLeft" 
-            )
-            img(src="img/formats/Group 2246.png", alt="").formats__block_img
-        .formats__block(
-            data-scroll="" 
-            data-scroll-offset="10%"  
-            data-scroll-class="slideRight" 
-            )
-            img(src="img/formats/Rectangle 3.jpg", alt="").formats__block_img
-        .formats__block
-            .formats__block__title(
-                data-scroll="" 
-                data-scroll-offset="10%"  
-                data-scroll-class="slideLeft" 
-                ) БАННЫЙ НЕТВОРКИНГ
-            .formats__block__sub(
-                data-scroll="" 
-                data-scroll-offset="10%"  
-                data-scroll-class="slideLeft" 
-                ) Ставим мировой рекорд, поднявшись на самую высокую точку Африки в команде предпринимателей!
-        .formats__block
-            .formats__block__sub.formats__block__onlySub(
+                )
+                img(src="img/formats/formats-4.jpg", alt="").formats__block_img
+            .formats__block
+                .formats__block_text
+                    .formats__block__title(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideLeft" 
+                        ) ИНВЕСТИЦИОННЫЙ КЛУБ
+                    .formats__block__sub(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideLeft" 
+                        ) Формат, в котором принимают участие только обладатели vip-доступа CLUB 500. Направление как для тех, кто инвестирует, так и для тех, кто привлекает инвестиции в свой проект. <br>Обучение финансовой грамотности, разбор успешных и неуспешных кейсов, создание инвестиционных пулов, опытнейшие инвесторы страны.
+
+        .formats__row.formats__row_circle
+            .formats__block
+                .formats__block_text
+                    .formats__block__sub.formats__block__onlySub(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideRight" 
+                        ) Один из самых популярных форматов CLUB 500, в котором собран уникальный опыт, детально разделенный по главным бизнес-блокам. Максимально детальный разбор одной или нескольких тем, изучение подводных камней и превентивных инструментов. В. Любой точке мира резидент CLUB 500 может воспользоваться этим форматом имея лишь доступ в интернет. Все резиденты получают доступ к записи, если не было возможности подключиться online.
+            .formats__block
+                .formats__circle
+                    .formats__circleText ONLINE<br>ОБУЧЕНИЕ
+                    .formats__circleBox(
+                        )
+                        img(src="img/formats-circle-2.jpg", alt="")
+
+        .formats__row
+            .formats__block(
                 data-scroll="" 
                 data-scroll-offset="10%"  
                 data-scroll-class="slideRight" 
-                ) Ставим мировой рекорд, поднявшись на самую высокую точку Африки в команде предпринимателей!
-        .formats__block.formats__block__circle 
-            img(src="img/formats/Ellipse 38.png", alt="").formats__block_img
-            div СОВЕТ<br>ДИРЕКТОРОВ
-        .formats__block(
-            data-scroll="" 
-            data-scroll-offset="10%"  
-            data-scroll-class="slideRight" 
-            )
-            img(src="img/formats/Rectangle 4.jpg", alt="").formats__block_img
-        .formats__block
-            .formats__block__title(
+                )
+                img(src="img/formats/formats-5.jpg", alt="").formats__block_img
+            .formats__block
+                .formats__block_text
+                    .formats__block__title(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideLeft" 
+                        ) Бизнес-завтрак
+                    .formats__block__sub(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideLeft" 
+                        ) Любимый формат резидентов CLUB 500, совмещающий в себе сразу несколько ценностей: нетворкинг, выступление спикера, вкуснейших завтрак в лучших ресторанах Москвы.
+
+        .formats__row
+            .formats__block
+                .formats__circle.mobile
+                    .formats__circleText ЗАКРЫТЫЕ <br>ЧАТЫ
+                    .formats__circleBox.formats__circleBox_phone(
+                        )
+                        img(src="img/formats/Group_2246.png", alt="")
+                .formats__block_text.desktop
+                    .formats__block__title(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideRight" 
+                        ) ЗАКРЫТЫЕ ЧАТЫ
+                    .formats__block__sub(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideRight" 
+                        ) Поддержка клуба 24/7, непрерывное общение внутри удобной платформы, где за несколько часов решаются бизнес-вопросы любой сложности
+            .formats__block.desktop
+                .formats__block__chat(
+                    data-scroll="" 
+                    data-scroll-offset="10%"  
+                    data-scroll-class="slideLeft" 
+                    )
+                    img(src="img/formats/Group_2246.png", alt="").formats__block_img
+
+        .formats__row
+            .formats__block(
+                data-scroll="" 
+                data-scroll-offset="10%"  
+                data-scroll-class="slideRight" 
+                )
+                img(src="img/formats/formats-6.jpg", alt="").formats__block_img
+            .formats__block
+                .formats__block_text
+                    .formats__block__title(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideLeft" 
+                        ) БАННЫЙ НЕТВОРКИНГ
+                    .formats__block__sub(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideLeft" 
+                        ) Баня — душа клуба, где нет места поддельным эмоциям. Как правило, именно там происходит самый лучший нетворкинг и рождаются долгосрочные партнёрства. Каждое воскресенье душа CLUB 500 открыта.
+
+        .formats__row.formats__row_circle
+            .formats__block
+                .formats__block_text
+                    .formats__block__sub.formats__block__onlySub(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideRight" 
+                        ) Специально для резидентов CLUB 500 мы закрываем лучшие клубы, бары и рестораны, попасть в которые можно исключительно по спискам. Выступление звезд и именитых музыкантов - вишенка на торте наших мероприятий.
+            .formats__block
+                .formats__circle
+                    .formats__circleText закрытые <br>вечеринки
+                    .formats__circleBox(
+                        )
+                        img(src="img/formats-circle-3.jpg", alt="")
+
+        .formats__row
+            .formats__block(
+                data-scroll="" 
+                data-scroll-offset="10%"  
+                data-scroll-class="slideRight" 
+                )
+                img(src="img/formats/formats-7.jpg", alt="").formats__block_img
+            .formats__block
+                .formats__block_text
+                    .formats__block__title(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideLeft" 
+                        ) Бизнес-образование
+                    .formats__block__sub(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideLeft" 
+                        ) Абсолютно новый формат CLUB 500. Бизнес образование в любой точке планеты. Одна неделя, Одна страна, лучише университеты мира, группа из 50-ти резидентов и грандиозная завершающая вечеринка.
+
+        .formats__row
+            .formats__block
+                .formats__block_text
+                    .formats__block__title(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideRight" 
+                        ) Спортивные <br>мероприятия
+                    .formats__block__sub(
+                        data-scroll="" 
+                        data-scroll-offset="10%"  
+                        data-scroll-class="slideRight" 
+                        ) Бизнес и спорт — неотделимые понятия, которые помогают резидентам клуба расслабляться и получать адреналин: регулярные пробежки, хоккей, бокс, теннис — активности, которые мы внедрили на постоянной основе
+            .formats__block(
                 data-scroll="" 
                 data-scroll-offset="10%"  
                 data-scroll-class="slideLeft" 
-                ) ЗАКРЫТЫЕ ВЕЧЕРИНКИ
-            .formats__block__sub(
-                data-scroll="" 
-                data-scroll-offset="10%"  
-                data-scroll-class="slideLeft" 
-                ) Ставим мировой рекорд, поднявшись на самую высокую точку Африки в команде предпринимателей!
+                )
+                img(src="img/formats/formats-8.jpg", alt="").formats__block_img

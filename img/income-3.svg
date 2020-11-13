@@ -1,9 +1,34 @@
-<svg width="72" height="197" viewBox="0 0 72 197" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M35.9918 196.847C12.6468 169.408 -0.118443 134.526 0.000827509 98.5001C0.120098 62.4738 13.1161 27.6773 36.6422 0.393208L71.5392 30.4836C55.1921 49.4419 46.162 73.62 46.0791 98.6526C45.9962 123.685 54.8661 147.923 71.0872 166.989L35.9918 196.847Z" fill="url(#paint0_radial)" fill-opacity="0.18"/>
-<defs>
-<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(169 85.5) rotate(164.745) scale(159.625 171.997)">
-<stop offset="0.541985" stop-opacity="0"/>
-<stop offset="0.905492" stop-color="#219653"/>
-</radialGradient>
-</defs>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg13"
+   version="1.1"
+   fill="none"
+   viewBox="0 0 303 303"
+   height="303"
+   width="303">
+  <metadata
+     id="metadata17">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     id="path2"
+     stroke="#5B5B5B"
+     d="M36.8488 249C14.492 222.736 1 188.694 1 151.5C1 68.3811 68.3811 1 151.5 1C234.619 1 302 68.3811 302 151.5C302 188.694 288.508 222.736 266.151 249" />
+  <path
+     id="path824"
+     d="M 53.657825,234.85937 C 12.568852,185.54292 10.337015,125.59186 53.602754,67.404661"
+     style="fill:none;stroke:#219653;stroke-width:44;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.15686275" />
 </svg>

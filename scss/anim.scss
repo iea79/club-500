@@ -6,6 +6,14 @@ body {
     background-color: #000;
     font-family: "Pragmatica";
     color: #fff;
+
+    @media (min-width: 768px) {
+        // overflow: hidden;
+
+        .has-scroll-smooth & {
+            // overflow: inherit;
+        }
+    }
 }
 
 .residents__modal {
@@ -55,12 +63,13 @@ body {
         transition: 0s;
     }
 
-    .about__title {
+    .about__title span {
         // position: static;
         // opacity: 0;
         color: transparent;
 
         &.showTitle {
+            opacity: 1;
             // z-index: 0;
             // opacity: 1;
         }
@@ -70,6 +79,10 @@ body {
     .about__titlesub {
         color: transparent;
 
+    }
+
+    .about__unit {
+        opacity: 0;
     }
 
     [data-scroll-class]:not([class*="about__"]) {
@@ -233,286 +246,14 @@ body {
     // height: auto;
 }
 
-.innumber {
-    &__bg {
-        // background: url("../img/innumber.jpg") top center no-repeat;
-        // background-size: 100% auto;
-        // background-attachment: fixed;
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        // height: 100vh;
+.desktop {
+    @media (max-width: 767px) {
+        display: none !important;
     }
+}
 
-    &__top {
-        position: relative;
-        min-height: 88.7vh;
-        padding: 6em 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 2em;
+.mobile {
+    @media (min-width: 768px) {
+        display: none !important;
     }
-
-    &__title {
-        font-size: 15.93em;
-        text-transform: uppercase;
-        line-height: 0.8;
-        text-align: center;
-        color: #63766F;
-        letter-spacing: -0.07em;
-        font-weight: 300;
-
-        @supports (background-clip: text) {
-            color: #fff;
-            background: linear-gradient(to left, #000000 0%, #E5E5E5 50%, #000000 100%);
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    }
-
-    &__row {
-        position: relative;
-        display: flex;
-        margin: 0 3.3em;
-        padding: 0;
-        border-top: 0.1em solid rgba(#fff, 0.7);
-    }
-
-    &__item {
-        flex-grow: 1;
-        padding: 1.7em 3.8em;
-        position: relative;
-
-        &:nth-child(n+2) {
-            border-left: 0.1em solid rgba(#fff, 0.7);
-        }
-    }
-
-    &__name {
-        font-size: 1.5em;
-        min-height: 1.2em;
-        font-weight: 500;
-        text-transform: uppercase;
-    }
-
-    &__counter {
-        height: 31.2em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 4em;
-        padding-bottom: 1em;
-
-        &Num {
-            font-size: 5.5em;
-            margin-bottom: 0.66em;
-        }
-
-        &Label {
-            font-size: 1.3em;
-        }
-
-    }
-
-    svg {
-        max-width: 100%;
-        height: auto;
-    }
-
-    &__map {
-        margin: auto;
-        max-width: 55em;
-        margin-bottom: 3em;
-
-    }
-
-    &__income {
-        display: flex;
-        justify-content: space-between;
-        padding: 6.3em 5.6em 9.2em;
-
-        &Item {
-            width: 18.9em;
-            position: relative;
-        }
-
-        &Content {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-end;
-        }
-
-        &Num {
-            font-size: 5.5em;
-            margin-bottom: 0.4em;
-        }
-
-        &Label {
-            font-size: 1.4em;
-            font-weight: 500;
-        }
-
-    }
-
-    &__round {
-        svg:nth-of-type(2) {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-        }
-    }
-
-    &__prof {
-        display: flex;
-        margin: 3em -25.5em 4.6em -13.1em;
-
-        &Item {
-            background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 55.21%, rgba(255, 255, 255, 0.14) 100%);
-            border: 0.1em solid #777777;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-transform: uppercase;
-            font-size: 1.3em;
-            font-weight: 500;
-            flex: none;
-            width: 33.3%;
-            padding-bottom: 0.8em;
-
-            &:nth-child(2) {
-                margin: 0 -4.4em;
-            }
-
-            // width: 5em;
-            height: 37em;
-        }
-
-    }
-
-    &__gender {
-        display: flex;
-        justify-content: center;
-        // position: absolute;
-        // top: 0;
-        // left: 0;
-        // right: 0;
-        // bottom: 0;
-        // padding: 3.7em;
-
-        margin: -1em 0 0.4em;
-
-        &Photo {
-            position: relative;
-            width: 31.7em;
-            // height: 10em;
-
-            img {
-                width: 100%;
-            }
-        }
-
-        &Percent {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 5.5em;
-            padding-bottom: 0.15em;
-        }
-
-        &Name {
-            position: absolute;
-            font-size: 1.23em;
-            right: 2.4em;
-            bottom: 1.8em;
-
-            &_woman {
-                bottom: auto;
-                top: 1.5em;
-            }
-        }
-
-    }
-
-    &__place {
-        margin: 2.3em auto;
-        max-width: 92.7em;
-
-        &Row {
-            display: flex;
-            align-items: flex-end;
-            padding-left: 8.8em;
-            margin-bottom: 7.9em;
-
-            &:nth-child(2) {
-                margin-bottom: 2.2em;
-            }
-        }
-
-        &Line {
-            position: relative;
-            flex-grow: 1;
-            margin-right: 1.4em;
-            border-bottom: 0.1em solid #5B5B5B;
-        }
-
-        &Percent {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            font-size: 5.4em;
-            padding-bottom: 0.1em;
-            padding-left: 1.9em;
-        }
-
-        &Img {
-            position: relative;
-            padding-bottom: 0.4em;
-
-            img {
-                display: block;
-            }
-
-            &:after {
-                content: '';
-                height: 2em;
-                width: 100%;
-                position: absolute;
-                left: 0;
-                width: 100%;
-                bottom: 0;
-                background: linear-gradient(180deg, rgba(10, 48, 26, 0) 50%, #219653 120.31%);
-            }
-        }
-
-        &Label {
-            text-transform: uppercase;
-            font-size: 1.5em;
-            line-height: 0.7;
-            flex: none;
-            width: 4.2em;
-            text-align: right;
-        }
-
-    }
-
 }
