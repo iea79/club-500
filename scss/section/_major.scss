@@ -59,7 +59,7 @@
 		&-cellar {
 			position: absolute;
 			left: 50%;
-			transform: translate(-50%, 0);
+			transform: translate3d(-50%, 0, 0);
 			bottom: 0;
 			max-width: 101em;
 			width: 100%;
@@ -105,7 +105,7 @@
 		align-items: center;
 		position: absolute;
 		left: 50%;
-		transform: translate(-50%, 0);
+		transform: translate3d(-50%, 0, 0);
 		top: 0;
 		max-width: 114.8em;
 		width: 100%;
@@ -148,7 +148,7 @@
 		top: 10.5em;
 		width: 58%;
 		height: 56%;
-		transform: translate(-50%, 0);
+		transform: translate3d(-50%, 0, 0);
 		z-index: 2;
 		display: flex;
 		align-items: flex-end;
@@ -175,7 +175,7 @@
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		transform: translate(-50%, -50%);
+		transform: translate3d(-50%, -50%, 0);
 		// height: 58%;
 		z-index: 3;
 		max-width: 60em;
