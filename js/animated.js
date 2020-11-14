@@ -424,7 +424,7 @@ function getCallOnScroll() {
 getCallOnScroll();
 
 let options = {
-    root: container,
+    root: document.querySelector('[data-scroll-section]'),
     rootMargin: '0px',
     threshold: 1.0
 }

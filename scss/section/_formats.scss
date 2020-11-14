@@ -288,22 +288,51 @@
     }
 
     .ellipse {
-        position: absolute;
-        z-index: 1;
+        display: none;
+
+        @media (min-width: 768px) {
+            position: absolute;
+            z-index: 1;
+            display: block;
+            background-color: #c4c4c4;
+            background: linear-gradient(130.42deg, #49DFC3 14.1%, #104B29 39.65%, #020202 64.9%), #C4C4C4;
+            opacity: 0.8;
+            filter: blur(10em);
+            // transform: rotate(60deg);
+
+        }
     }
 
     .ellipse1 {
         top: 0;
-        transform: rotate(220deg);
+        left: 0;
+        width: 100.44em;
+        height: 100.44em;
+        // height: 158.5625em;
+        // background: linear-gradient(130.42deg, rgba(73, 223, 195, 0.19) 14.1%, rgba(16, 75, 41, 0.19) 39.65%, rgba(2, 2, 2, 0.19) 64.9%);
+        // opacity: 0.8;
     }
 
     .ellipse2 {
-        top: 50%;
-        transform: rotate(220deg);
+        top: 85em;
+        left: 11em;
+        width: 84.563em;
+        height: 84.563em;
+        // height: 84.563em;
+        // background: linear-gradient(130.42deg, #49DFC3 14.1%, #104B29 39.65%, #020202 64.9%), #C4C4C4;
     }
 
     .ellipse3 {
-        bottom: 0;
-        transform: rotate(220deg);
+        top: 287em;
+        left: 44em;
+        width: 47.563em;
+        height: 47.563em;
+    }
+
+    .ellipse4 {
+        bottom: 6em;
+        left: 16em;
+        width: 84.563em;
+        height: 84.563em;
     }
 }
