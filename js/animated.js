@@ -1,29 +1,20 @@
 // import './custom.js';
 import LocomotiveScroll from 'locomotive-scroll';
-import { gsap, TweenLite, TweenMax, TimelineLite, TimelineMax } from "gsap";
+import { TweenMax } from "gsap";
 
 
 let container = document.querySelector('[data-scroll-container]'),
-    soc = document.querySelector('.major__networks'),
-    aTitle = document.querySelector('.about__title'),
-    year = document.querySelector('.major__year'),
     cursor = document.querySelector('.cursor'),
-    media = document.querySelector('.media'),
     isDesktop = $(window).width() >= 768,
     dom = false,
-    domEnd = false,
-    domScreen = false,
-    domScreenImg = false,
     screenHeight = window.innerHeight,
     domTop,
     tpos,
     scaledImg = 1,
     slider = $('.dom'),
-    domImg500 = $('.domScreen__block_img'),
     domImg = $('.domScreen__img'),
     domScreenText = $('.domScreen'),
-    domSliderContent,
-    domVisibled = true;
+    domSliderContent;
 
 function getCallOnScroll() {
     const pageScroll = new LocomotiveScroll({
@@ -44,8 +35,7 @@ function getCallOnScroll() {
         domSliderContent = $('.dom__slider__top__convert, .dom__slider_map, .dom .slick-arrow, .dom__slider__bottom, .dom__counter'),
         tpos = obj.scroll.y;
         let scale,
-            opacity,
-            currentTop;
+            opacity;
 
         if (dom) {
             // console.log(domTop);
@@ -68,7 +58,6 @@ function getCallOnScroll() {
                 // console.log('opacity', opacity);
                 // console.log('opacity *', opacity*scale*scale*scale+1.5);
                 // console.log('');
-                currentTop = tpos;
                 $('.dom').css({
                     transform: 'translate3d(0px, '+(tpos - domTop)+'px, 0px)',
                 });
@@ -166,7 +155,7 @@ function getCallOnScroll() {
     });
 
     if (isXsWidth()) {
-        $('.media__box').each(function( index, element ) {
+        $('.media__box').each(function() {
             if ($(this).children('.media__logo').length == 1)  {
                 $(this).css('display', 'block');
             } else {
@@ -324,13 +313,13 @@ function getCallOnScroll() {
     function initSlider() {
         $('.dom__counter__all').text($('.dom__slider__block').length)
 
-        $(".dom__slider__bottom").on('afterChange', function(event, slick, currentSlide){
+        $(".dom__slider__bottom").on('afterChange', function(currentSlide){
             (currentSlide+1>9)?$('.dom__counter__null').hide():$('.dom__counter__null').show()
 
             $(".dom__counter__num").text(currentSlide + 1);
         });
 
-        $(".dom__slider__top, .dom__slider__bottom").on('init', function(event, slick, currentSlide){
+        $(".dom__slider__top, .dom__slider__bottom").on('init', function(){
             if (isDesktop) {
                 pageScroll.start();
             }
@@ -344,7 +333,7 @@ function getCallOnScroll() {
             $('.dom__slider__top').slick('slickGoTo', i);
         });
 
-        $('.dom__slider__top').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        $('.dom__slider__top').on('beforeChange', function(nextSlide){
             $('[data-slide]').removeClass('active');
             $('[data-slide="'+nextSlide+'"]').addClass('active');
         });
@@ -429,5 +418,4 @@ let options = {
     threshold: 1.0
 }
 
-
-let observer = new IntersectionObserver(getCallOnScroll, options);
+new IntersectionObserver(getCallOnScroll, options);
