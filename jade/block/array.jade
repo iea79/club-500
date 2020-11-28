@@ -1,4 +1,311 @@
-- residents = [{name: 'Сюренкок Омюр', prof: 'Производство и продажа одежды, <br>U.S. Polo Assn'}, {name: 'Сирота Антон', prof: 'Продажа профессионального оборудования,  Garmin '}, false, false, {name: 'Киселев Юрий', prof: 'Производство и реализация строительных материалов,  OBOIRU Group'}, false, {name: 'Гаврик Александр', prof: 'Поставки и сопровождение бизнеса <br>в Китае,  SCS Group'}, {name: 'Сорокин Иван', prof: 'Сеть частных садов, Smile Fish'}, {name: 'Глушков Иван', prof: 'Сфера общественного питания, DaVinci,  BERËZKA,  SELFIE,  BOHO,  ОЛИВЬЕ'}, {name: 'Кузьминский Кирилл', prof: 'Розничная торговля, производство, дистрибьюция,  Пив&Ко'}, false, {name: 'Ниценко Андрей', prof: 'Сельскохозяйственная индустрия,  дистрибуция, ресторанный бизнес, ТМ Праймбиф'}, {name: 'Заяц Вадим', prof: 'IT услуги,  ЛИИС Инженерные решения'}, false, {name: 'Гафуров Наиль', prof: 'Визовые услуги,  Единый Визовый центр'}, false, {name: 'Магакян Давид', prof: 'Производство, <br>Гавари Групп '}, {name: 'Нагайцев Дмитрий', prof: 'Медиа,  VKLYBE.TV'}];
+- 
+    residents = [
+        {
+            name: 'Сюренкок', 
+            sname: 'Омюр', 
+            prof: 'Производство и продажа одежды, <br>U.S. Polo Assn',
+            photo: 'residents-modal-1.png', 
+            mphoto: 'residents-modal-mob-1.png', 
+            props: [
+                {
+                    top: '30', 
+                    val: 'млн', 
+                    label: 'оборот за 1год '
+                },
+                {
+                    top: '100', 
+                    val: 'млн', 
+                    label: 'оборот за 2 год '
+                },
+                {
+                    top: '850', 
+                    val: 'млн', 
+                    label: 'общий ОБОРОТ'
+                }
+            ],
+            label: 'Представители в росии',
+            imgLabel: '<img src="img/polo-assn.svg"/>',
+            logoList: '<img src="img/kenzo.svg"/><img src="img/boss.svg"/><img src="img/lacoste.svg"/><img src="img/polo-assn.svg"/>',
+            skills: false
+        }, 
+        {
+            name: 'Сирота', 
+            sname: 'Антон', 
+            prof: 'Продажа профессионального оборудования,  Garmin ',
+            photo: 'residents-modal-2.png', 
+            mphoto: 'residents-modal-mob-2.png', 
+            props: [
+                {
+                    top: '70', 
+                    val: 'млн+', 
+                    label: 'оборот'
+                },
+                {
+                    img: '<img src="img/garmin.png"/>', 
+                }
+            ],
+            label: 'навыки',
+            imgLabel: '<img src="img/garmin.png"/>',
+            skills: ['Продажа', 'Профессионального оборудования ']
+        }, 
+        false, 
+        false, 
+        {
+            name: 'Киселев', 
+            sname: 'Юрий', 
+            prof: 'Производство и реализация строительных материалов,  OBOIRU Group',
+            photo: 'residents-modal-3.png', 
+            mphoto: 'residents-modal-mob-3.png', 
+            props: [
+                {
+                    top: '1', 
+                    val: 'млрд+', 
+                    label: 'оборот'
+                },
+                {
+                    top: '100', 
+                    val: '+', 
+                    label: 'сотрудники'
+                }
+            ],
+            label: 'навыки',
+            imgLabel: 'Оборот <b>1 млрд  ₽</b>',
+            skills: ['Разработка', 'Производство', 'Дистрибьюция обоев', 'Розничная сеть']
+        }, 
+        false, 
+        {
+            name: 'Гаврик', 
+            sname: 'Александр', 
+            prof: 'Поставки и сопровождение бизнеса <br>в Китае,  SCS Group',
+            photo: 'residents-modal-4.png', 
+            mphoto: 'residents-modal-mob-4.png', 
+            props: [
+                {
+                    top: '2', 
+                    val: 'млрд+', 
+                    label: 'оборот'
+                },
+                {
+                    top: '100', 
+                    val: '+', 
+                    label: 'сотрудники'
+                }
+            ],
+            label: 'навыки',
+            imgLabel: 'Оборот <b>2 млрд  ₽</b>',
+            skills: ['Услуги', 'Управления цепями поставок', 'Сопровождения бизнеса ', 'в Китае', 'странах Юго-Восточной Азии']
+        }, 
+        {
+            name: 'Сорокин', 
+            sname: 'Иван', 
+            prof: 'Сеть частных садов, Smile Fish',
+            photo: 'residents-modal-5.png', 
+            mphoto: 'residents-modal-mob-5.png', 
+            props: [
+                {
+                    top: '338', 
+                    val: 'млн', 
+                    label: 'оборот'
+                },
+                {
+                    top: '200', 
+                    val: '+', 
+                    label: 'сотрудники'
+                },
+                {
+                    top: '40', 
+                    val: '%', 
+                    label: 'рентабельность бизнеса'
+                }
+            ],
+            label: 'навыки',
+            imgLabel: 'Оборот <b>338 млн ₽</b>',
+            skills: ['Услуги']
+        }, 
+        {
+            name: 'Глушков', 
+            sname: 'Иван', 
+            prof: 'Сфера общественного питания, DaVinci,  BERËZKA,  SELFIE,  BOHO,  ОЛИВЬЕ',
+            photo: 'residents-modal-6.png', 
+            mphoto: 'residents-modal-mob-6.png', 
+            props: [
+                {
+                    top: '2', 
+                    val: 'млрд+', 
+                    label: 'оборот'
+                },
+                {
+                    top: '600', 
+                    val: '+', 
+                    label: 'сотрудники'
+                }
+            ],
+            label: 'навыки',
+            imgLabel: 'Оборот <b>2 млрд ₽</b>',
+            skillsText: 'В запуске 2 новых цеха, которые дадут возможность увеличения производства в 2 раза. Планируемый оборот компании 3 млрд ₽ в 2021 г.'
+        }, 
+        {
+            name: 'Кузьминский', 
+            sname: 'Кирилл', 
+            prof: 'Розничная торговля, производство, дистрибьюция,  Пив&Ко',
+            photo: 'residents-modal-7.png', 
+            mphoto: 'residents-modal-mob-7.png', 
+            props: [
+                {
+                    top: '7', 
+                    val: 'млрд+', 
+                    label: 'оборот'
+                },
+                {
+                    top: '1500', 
+                    val: '+', 
+                    label: 'сотрудники'
+                }
+            ],
+            table: [
+                {
+                    label: 'сеть магазинов ', 
+                    prop: 'Пив&Ко <br>(более 500 магазинов)'
+                },
+                {
+                    label: 'пивоварня', 
+                    prop: 'Арамильская Бойлерная пивоварня'
+                },
+                {
+                    label: 'завод', 
+                    prop: 'Averton Snack'
+                },
+                {
+                    label: 'завод', 
+                    prop: 'Averton Drinks'
+                },
+                {
+                    label: 'сеть пиццерий', 
+                    prop: 'Italian Pizza'
+                },
+                {
+                    label: 'ресторан', 
+                    prop: 'Твой бар'
+                },
+                {
+                    label: 'дистрибьюторская компания', 
+                    prop: 'Пивзавод Distribution'
+                }
+            ],
+            label: 'Факты',
+            imgLabel: 'Оборот <b>7 млрд ₽</b>',
+            skillsText: 'Франшиза Пив&Ко в 2020 году вошла в список Forbes Юбилейный 500й магазин Пив&Ко открылся в 2020 году Ежегодно транспорт компании проезжает 3 млн км - это 93 оборота вокруг Земли'
+        }, 
+        false, 
+        {
+            name: 'Ниценко', 
+            sname: 'Андрей', 
+            prof: 'Сельскохозяйственная индустрия,  дистрибуция, ресторанный бизнес, ТМ Праймбиф',
+            photo: 'residents-modal-8.png', 
+            mphoto: 'residents-modal-mob-8.png', 
+            props: [
+                {
+                    top: '6', 
+                    val: 'млрд+', 
+                    label: 'оборот'
+                },
+                {
+                    top: '2300', 
+                    val: '+', 
+                    label: 'сотрудники'
+                },
+                {
+                    top: '8,5', 
+                    val: 'млрд+', 
+                    label: 'цель'
+                }
+            ],
+            label: 'навыки',
+            imgLabel: 'Оборот <b>6 млрд ₽</b>',
+            skills: ['Услуги']
+        }, 
+        {
+            name: 'Заяц', 
+            sname: 'Вадим', 
+            prof: 'IT услуги,  ЛИИС Инженерные решения',
+            photo: 'residents-modal-9.png', 
+            mphoto: 'residents-modal-mob-9.png', 
+            props: [
+                {
+                    top: '1,5', 
+                    val: 'млрд+', 
+                    label: 'оборот'
+                },
+                {
+                    top: '110', 
+                    val: '', 
+                    label: 'сотрудники'
+                }
+            ],
+            label: 'навыки',
+            imgLabel: 'Оборот <b>1.5 млрд ₽</b>',
+            skillsText: 'Из компании которые делала частные квартиры выросли в компанию, автоматизирующую большиеобъекты соединяя системы автоматизации и IT системызаказчика. А также для частных клиентов и девелоперо вразработали готовые решения Умный дом.'
+        }, 
+        false, 
+        {
+            name: 'Гафуров', 
+            sname: 'Наиль', 
+            prof: 'Визовые услуги,  Единый Визовый центр',
+            photo: 'residents-modal-10.png', 
+            mphoto: 'residents-modal-mob-10.png', 
+            props: [
+                {
+                    top: '75', 
+                    val: '', 
+                    label: 'офисов'
+                },
+                {
+                    top: '300', 
+                    val: '+', 
+                    label: 'сотрудники'
+                },
+                {
+                    top: '60000', 
+                    val: '+', 
+                    label: 'Виз в год'
+                }
+            ],
+            label: 'навыки',
+            imgLabel: 'Виз в год <b>60 000+</b>',
+            skills: ['Услуги']
+        }, 
+        false, 
+        {
+            name: 'Магакян', 
+            sname: 'Давид', 
+            prof: 'Производство, <br>Гавари Групп ',
+            photo: 'residents-modal-11.png', 
+            mphoto: 'residents-modal-mob-11.png', 
+            props: [
+                {
+                    top: '4', 
+                    val: 'млрд+', 
+                    label: 'оборот'
+                },
+                {
+                    top: '500', 
+                    val: '+', 
+                    label: 'сотрудники'
+                }
+            ],
+            label: 'навыки',
+            imgLabel: 'Оборот <b>4 млрд ₽</b>',
+            skills: ['Производство']
+        }, 
+        {
+            name: 'Нагайцев', 
+            name: 'Дмитрий', 
+            prof: 'Медиа,  VKLYBE.TV',
+            photo: 'residents-modal-12.png', 
+            mphoto: 'residents-modal-mob-12.png', 
+            imgLabel: '<img src="img/vklybe.svg"/>',
+        }
+    ];
 
 - speakers = [false, false, {name: 'Оскар Хартманн', prof: 'Основатель проектов KupiVIP.ru, Carprice, Aktivo, CarFix', photo: '1'}, {name: 'Михаил Кучмент', prof: 'Совладелец Hoff', photo: '2'}, {name: 'Евгений Чичваркин', prof: 'Сооснователь и бывший совладелец «Евросеть», владелец бутика Hedonism Wines и ресторана Hide', photo: '3'}, false, {name: 'Евгений Черняк', prof: 'Fвтор YouTube-канала Big Money, входит в ТОП-30 Forbes', photo: '4'}, {name: 'Гил Петерсил', prof: 'Эксперт по нетворкингу <br>и преподаватель Стартап Академии Сколково', photo: '5'}, {name: 'Алексей Васильчук', prof: 'Владелец холдинга RESTart Vasilchuk Brothers', photo: '6'}, false, {name: 'Костя Цзю ', prof: 'Российский боксёр, трёхкратный чемпион СССР', photo: '7'}, {name: 'Максим Батырев', prof: 'Основатель <br>Batyrev Consulting Group', photo: '8'}, {name: 'Александр Орлов ', prof: 'Основатель холдинга <br>Bulldozer Group', photo: '9'}, {name: 'Сергей Солонин', prof: 'Генеральный директор Qiwi', photo: '10'}, false, {name: 'Сергей Федоринов', prof: 'Основатель и CEO ЦКБ42, создатель проекта Юлмарт', photo: '11'}, false, {name: 'Борис Зарьков', prof: 'Владелец ресторанов White Rabbit, основатель компании White Rabbit Family', photo: '12'}];
 

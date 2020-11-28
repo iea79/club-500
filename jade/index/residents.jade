@@ -1,11 +1,13 @@
-mixin item(item, i)
-    .residents__picture(data-modal-id="residents-modal-"+item+"")
+mixin item(item, i, img)
+    .residents__picture(data-modal-id="residents-modal-"+i+"")
 
-        img(src='img/residents-'+i+'.jpg' class='residents__img' alt= item.name)
+        .residents__label!=item.imgLabel
+
+        img(src='img/residents-'+img+'.jpg' class='residents__img' alt= item.name)
 
     .residents__content
 
-        .residents__name!= item.name
+        .residents__name!= item.name + ' ' + item.sname
 
         .residents__post!= item.prof
 
@@ -50,7 +52,7 @@ mixin item(item, i)
 
                     if item
                         - ri++;
-                        +item(item, ri)
+                        +item(item, i, ri)
 
             else
                 .residents__box(
@@ -61,4 +63,4 @@ mixin item(item, i)
 
                     if item
                         - ri++;
-                        +item(item, ri)
+                        +item(item, i, ri)

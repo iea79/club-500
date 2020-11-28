@@ -27,16 +27,24 @@ each item in media
                     .media__modal-line
 
 
-//- each item in residents
+each item, i in residents
 
     if item
 
-        .residents__modal.tab(id="residents-modal-"+item+"")
+        .residents__modal.tab(id="residents-modal-"+i+"")
 
             .residents__modal-cirsleOne
             .residents__modal-cirsleTwo
 
-            img(src='img/resident-detail.png' class='residents__modal-img' alt='Дмитрий Белорусов')
+            //- img.residents__modal-img(
+            //-     srcset="img/"+item.mphoto+" 767w, img/"+item.photo+" 1920w" 
+            //-     sizes="(max-width: 767px) 375px, (min-width: 768px) 1000px" 
+            //-     src="img/"+item.photo+"" alt=""
+            //- )
+
+            picture.residents__modal-img
+                source(srcset="img/"+item.mphoto+"" media="(max-width: 767px)")
+                img(src="img/"+item.photo+"" alt="")
 
             .residents__modal-head
 
@@ -44,65 +52,70 @@ each item in media
 
                 .residents__modal-nav
 
-                    .residents__modal-link.tab__item.active(data-tab='achievements'+ item +'') ДОСТИЖЕНИЯ
+                    //- .residents__modal-link.tab__item.active(data-tab='achievements'+ item +'') ДОСТИЖЕНИЯ
+                    //- 
+                    //- .residents__modal-link.tab__item(data-tab='about'+ item +'') О СЕБЕ
 
-                    .residents__modal-link.tab__item(data-tab='about'+ item +'') О СЕБЕ
-
-                .residents__modal-close
+            .residents__modal-close
 
             .residents__modal-body
 
                 .residents__modal-forename
 
-                    .residents__modal-name Дмитрий
+                    .residents__modal-name= item.name
+                    .residents__modal-surname= item.sname
 
-                    .residents__modal-surname Белорусов
+                .residents__modal-post!= item.prof
 
-                .residents__modal-post контент-маркетолог
+                if item.table
+                    .residents__modal-table
+                        each td in item.table
+                            .residents__modal-table__row
+                                .residents__modal-table__td!=td.label
+                                .residents__modal-table__td!=td.prop
 
                 .tab__mass.open(id='achievements'+ item +'')
 
                     .residents__modal-mass
 
                         .residents__modal-facts
+                            if item.props
+                                each prop in item.props
+                                    .residents__modal-cell
 
-                            .residents__modal-cell
+                                        if prop.img
+                                            .residents__modal-clogo!=prop.img
+                                        else
+                                            .residents__modal-value
+                                                span!=prop.top
+                                                | #{prop.val}
 
-                                .residents__modal-value <span>12</span> лет
-
-                                .residents__modal-property Экспертизы
-
-                            .residents__modal-cell
-
-                                .residents__modal-value <span>340</span>
-
-                                .residents__modal-property Проектов
-
-                            .residents__modal-cell
-
-                                .residents__modal-value <span>2,2</span> млрд.р
-
-                                .residents__modal-property Общая прибыль
+                                        .residents__modal-property= prop.label
 
                         .residents__modal-skills
 
-                            .residents__modal-topic навыки
+                            .residents__modal-topic= item.label
 
-                            .residents__modal-set
-                                .residents__modal-elem Оптовая торговля
-                                .residents__modal-elem Digital
+                            if item.logoList
+                                .residents__modal-clogoList!= item.logoList
 
-                            .residents__modal-set
-                                .residents__modal-elem Оптовая торговля
+                            if item.skillsText
+                                .residents__modal-skill!= item.skillsText
 
-                        .residents__modal-networks
+                            if item.skills
+                                .residents__modal-set
+                                    each skill in item.skills
+                                        .residents__modal-elem= skill
 
-                            a(href='#').residents__modal-icon
-                                img(src='img/facebook.svg' alt='residents__modal-icon')
 
-                            a(href='#').residents__modal-icon
-                                img(src='img/instagram.svg' alt='residents__modal-icon')
+            .residents__modal-networks
 
-                .tab__mass(id='about'+ item +'')
+                a(href='#').residents__modal-icon
+                    img(src='img/facebook.svg' alt='residents__modal-icon')
 
-                    .residents__modal-about О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ
+                a(href='#').residents__modal-icon
+                    img(src='img/instagram.svg' alt='residents__modal-icon')
+
+            //- .tab__mass(id='about'+ item +'')
+            //- 
+            //-     .residents__modal-about О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ О СЕБЕ

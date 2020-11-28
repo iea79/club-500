@@ -52,6 +52,10 @@ $(document).ready(function(){
         $(this).addClass('active');
     });
 
+    $('.menu__link').on('click', () => {
+        $('.menu').removeClass('open');
+    });
+
 
     $('.tab__item').click(function() {
         var tab_id = $(this).attr('data-tab'),
@@ -80,6 +84,12 @@ $(document).ready(function(){
     });
 
 });
+
+if (isXsWidth()) {
+    $('.residents__modal-img').insertAfter('residents__modal-post');
+} else {
+    $('.residents__modal-img').insertAfter('residents__modal-cirsleTwo');
+}
 
 document.addEventListener('DOMContentLoaded', function(){
     // начало Модалки секции тарифы
