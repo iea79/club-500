@@ -234,6 +234,10 @@
         &.active {
             display: block;
         }
+
+        &-price {
+            margin-top: 1.5em;
+        }
     }
 
     &__btn {

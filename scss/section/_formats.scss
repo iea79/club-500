@@ -169,7 +169,18 @@
             padding-left: 50%;
             text-shadow: 0 0 4em rgba(#000, 0.7);
 
+            p {
+                margin: 1em 0;
+            }
+
+            br {
+                display: none;
+            }
+
             @media(min-width: 768px) {
+                br {
+                    display: block;
+                }
                 margin-top: 2.6875em;
                 font-size: 1.2em;
                 padding-left: 1em;
@@ -239,6 +250,7 @@
         height: 29.4em;
         margin: auto;
         background: #219653;
+        -webkit-mask-image: -webkit-radial-gradient(white, black);
 
         @media (min-width: 768px) {
             width: 56em;

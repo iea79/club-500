@@ -183,6 +183,11 @@
 		font-size: 15.5em;
 		letter-spacing: -0.085em;
 		text-transform: uppercase;
+		transition: color 0.5s !important;
+
+		&:hover {
+			color: #fff;
+		}
 
 		&-text {
 			display: flex;

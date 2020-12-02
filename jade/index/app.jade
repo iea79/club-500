@@ -39,21 +39,37 @@
             data-scroll="" 
             data-scroll-offset="30%"  
             data-scroll-class="fadeIn" 
-            ) Каждый в клубе ставит свою цель и идет к ней
+            ) Безграничные возможности в один клик
         .app__description(
             data-scroll="" 
             data-scroll-offset="30%"  
             data-scroll-class="fadeIn" 
-            ) В приложении GarageBand для iOS играть и записывать музыку невероятно просто. И так же просто поделиться ею со всем миром, где бы вы ни находились. Одним касанием выбирайте любые музыкальные инструменты, включая этнические. И бесплатно загружайте наборы инструментов и лупов после каждого нового релиза — для этого есть новая функция «Фонотека». Вам не составит труда записать композицию в вашем любимом стиле. Всё, что для этого нужно, — только iPhone, iPad или iPod touch.
+            ) Эксклюзивное приложение CLUB 500 — это электронный ключ доступа ко всем возможностям нашего сообщества. 
+                br 
+                | Любые запросы, контакты, мероприятия, закрытые чаты, постоянный нетворкинг — это лишь малая часть того, 
+                br 
+                | что откроет вам приложение CLUB 500
     .app__main
         .app-grid
-            .app-grid__item.app-grid__item_middle.app-grid__item_desctop(
+            .app-grid__item.app-grid__item-col.app-grid__item_center-center.app-grid__item_middle.app-grid__item_desctop(
                 data-scroll="" 
                 data-scroll-offset="10%"  
                 data-scroll-class="slideRight" 
                 )
-                .app-grid__name название
-                .app-grid__name раздела  app
+                .app-grid__name Разделы приложения
+                .app-grid__title(
+                    data-scroll="" 
+                    data-scroll-offset="10%" 
+                    data-scroll-class="slideLeft" 
+                    )
+                    .app-grid__title-item Агрегатор 
+                    .app-grid__title-item событий
+                .app-grid__article(
+                    data-scroll="" 
+                    data-scroll-offset="15%" 
+                    data-scroll-class="fadeIn" 
+                    ) Умная нейросеть, в которой собраны все <br>актуальные новости CLUB 500 о ближайших <br>мероприятиях, спикерах и событиях.
+
             .app-grid__item.app-grid__item_mobile.app-grid__item_full
                 .app-grid__info
                     .app-grid__info-icon(
@@ -72,18 +88,27 @@
                         data-scroll-offset="10%"  
                         data-scroll-class="slideUp" 
                         ) В приложении GarageBand для iOS играть и записывать музыку невероятно просто. И так же просто поделиться ею со всем миром, где бы вы ни находились. Одним касанием выбирайте любые музыкальные инструменты, включая этнические. 
+                        .app-grid__img.app-grid__img_ellipse
+                //- .app-grid__img
+                //-     img(src="img/app/min/app-1.png" alt="mobile-app")
+
             .app-grid__item
-                //- .app-grid__img.app-grid__img_ellipse
                 .app-grid__img
                     img(src="img/app/min/app-1.png" alt="mobile-app")
-            .app-grid__item.app-grid__item_small.app-grid__item_center-center.app-grid__item_desctop
+
+            .app-grid__item.app-grid__item-col.app-grid__item_small.app-grid__item_center-center.app-grid__item_desctop
                 .app-grid__title(
                     data-scroll="" 
-                    data-scroll-offset="10%" 
+                    data-scroll-offset="14%" 
                     data-scroll-class="slideLeft" 
                     )
-                    .app-grid__title-item описание
-                    .app-grid__title-item срин.каст
+                    .app-grid__title-item аккаунт
+                    .app-grid__title-item резидента
+                .app-grid__article(
+                    data-scroll="" 
+                    data-scroll-offset="19%" 
+                    data-scroll-class="fadeIn" 
+                    ) Подробная информация о каждом резиденте, где вы сможете найти одноклубников по основным <br>экспертизам.
             .app-grid__item(
                 data-scroll="" 
                 data-scroll-offset="15%"  
@@ -106,21 +131,27 @@
                         data-scroll-class="fadeIn" 
                         ) В приложении GarageBand для iOS играть и записывать музыку невероятно просто. И так же просто поделиться ею со всем миром, где бы вы ни находились. Одним касанием выбирайте любые музыкальные инструменты, включая этнические. 
                     .app-grid__card
-                        a(href="#").app-grid__card-title См.все
+                        a(href="#").app-grid__card-title Отрослевые знания
                         .app-grid__card-container-item
-                            .app-grid__card-item(data-scroll=""
+                            img.app-grid__card-img(data-scroll=""
                                 data-scroll-offset="5%"  
                                 data-scroll-class="slideRight" 
-                                style="background-image: url('../img/app/card-1.png');"
+                                src="img/app/app-part.png"
                                 )
-                            .app-grid__card-item(data-scroll=""
-                                data-scroll-offset="10%"  
-                                data-scroll-class="slideRight" 
-                                style="background-image: url('../img/app/card-2.png');")
-                            .app-grid__card-item(data-scroll=""
-                                data-scroll-offset="15%"  
-                                data-scroll-class="slideRight" 
-                                style="background-image: url('../img/app/card-3.png');")
+                        //- .app-grid__card-container-item
+                        //- .app-grid__card-item(data-scroll=""
+                        //-     data-scroll-offset="5%"  
+                        //-     data-scroll-class="slideRight" 
+                        //-     style="background-image: url('../img/app/card-1.png');"
+                        //-     )
+                        //- .app-grid__card-item(data-scroll=""
+                        //-     data-scroll-offset="10%"  
+                        //-     data-scroll-class="slideRight" 
+                        //-     style="background-image: url('../img/app/card-2.png');")
+                        //- .app-grid__card-item(data-scroll=""
+                        //-     data-scroll-offset="15%"  
+                        //-     data-scroll-class="slideRight" 
+                        //-     style="background-image: url('../img/app/card-3.png');")
             .app-grid__item.app-grid__item_mobile.app-grid__item_full
                 .app-grid__info
                     .app-grid__info-icon
@@ -216,7 +247,7 @@
                 .app-grid__img   
                     img(src="img/app/min/app-8.png" alt="mobile-app")
             .app-grid__item.app-grid__item_center-start.app-grid__item_desctop
-                .app-grid__descript
+                //- .app-grid__descript
                     .app-grid__title(
                         data-scroll="" 
                         data-scroll-offset="10%"  

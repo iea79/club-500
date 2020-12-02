@@ -7,8 +7,9 @@ let container = document.querySelector('[data-scroll-container]'),
     cursor = document.querySelector('.cursor'),
     isDesktop = $(window).width() >= 768,
     dom = false,
+    innumber = false,
     screenHeight = window.innerHeight,
-    domTop,
+    sectionTop,
     tpos,
     scaledImg = 1,
     slider = $('.dom'),
@@ -37,11 +38,18 @@ function getCallOnScroll() {
         let scale,
             opacity;
 
+        if (innumber) {
+            scale = -( sectionTop - tpos - screenHeight )/screenHeight;
+            opacity = scale*scale*scale-0.5;
+
+            $('.innumber__bg img').css('opacity', opacity);
+        }
+
         if (dom) {
-            // console.log(domTop);
+            // console.log(sectionTop);
             // console.log(tpos);
 
-            scale = -( domTop - tpos - screenHeight )/screenHeight;
+            scale = -( sectionTop - tpos - screenHeight )/screenHeight;
             opacity = -scale+2;
             // console.log(scale);
             // console.log(opacity);
@@ -59,14 +67,14 @@ function getCallOnScroll() {
                 // console.log('opacity *', opacity*scale*scale*scale+1.5);
                 // console.log('');
                 $('.dom').css({
-                    transform: 'translate3d(0px, '+(tpos - domTop)+'px, 0px)',
+                    transform: 'translate3d(0px, '+(tpos - sectionTop)+'px, 0px)',
                 });
                 domScreenText.css({
-                    transform: 'translate3d(0px, '+(tpos - domTop)+'px, 0px)',
+                    transform: 'translate3d(0px, '+(tpos - sectionTop)+'px, 0px)',
                 });
                 domScreenText.css('opacity', '0');
                 domImg.css({
-                    transform: 'translate3d(0px, '+(tpos - domTop)+'px, 0px) scale('+scaledImg+')',
+                    transform: 'translate3d(0px, '+(tpos - sectionTop)+'px, 0px) scale('+scaledImg+')',
                     opacity: opacity*scale*scale*scale+1.5
                 });
 
@@ -90,6 +98,23 @@ function getCallOnScroll() {
         // $(document).trigger(obj);
         // console.log(func);
         switch (func) {
+            case 'innumber':
+                if (state === 'enter') {
+                    console.log(obj.top);
+                    console.log('innumber', state);
+                    // pageScroll.stop();
+                    // pageScroll.update();
+                    innumber = true;
+                    sectionTop = obj.top;
+                } else {
+                    console.log('innumber', state);
+                    console.log(obj.top);
+
+                    // pageScroll.start();
+                    // pageScroll.update();
+                    innumber = false;
+                }
+                return ;
             case 'dom':
                 if (state === 'enter') {
                     console.log(obj.top);
@@ -97,7 +122,7 @@ function getCallOnScroll() {
                     // pageScroll.stop();
                     // pageScroll.update();
                     dom = true;
-                    domTop = obj.top;
+                    sectionTop = obj.top;
                 } else {
                     console.log('dom', state);
                     console.log(obj.top);
