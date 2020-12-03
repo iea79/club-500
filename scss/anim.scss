@@ -231,8 +231,7 @@ body {
     }
 }
 
-.major__stencil,
-.media__logo {
+.major__stencil {
     @media (min-width: 768px) {
         cursor: none;
     }

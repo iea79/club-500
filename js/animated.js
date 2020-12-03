@@ -39,10 +39,18 @@ function getCallOnScroll() {
             opacity;
 
         if (innumber) {
-            scale = -( sectionTop - tpos - screenHeight )/screenHeight;
-            opacity = scale*scale*scale-0.5;
+            // scale = -( sectionTop - tpos - screenHeight )/screenHeight;
+            // opacity = scale-1;
+            // console.log(sectionTop);
+            // console.log(tpos);
 
-            $('.innumber__bg img').css('opacity', opacity);
+            if (sectionTop > tpos) {
+                $('.innumber__bg img').removeClass('show');
+            }
+
+            // console.log('innumber', innumber);
+        } else {
+            // console.log('innumber', innumber);
         }
 
         if (dom) {
@@ -100,18 +108,15 @@ function getCallOnScroll() {
         switch (func) {
             case 'innumber':
                 if (state === 'enter') {
-                    console.log(obj.top);
-                    console.log('innumber', state);
-                    // pageScroll.stop();
-                    // pageScroll.update();
+                    // console.log(obj.top);
+                    // console.log('innumber', state);
                     innumber = true;
                     sectionTop = obj.top;
                 } else {
-                    console.log('innumber', state);
-                    console.log(obj.top);
+                    // console.log('innumber', state);
+                    // console.log(obj.top);
+                    $('.innumber__bg img').addClass('show');
 
-                    // pageScroll.start();
-                    // pageScroll.update();
                     innumber = false;
                 }
                 return ;
@@ -143,32 +148,32 @@ function getCallOnScroll() {
         $('[data-scroll]').removeAttr('style');
     }
 
-    $('.media__logo').click(function(){
-        let id = $(this).attr('data-modal-id'),
-            modal = $('#' + id);
-
-        // console.log($(window).height());
-        console.log($('body').offset().top);
-        modal
-            .height($(window).height())
-            .addClass('open');
-        // $('body').addClass('no-scroll');
-        if (isDesktop) {
-            pageScroll.stop();
-        }
-        $(document).mousedown(function (e){
-            var modalContent = $('.media__modal-block');
-            if (!modalContent.is(e.target)
-            && modalContent.has(e.target).length === 0) {
-                $('.media__modal').removeClass('open');
-                $('body').removeClass('no-scroll');
-                if (isDesktop) {
-                    pageScroll.update();
-                    pageScroll.start();
-                }
-            }
-        });
-    });
+    // $('.media__logo').click(function(){
+    //     let id = $(this).attr('data-modal-id'),
+    //         modal = $('#' + id);
+    //
+    //     // console.log($(window).height());
+    //     console.log($('body').offset().top);
+    //     modal
+    //         .height($(window).height())
+    //         .addClass('open');
+    //     // $('body').addClass('no-scroll');
+    //     if (isDesktop) {
+    //         pageScroll.stop();
+    //     }
+    //     $(document).mousedown(function (e){
+    //         var modalContent = $('.media__modal-block');
+    //         if (!modalContent.is(e.target)
+    //         && modalContent.has(e.target).length === 0) {
+    //             $('.media__modal').removeClass('open');
+    //             $('body').removeClass('no-scroll');
+    //             if (isDesktop) {
+    //                 pageScroll.update();
+    //                 pageScroll.start();
+    //             }
+    //         }
+    //     });
+    // });
 
     $('.media__modal-close').click(function(){
         $('.media__modal').removeClass('open');
@@ -197,11 +202,14 @@ function getCallOnScroll() {
         modal.addClass('open');
         $('body').addClass('no-scroll');
 
-        if (isXsWidth()) {
-            modal.find('.residents__modal-post').after(modal.find(".residents__modal-img"));
-        }
     });
 
+    if (isXsWidth()) {
+        $('.residents__modal').each(function(index, el) {
+            $(el).find('.residents__modal-post').after($(el).find(".residents__modal-img"));
+
+        });
+    }
     $('.residents__modal-close').click(function(){
         $('.residents__modal').removeClass('open')
         $('body').removeClass('no-scroll');
@@ -285,8 +293,9 @@ function getCallOnScroll() {
         if (isDesktop) {
             if ($(cursor).attr('style') == undefined) {
                 showCoursor(".major__stencil", 'Смотреть видео');
-                showCoursor(".media__logo", 'Читать');
+                // showCoursor(".media__logo", 'Читать');
                 showCoursor(".poster__descr", 'Подробнее');
+                showCoursor(".travel__plate", 'Oставить заявку');
                 showCoursor(".travel__item_any", 'Подробнее');
                 showCoursor(".residents__picture", 'Подробнее');
             }

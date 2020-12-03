@@ -1,34 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   id="svg13"
-   version="1.1"
-   fill="none"
-   viewBox="0 0 303 303"
-   height="303"
-   width="303">
-  <metadata
-     id="metadata17">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <path
-     id="path2"
-     stroke="#5B5B5B"
-     d="M36.8488 249C14.492 222.736 1 188.694 1 151.5C1 68.3811 68.3811 1 151.5 1C234.619 1 302 68.3811 302 151.5C302 188.694 288.508 222.736 266.151 249" />
-  <path
-     id="path824"
-     d="m 54.244703,234.63241 c 0,0 -10.735005,-13.00163 -18.601905,-27.93968 -7.8669,-14.93804 -12.204804,-31.34583 -13.26933,-51.9157 C 20.2057,112.88918 44.770744,73.020907 68.688559,53.281779 91.126211,34.764215 125.90307,19.257604 170.78731,24.089772 c 38.56221,4.151548 73.66236,38.335059 73.66236,38.335059"
-     style="fill:none;stroke:#219653;stroke-width:44;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.15686275" />
+<svg width="303" height="303" viewBox="0 0 303 303" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.8488 249C14.492 222.736 1 188.694 1 151.5C1 68.3811 68.3811 1 151.5 1C234.619 1 302 68.3811 302 151.5C302 188.694 288.508 222.736 266.151 249" stroke="#5B5B5B"/>
+<path d="M35.9918 249.847C10.5877 219.988 -2.20744 181.418 0.312177 142.295C2.83179 103.172 20.4686 66.5628 49.4931 40.2085C78.5175 13.8542 116.654 -0.178574 155.838 1.07753C195.022 2.33362 232.182 18.7801 259.458 46.9392L226.362 78.9991C207.409 59.433 181.588 48.0052 154.362 47.1324C127.135 46.2596 100.636 56.0102 80.4685 74.3223C60.301 92.6344 48.0462 118.072 46.2954 145.257C44.5447 172.441 53.4353 199.241 71.0872 219.989L35.9918 249.847Z" fill="url(#paint4_radial)" fill-opacity="0.18"/>
+<defs>
+<radialGradient id="paint4_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(174.5 150) rotate(169.174) scale(162.39)">
+<stop offset="0.541985" stop-opacity="0"/>
+<stop offset="0.905492" stop-color="#219653"/>
+</radialGradient>
+</defs>
 </svg>

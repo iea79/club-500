@@ -92,6 +92,24 @@ each item, i in residents
 
                                         .residents__modal-property= prop.label
 
+                        if item.vklybe
+                            .residents__modal-forename
+
+                                .residents__modal-name= item.vklybe.title
+
+                            .residents__modal-post!= item.vklybe.sub
+
+                            .residents__modal-facts
+                                each prop in item.vklybe.prop
+                                    .residents__modal-cell
+
+                                        .residents__modal-value
+                                            span!=prop.top
+                                            | #{prop.val}
+
+                                        .residents__modal-property!= prop.label
+
+
                         .residents__modal-skills
 
                             .residents__modal-topic= item.label
@@ -106,6 +124,8 @@ each item, i in residents
                                 .residents__modal-set
                                     each skill in item.skills
                                         .residents__modal-elem= skill
+                        if item.text
+                            .residents__modal-text!= item.text
 
 
             .residents__modal-networks

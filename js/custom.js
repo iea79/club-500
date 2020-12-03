@@ -141,4 +141,82 @@ document.addEventListener('DOMContentLoaded', function(){
     }
     tarrifModalOpen();
     // конец Модалки секции тарифы
-})
+});
+
+// Простая проверка форм на заполненность и отправка аяксом
+function formSubmit() {
+    $("[type=submit]").on('click', function (e){
+        e.preventDefault();
+        var form = $(this).closest('form');
+        var url = form.attr('action');
+        var formData = form.serialize();
+        var field = form.find('[name="name"], [name="business"], [name="email"], [name="tel"], [name="inYear"], name="income"');
+        if (isXsWidth()) {
+            var field = form.find('[name="name"], [name="business"], [name="email"], [name="tel"]');
+        }
+
+        let empty = 0;
+
+        field.each(function() {
+            if ($(this).val() == "") {
+                $(this).addClass('invalid');
+                // return false;
+                $('.modal__message').text('Не все поля заполнены!');
+                setTimeout(function () {
+                    $('.modal__message').text('');
+                }, 3000);
+
+                empty++;
+            } else {
+                $(this).removeClass('invalid');
+                $(this).addClass('valid');
+            }
+        });
+
+        // console.log(empty);
+
+        if (empty > 0) {
+            return false;
+        } else {
+            $.ajax({
+                url: url,
+                type: "POST",
+                dataType: "html",
+                data: formData,
+                success: function (response) {
+                    // $('#success').modal('show');
+                    // console.log('success');
+                    console.log(response);
+                    // console.log(data);
+                    // document.location.href = "success.html";
+                    $('.modal__message').text('Ваше письмо отправлено!');
+                },
+                error: function (response) {
+                    // $('#success').modal('show');
+                    // console.log('error');
+                    console.log(response);
+                }
+            });
+        }
+
+    });
+
+    $('[required]').on('blur', function() {
+        if ($(this).val() != '') {
+            $(this).removeClass('invalid');
+        }
+    });
+
+    $('.form__privacy input').on('change', function(event) {
+        event.preventDefault();
+        var btn = $(this).closest('.form').find('.btn');
+        if ($(this).prop('checked')) {
+            btn.removeAttr('disabled');
+            // console.log('checked');
+        } else {
+            btn.attr('disabled', true);
+        }
+    });
+}
+
+formSubmit();

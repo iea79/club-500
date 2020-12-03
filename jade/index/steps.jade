@@ -126,15 +126,17 @@
 
             .modal__title получите доступ в club 500
 
-            form.modal__form
+            form.modal__form(action="send.php")
+
+                input(type="hidden" name="subject" value="Заявка с сайта")
 
                 .modal__row
 
-                    input(type='text' class='modal__field' placeholder='Ваше имя')
+                    input(type='text' class='modal__field' name="name" placeholder='Ваше имя')
 
                 .modal__row
 
-                    input(type='text' class='modal__field' placeholder='Сфера бизнеса')
+                    input(type='text' class='modal__field' name="business" placeholder='Сфера бизнеса')
 
                     .modal__icon
 
@@ -142,22 +144,24 @@
 
                 .modal__row.none
 
-                    input(type='text' class='modal__field' placeholder='Обород компании в год')
+                    input(type='text' class='modal__field' name="inYear" placeholder='Обород компании в год')
 
                 .modal__row.none
 
-                    input(type='text' class='modal__field' placeholder='Личный доход в год')
+                    input(type='text' class='modal__field' name="income" placeholder='Личный доход в год')
 
                 .modal__row
 
-                    input(type='email' class='modal__field' placeholder='Email')
+                    input(type='email' class='modal__field' name="email" placeholder='Email')
 
                 .modal__row
 
-                    input(type='tel' class='modal__field' placeholder='Телефон')
+                    input(type='tel' class='modal__field' name="tel" placeholder='Телефон')
 
                 .modal__cellar
 
-                    button(class='modal__btn') отправить
+                    button(class='modal__btn' type="submit") отправить
 
                     .modal__notice Нажимая на кнопку отправить, вы даете согласие на обработку персональных данных
+
+                .modal__message

@@ -428,6 +428,10 @@
 		font-size: 1.42em;
 		letter-spacing: -0.035em;
 		color: #FFFFFF;
+
+		&.invalid {
+			border-bottom-color: red;
+		}
 		@media (max-width: 767px) {
 			font-size: 1.3em;
 		}
@@ -505,6 +509,13 @@
 			order: 1;
 			font-size: 1em;
 			padding-bottom: 6vh;
+		}
+	}
+
+	&__message {
+		&:not(:empty) {
+			padding: 2em 0 0;
+			font-size: 1.4em;
 		}
 	}
 }

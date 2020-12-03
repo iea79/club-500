@@ -428,7 +428,7 @@
               <div class="formats__block_text">
                 <div class="formats__block__title">ПУТЕШЕСТВИЯ</div>
                 <div class="formats__block__sub"> 
-                  <p>CLUB 500 — это не только про бизнес.<br/>Клуб единомышленников способных на любые подвиги. Вместе мы покоряем вершины, исследуем новые <br/>горизонты и скрытые от обычных туристов локации.<br/>Уникальные маршруты наших экспедиций — <br/>это незабываемые эмоции абсолютной свободы.</p>
+                  <p>CLUB 500 — это не только про бизнес.<br/>Клуб единомышленников способных на любые подвиги. <br/>Вместе мы покоряем вершины, исследуем новые <br/>горизонты и скрытые от обычных туристов локации.<br/>Уникальные маршруты наших экспедиций — <br/>это незабываемые эмоции абсолютной свободы.</p>
                 </div>
               </div>
             </div>
@@ -444,7 +444,7 @@
             <div class="formats__block">
               <div class="formats__block_text">
                 <div class="formats__block__sub formats__block__onlySub" data-scroll="" data-scroll-offset="10%" data-scroll-class="slideLeft"> 
-                  <p>CLUB 500 — это безграничные возможности. Наши резиденты получают доступ <br/>к уникальному формату — VIP-экскурсии <br/>в топ компании России и мира. <br/>Нас приглашали: mail.ru Group, <br/>Белая дача, Абрау Дюрсо, Грасс, <br/>Сколково, Аскона, Ройстат.</p>
+                  <p>CLUB 500 — это безграничные возможности. <br/>Наши резиденты получают доступ <br/>к уникальному формату — VIP-экскурсии <br/>в топ компании России и мира. <br/>Нас приглашали: mail.ru Group, <br/>Белая дача, Абрау Дюрсо, Грасс, <br/>Сколково, Аскона, Ройстат.</p>
                 </div>
               </div>
             </div>
@@ -476,7 +476,7 @@
             <div class="formats__block">
               <div class="formats__block_text">
                 <div class="formats__block__sub formats__block__onlySub" data-scroll="" data-scroll-offset="10%" data-scroll-class="slideRight"> 
-                  <p>Один из самых популярных форматов CLUB 500,<br/>в котором собран уникальный опыт, детально <br/>разделенный по главным бизнес-блокам. Максимально <br/>детальный разбор одной или нескольких тем, изучение <br/>подводных камней и превентивных инструментов.<br/>В любой точке мира резидент CLUB 500 может воспользоваться этим форматом имея<br/>лишь доступ в интернет. Все резиденты получают доступ<br/>к записи, если не было возможности подключиться online.</p>
+                  <p>Один из самых популярных форматов CLUB 500,<br/>в котором собран уникальный опыт, детально <br/>разделенный по главным бизнес-блокам. Максимально <br/>детальный разбор одной или нескольких тем, изучение <br/>подводных камней и превентивных инструментов.<br/>В любой точке мира резидент CLUB 500 может <br/>воспользоваться этим форматом имея<br/>лишь доступ в интернет. Все резиденты получают доступ<br/>к записи, если не было возможности подключиться online.</p>
                 </div>
               </div>
             </div>
@@ -547,7 +547,7 @@
               <div class="formats__block_text">
                 <div class="formats__block__title" data-scroll="" data-scroll-offset="10%" data-scroll-class="slideLeft">Бизнес-образование</div>
                 <div class="formats__block__sub" data-scroll="" data-scroll-offset="10%" data-scroll-class="slideLeft"> 
-                  <p>Абсолютно новый формат CLUB 500. Бизнес образование </p><br/>в любой точке планеты. Одна неделя, Одна страна, <br/>лучише университеты мира, группа из 50-ти резидентов <br/>и грандиозная завершающая вечеринка.
+                  <p>Абсолютно новый формат CLUB 500. Бизнес образование <br/>в любой точке планеты. Одна неделя, Одна страна, <br/>лучише университеты мира, группа из 50-ти резидентов <br/>и грандиозная завершающая вечеринка.</p>
                 </div>
               </div>
             </div>
@@ -557,7 +557,7 @@
               <div class="formats__block_text">
                 <div class="formats__block__title" data-scroll="" data-scroll-offset="10%" data-scroll-class="slideRight">Спортивные <br>мероприятия</div>
                 <div class="formats__block__sub" data-scroll="" data-scroll-offset="10%" data-scroll-class="slideRight"> 
-                  <p>Бизнес и спорт — неотделимые понятия, которые <br/>помогают резидентам клуба расслабляться и получать адреналин: <br/>регулярные пробежки, хоккей, бокс, теннис — активности, <br/>которые мы внедрили на постоянной основе</p>
+                  <p>Бизнес и спорт — неотделимые понятия, которые  помогают<br/>резидентам клуба расслабляться и получать адреналин: <br/>регулярные пробежки, хоккей, бокс, теннис — активности, <br/>которые мы внедрили на постоянной основе</p>
                 </div>
               </div>
             </div>
@@ -723,30 +723,32 @@
           </div>
           <div class="modal__mass">
             <div class="modal__title">получите доступ в club 500</div>
-            <form class="modal__form">
+            <form class="modal__form" action="send.php">
+              <input type="hidden" name="subject" value="Заявка с сайта"/>
               <div class="modal__row">
-                <input class="modal__field" type="text" placeholder="Ваше имя"/>
+                <input class="modal__field" type="text" name="name" placeholder="Ваше имя"/>
               </div>
               <div class="modal__row">
-                <input class="modal__field" type="text" placeholder="Сфера бизнеса"/>
+                <input class="modal__field" type="text" name="business" placeholder="Сфера бизнеса"/>
                 <div class="modal__icon"><img src="img/steps-icon.svg"/></div>
               </div>
               <div class="modal__row none">
-                <input class="modal__field" type="text" placeholder="Обород компании в год"/>
+                <input class="modal__field" type="text" name="inYear" placeholder="Обород компании в год"/>
               </div>
               <div class="modal__row none">
-                <input class="modal__field" type="text" placeholder="Личный доход в год"/>
+                <input class="modal__field" type="text" name="income" placeholder="Личный доход в год"/>
               </div>
               <div class="modal__row">
-                <input class="modal__field" type="email" placeholder="Email"/>
+                <input class="modal__field" type="email" name="email" placeholder="Email"/>
               </div>
               <div class="modal__row">
-                <input class="modal__field" type="tel" placeholder="Телефон"/>
+                <input class="modal__field" type="tel" name="tel" placeholder="Телефон"/>
               </div>
               <div class="modal__cellar">
-                <button class="modal__btn">отправить</button>
+                <button class="modal__btn" type="submit">отправить</button>
                 <div class="modal__notice">Нажимая на кнопку отправить, вы даете согласие на обработку персональных данных</div>
               </div>
+              <div class="modal__message"></div>
             </form>
           </div>
         </div>
@@ -879,11 +881,11 @@
           </div>
           <div class="residents__box" data-scroll="" data-scroll-class="slideUp" data-scroll-offset="20%">
                   <div class="residents__picture" data-modal-id="residents-modal-17">
-                    <div class="residents__label"><img src="img/vklybe.svg"/></div><img class="residents__img" src="img/residents-12.jpg" alt="Дмитрий"/>
+                    <div class="residents__label"><img src="img/vklybe.svg"/></div><img class="residents__img" src="img/residents-12.jpg" alt="Нагайцев"/>
                   </div>
                   <div class="residents__content">
-                    <div class="residents__name">Дмитрий undefined</div>
-                    <div class="residents__post">Медиа,  VKLYBE.TV</div>
+                    <div class="residents__name">Нагайцев Дмитрий</div>
+                    <div class="residents__post">Vklybe.tv, Река 21, AutoLead</div>
                   </div>
           </div>
         </div>
@@ -1025,7 +1027,7 @@
           <div class="travel__row">
             <div class="travel__item">
               <div class="travel__img"><img src="img/trips/trips-1.jpg" alt=""/></div>
-              <div class="travel__plate">
+              <div class="travel__plate js_action">
                 <div class="travel__date">28<sup class="desktop"><small>11</small></sup>—04<sup class="desktop"><small>12</small></sup> <span class="mobile">ноября</span></div>
                 <div class="travel__bottom">
                   <div class="travel__name">Экспедиция <br>в Эфиопию</div>
@@ -1046,7 +1048,7 @@
           <div class="travel__row">
             <div class="travel__item">
               <div class="travel__img"><img src="img/trips/trips-2.jpg" alt=""/></div>
-              <div class="travel__plate">
+              <div class="travel__plate js_action">
                 <div class="travel__date">04<sup class="desktop"><small>02</small></sup>—10<sup class="desktop"><small>02</small></sup><span class="mobile">ноября</span></div>
                 <div class="travel__bottom">
                   <div class="travel__name">ROAD-TRIP по бахе калифорнии</div>
@@ -1068,7 +1070,7 @@
           <div class="travel__row">
             <div class="travel__item">
               <div class="travel__img"><img src="img/trips/trips-3.jpg" alt=""/></div>
-              <div class="travel__plate">
+              <div class="travel__plate js_action">
                 <div class="travel__date">25<sup class="desktop"><small>02</small></sup>—06<sup class="desktop"><small>03</small></sup><span class="mobile">ноября</span></div>
                 <div class="travel__bottom">
                   <div class="travel__name">Килиманджаро. Мировой рекорд</div>
@@ -1885,6 +1887,7 @@
         <div class="media__circle-four" data-scroll="" data-scroll-speed="1"></div>
         <div class="media__container">
           <div class="media__title">СМИ</div>
+          <div class="media__sub">о нас пишут</div>
           <div class="media__set" id="media">
             <div class="media__box" data-scroll="" data-scroll-class="slideUp">
               <div class="media__logo" data-modal-id="media-modal-1"><img src="img/media1.svg" alt="media__logo"/></div>
@@ -2651,17 +2654,45 @@
       <div class="residents__modal-close"></div>
       <div class="residents__modal-body">
         <div class="residents__modal-forename">
-          <div class="residents__modal-name">Дмитрий</div>
-          <div class="residents__modal-surname"></div>
+          <div class="residents__modal-name">Нагайцев</div>
+          <div class="residents__modal-surname">Дмитрий</div>
         </div>
-        <div class="residents__modal-post">Медиа,  VKLYBE.TV</div>
+        <div class="residents__modal-post">Vklybe.tv, Река 21, AutoLead</div>
         <div class="tab__mass open" id="achievements[object Object]">
           <div class="residents__modal-mass">
             <div class="residents__modal-facts">
+              <div class="residents__modal-cell">
+                <div class="residents__modal-value"><span>4</span>млрд+</div>
+                <div class="residents__modal-property">оборот</div>
+              </div>
+              <div class="residents__modal-cell">
+                <div class="residents__modal-value"><span>500</span>+</div>
+                <div class="residents__modal-property">сотрудники</div>
+              </div>
+            </div>
+            <div class="residents__modal-forename">
+              <div class="residents__modal-name">Медиа ресурс &quot;VKLYBE.TV&quot;</div>
+            </div>
+            <div class="residents__modal-post">За 12 лет успешной работы было сделано:</div>
+            <div class="residents__modal-facts">
+              <div class="residents__modal-cell">
+                <div class="residents__modal-value"><span>1</span>млрд</div>
+                <div class="residents__modal-property">фотографий <br>со всего мира</div>
+              </div>
+              <div class="residents__modal-cell">
+                <div class="residents__modal-value"><span>50</span>+</div>
+                <div class="residents__modal-property">крупных <br>ивентов</div>
+              </div>
+              <div class="residents__modal-cell">
+                <div class="residents__modal-value"><span>4000</span>+</div>
+                <div class="residents__modal-property">Награждены <br>номинанты</div>
+              </div>
             </div>
             <div class="residents__modal-skills">
-              <div class="residents__modal-topic"></div>
+              <div class="residents__modal-topic">Клиенты и рекламодатели</div>
+              <div class="residents__modal-clogoList"><img src="img/logo-line-1.svg"/><img src="img/logo-line-2.svg"/><img src="img/logo-line-3.svg"/></div>
             </div>
+            <div class="residents__modal-text"><h4>Река 21</h4><p>производство дейдвудных подшипников и сегментов для гребных валов морских и речных судов, а также навигационных фонарей для обеспечения судоходной обстановки на реках</p><p>За 11 лет работы были осуществлены успешные поставки продукции для ведущих российских и гос. компаний таких как: </p><ul><li>Минобороны РФ</li><li>Росморпорт</li><li>ОСК</li><li>Газпром</li></ul><h4>AutoLead</h4><p>№1 в России в области таргетированных SMS-рассылок по базам автовладельцев</p><p>Партнер автомобильных холдингов, входящих в ТОП-10 России: РОЛЬФ, АВИЛОН, MAJOR, АВТОDОМ, БалтАвтоТрейд, Favorit Motors и др.</p><p>За 11 лет продано более 2000 новых автомобилей привлеченным клиентам"</p></div>
           </div>
         </div>
       </div>
